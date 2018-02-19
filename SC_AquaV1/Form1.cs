@@ -1370,14 +1370,23 @@ private void RGB_config_info() {
                 TEMP_STRING_DATA[2] = hourOff1;
                 TEMP_STRING_DATA[3] = minOff1;
                 TEMP_STRING_DATA[4] = srdur;
-                GetUDP_Values( TEMP_STRING_DATA){
+                GetUDP_Values(TEMP_STRING_DATA);
+
+                string test2sf = (string.Join(UDP_DELIMINER.ToString(), GetUDP_Values(TEMP_STRING_DATA)));
+                string w23 = (string.Join(UDP_Timers_Digit_00.ToString(), test2sf.ToString()));
+                {
                     richTextBox1.Text += (DateTime.Now);
-                    richTextBox1.Text += (GetUDP_Values(TEMP_STRING_DATA)).ToString();
+                    // richTextBox1.Text += (string.Join (UDP_DELIMINER.ToString() , GetUDP_Values(TEMP_STRING_DATA)));                //GetUDP_Values(TEMP_STRING_DATA)).ToString();
+                    // richTextBox1.Text += (test2sf.ToString());
+                    richTextBox1.Text += (w23.ToString());
                     richTextBox1.Text += " bla bla bla \r\n";
                 };
-                
+
+                String[]  HGF  = new String[5];
                 richTextBox1.Text += (DateTime.Now);
-                richTextBox1.Text += (GetUDP_Values(TEMP_STRING_DATA)).ToString();
+                HGF = GetUDP_Values(TEMP_STRING_DATA);
+
+                richTextBox1.Text += (HGF);
                 richTextBox1.Text += " bla bla bla \r\n";
 
                 richTextBox1.Text += (DateTime.Now);
@@ -1870,7 +1879,7 @@ private void RGB_config_info() {
         }
 
 
-        public string[] GetUDP_Values(String[] AA )
+        public static string[] GetUDP_Values(String[] AA )
         {
 
             String[] ret = new String[5];
@@ -1883,6 +1892,8 @@ private void RGB_config_info() {
                
                 
             }
+
+            //String TT = Join.ret.ToString();
             return ret;
         }
 
