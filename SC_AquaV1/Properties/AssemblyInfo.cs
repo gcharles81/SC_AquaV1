@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SC_AquaV1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("BESI")]
+[assembly: AssemblyCompany("Charles")]
 [assembly: AssemblyProduct("SC_AquaV1")]
-[assembly: AssemblyCopyright("Copyright © BESI 2016")]
+[assembly: AssemblyCopyright("Copyright © Charles Galea")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
