@@ -1370,30 +1370,30 @@ private void RGB_config_info() {
                 UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
                 UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
 
-                UDP_Timers_Digit_01 = 1;
-                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();
+                UDP_Timers_Digit_01 = 1; // 1 = SUNSET TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
 
-               
-                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //TEMP_STRING_DATA[0].ToString();
-                               
-                UDP_STRING_COMBINED[3] = minOn1.ToString();
-                                
-                UDP_STRING_COMBINED[4] = hourOff1.ToString();
-                                
-                UDP_STRING_COMBINED[5] = minOff1.ToString();
-                                
-                UDP_STRING_COMBINED[6] = srdur.ToString();
-                UDP_STRING_COMBINED[7] = "0".ToString();
-            
-                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = srdur.ToString();//UDP TIMER duration value
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
                 var builder = new StringBuilder();
                 Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
-                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
 
 
                 ini.IniWriteValue("Sunrise", "Status", "true");
 
-                ini.IniWriteValue("Sunrise", "UDP_PACKET", result);
+                ini.IniWriteValue("Sunrise", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1438,7 +1438,7 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Sunset", "duration", srdur);
                 this.progressBar1.Increment(25);
 
-                ////////UDP String GEneration
+                //UDP String Creation starts below  
 
                 UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
                 UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
@@ -1463,6 +1463,7 @@ private void RGB_config_info() {
                 Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
                 var result = String.Join(":", UDP_STRING_COMBINED.ToArray());
 
+                ////UDP String Creation Ends  
 
                 ini.IniWriteValue("Sunset", "Status", "true");
                 ini.IniWriteValue("Sunset", "UDP_PACKET", result);
