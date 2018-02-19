@@ -16,8 +16,19 @@ namespace SC_AquaV1
     {
         //////////UDP_RELATED//////////////////////////
         char UDP_DELIMINER = ':';//
-        char UDP_START = 'A';  //// A-Z
-        int UDP_FUNCT = 16; //// 0-255
+        char UDP_START = ' ';  //// A-Z
+        int UDP_FUNCT = 0; //// 0-255
+        String[] UDP_STRING_COMBINED =  new String[8];
+        String[] TEMP_STRING_DATA = new String[6];
+        Char UDP_Timers_Digit_00 = ' ';
+        int UDP_Timers_Digit_01 = 16;
+        int UDP_Timers_Digit_02 = 10;
+        int UDP_Timers_Digit_03 = 30;
+        int UDP_Timers_Digit_04 = 14;
+        int UDP_Timers_Digit_05 = 35;
+        int UDP_Timers_Digit_06 = 100;
+        int UDP_Timers_Digit_07 = 45;
+
         //////////////////////////Sunrise timer related
         bool SunriseHON = false;
         bool SunriseMON = false;
@@ -1318,9 +1329,11 @@ private void RGB_config_info() {
 
         private void Generate_timers_config_file()
         {
+
             ///////GENETATE GENERAL STATUS OF ALL TIMERS IN ONE FILE NAMED TIMSTS.txt////////////////////////////////////////////////
-
-
+            UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+            UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+            
             IniFile ini = new IniFile("config/timers.ini");// Create general file for all timer values CHGA 29/8/2016 
 
             ini.IniWriteValue("Info Timers", "File info ", "//File format created by Charles Galea 2018.");
@@ -1329,6 +1342,8 @@ private void RGB_config_info() {
 
             if ((ACTIVATE_SUNRISE == true) & (SunriseHON == true) & (SunriseMON == true) & (SunriseHOFF == true) & (SunriseMOFF == true) & (SRDUR == true))
             {
+                UDP_Timers_Digit_01 = 1;
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();
 
                 String hourOn1 = comboBox16.Text;
                 ini.IniWriteValue("Sunrise", "hourOn1", hourOn1);
@@ -1349,6 +1364,21 @@ private void RGB_config_info() {
                 String srdur = comboBox1.Text;
                 ini.IniWriteValue("Sunrise", "duration", srdur);
                 this.progressBar1.Increment(25);
+
+                TEMP_STRING_DATA[0] = hourOn1;
+                TEMP_STRING_DATA[1] = minOn1;
+                TEMP_STRING_DATA[2] = hourOff1;
+                TEMP_STRING_DATA[3] = minOff1;
+                TEMP_STRING_DATA[4] = srdur;
+                GetUDP_Values( TEMP_STRING_DATA){
+                    richTextBox1.Text += (DateTime.Now);
+                    richTextBox1.Text += (GetUDP_Values(TEMP_STRING_DATA)).ToString();
+                    richTextBox1.Text += " bla bla bla \r\n";
+                };
+                
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += (GetUDP_Values(TEMP_STRING_DATA)).ToString();
+                richTextBox1.Text += " bla bla bla \r\n";
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1839,6 +1869,86 @@ private void RGB_config_info() {
             }
         }
 
+
+        public string[] GetUDP_Values(String[] AA )
+        {
+
+            String[] ret = new String[5];
+
+            for (int i = 0; i <= 4; i++)// We start from location 1 , becasue location 0 already SET 
+
+            {
+
+                ret[i] = AA[i];
+               
+                
+            }
+            return ret;
+        }
+
+
+        private void CreateUDP_Timers_String()
+        {
+
+            for (int i = 1; i <= 7; i++)// We start from location 1 , becasue location 0 already SET 
+
+            {
+
+
+                switch (i)
+                {
+
+                    
+                    case 1:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_01.ToString();
+                        break;
+
+                    case 2:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_02.ToString();
+                        break;
+
+                    case 3:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_03.ToString();
+                        break;
+
+                    case 4:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_04.ToString();
+                        break;
+
+                    case 5:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_05.ToString();
+                        break;
+
+                    case 6:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_06.ToString();
+                        break;
+                    case 7:
+                        UDP_STRING_COMBINED[i] = UDP_Timers_Digit_07.ToString();
+                        break;
+                }
+
+                
+            }
+
+
+            for (int i = 0; i <= 7; i++)
+
+            {
+                if (i == 7) {
+                    richTextBox1.Text += UDP_STRING_COMBINED[i];
+                    
+                }
+
+                else
+                {
+                    richTextBox1.Text += UDP_STRING_COMBINED[i];
+                    richTextBox1.Text += UDP_DELIMINER;
+                }
+            }
+
+            richTextBox1.Text += "String GEnerated \r\n";
+          
+        }
         private void button8_Click(object sender, EventArgs e)
         {
 
@@ -2817,6 +2927,7 @@ private void RGB_config_info() {
         if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
         {
             Generate_timers_config_file();
+                CreateUDP_Timers_String();
         }
     }
 
@@ -2849,32 +2960,7 @@ private void RGB_config_info() {
 
     private void button16_Click(object sender, EventArgs e)
     {
-        if (ACTIVATE_RGB1 == true)
-        {
-
-            String RED1 = label1.Text;
-            
-
-            String GREEN1 = label2.Text;
-            
-
-            String BLUE1 = label3.Text;
-           
-
-
-            richTextBox1.Text += (DateTime.Now);
-            richTextBox1.Text += ("  ");
-            richTextBox1.Text += " RGB UDP String generated successfully \r\n";
-
-        }
-
-        else if (ACTIVATE_RGB1 == false)
-        {
-
-            richTextBox1.Text += (DateTime.Now);
-            richTextBox1.Text += ("  ");
-            richTextBox1.Text += " EXIT RGB Channel not activated \r\n";
-        }
+            CreateUDP_Timers_String();
     }
 
 
