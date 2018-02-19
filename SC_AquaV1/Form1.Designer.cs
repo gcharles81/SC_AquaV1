@@ -242,6 +242,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.UDP_CREATE_PACKET_BUTTON = new System.Windows.Forms.Button();
             this.panel50 = new System.Windows.Forms.Panel();
@@ -287,7 +288,7 @@
             this.timersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label52 = new System.Windows.Forms.Label();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -5505,6 +5506,17 @@
             this.panel13.Size = new System.Drawing.Size(709, 220);
             this.panel13.TabIndex = 48;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
+            this.richTextBox2.Location = new System.Drawing.Point(-1, 34);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(705, 35);
+            this.richTextBox2.TabIndex = 50;
+            this.richTextBox2.Text = "";
+            // 
             // label51
             // 
             this.label51.BackColor = System.Drawing.Color.DarkGray;
@@ -6324,16 +6336,14 @@
             this.advancedToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.advancedToolStripMenuItem.Text = "Advanced";
             // 
-            // richTextBox2
+            // label52
             // 
-            this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox2.Location = new System.Drawing.Point(-1, 34);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(705, 35);
-            this.richTextBox2.TabIndex = 50;
-            this.richTextBox2.Text = "";
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(418, 28);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(41, 13);
+            this.label52.TabIndex = 35;
+            this.label52.Text = "label52";
             // 
             // Form1
             // 
@@ -6341,6 +6351,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1227, 645);
+            this.Controls.Add(this.label52);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.SUNRISE);
@@ -6683,6 +6694,7 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button UDP_CREATE_PACKET_BUTTON;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label52;
     }
 }
 
