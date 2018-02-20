@@ -917,25 +917,25 @@ private void RGB_config_info() {
         private void comboBox38_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON Neon3
-            label60.BackColor = System.Drawing.Color.DarkOrange;
+            Neon3HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon3HON = true;
         }
         private void comboBox39_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON Neon3
-            label64.BackColor = System.Drawing.Color.DarkOrange;
+            Neon3MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon3MON = true;
         }
         private void comboBox37_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF Neon3
-            label63.BackColor = System.Drawing.Color.DarkOrange;
+            Neon3HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon3HOFF = true;
         }
         private void comboBox40_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF Neon3
-            label62.BackColor = System.Drawing.Color.DarkOrange;
+            Neon3MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon3MOFF = true;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1335,7 +1335,7 @@ private void RGB_config_info() {
 
             ///////GENETATE GENERAL STATUS OF ALL TIMERS IN ONE FILE NAMED TIMSTS.txt////////////////////////////////////////////////
 
-            
+
             IniFile ini = new IniFile("config/timers.ini");// Create general file for all timer values CHGA 29/8/2016 
 
             ini.IniWriteValue("Info Timers", "File info ", "//File format created by Charles Galea 2018.");
@@ -1372,7 +1372,7 @@ private void RGB_config_info() {
                 UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
                 UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
 
-                UDP_Timers_Digit_01 = 1; // 1 = SUNSET TIMER PARAMETER
+                UDP_Timers_Digit_01 = 1; // 1 = SUNRISE TIMER PARAMETER
                 UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
 
 
@@ -1407,7 +1407,7 @@ private void RGB_config_info() {
 
             else
             {
-                
+
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Sunrise Timer is DISABLED \r\n";
@@ -1445,35 +1445,35 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Sunset", "duration", srdur);
                 this.progressBar1.Increment(25);
 
-                //UDP String Creation starts below  
+                ////////UDP String GEneration
 
                 UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
                 UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
 
-                UDP_Timers_Digit_01 = 2;
-                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();
+                UDP_Timers_Digit_01 = 2; // 2 = SUNSET TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
 
 
-                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //TEMP_STRING_DATA[0].ToString();
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
 
-                UDP_STRING_COMBINED[3] = minOn1.ToString();
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
 
-                UDP_STRING_COMBINED[4] = hourOff1.ToString();
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
 
-                UDP_STRING_COMBINED[5] = minOff1.ToString();
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
 
-                UDP_STRING_COMBINED[6] = srdur.ToString();
-                UDP_STRING_COMBINED[7] = "0".ToString();
+                UDP_STRING_COMBINED[6] = srdur.ToString();//UDP TIMER duration value
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
 
-                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
                 var builder = new StringBuilder();
                 Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
-                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
 
                 ////UDP String Creation Ends  
 
                 ini.IniWriteValue("Sunset", "Status", "true");
-                ini.IniWriteValue("Sunset", "UDP_PACKET", result);
+                ini.IniWriteValue("Sunset", "UDP_PACKET", result);//UDP string Write in Config file
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Sunset files generated succesfully \r\n";
@@ -1496,6 +1496,7 @@ private void RGB_config_info() {
 
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             //////////////////////////////GENERATE DAY 1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
             if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true))
             {
@@ -1638,8 +1639,8 @@ private void RGB_config_info() {
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            ///////////////////////////////GENERATE DAY 3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
+      
+                    ///////////////////////////////GENERATE DAY 3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
             if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true))
             {
 
@@ -1658,8 +1659,35 @@ private void RGB_config_info() {
                 String minOff1 = comboBox20.Text;
                 ini.IniWriteValue("Day 3", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
+                ////////UDP String GEneration
 
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 5; // 5 = DAY3 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Day 3", "Status", "true");
+                ini.IniWriteValue("Day 3", "UDP_PACKET", result);//UDP string Write in Config file
+
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1670,7 +1698,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Day 3", "Status", "false");
-
+                ini.IniWriteValue("Day 3", "hourOn1", "0");
+                ini.IniWriteValue("Day 3", "minOn1", "0");
+                ini.IniWriteValue("Day 3", "hourOff1", "0");
+                ini.IniWriteValue("Day 3", "minOff1", "0");
+                ini.IniWriteValue("Day 3", "UDP_PACKET", EMPTY_UDP);
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += "Day 3 Timer is DISABLED \r\n";
@@ -1699,8 +1731,35 @@ private void RGB_config_info() {
                 String minOff1 = comboBox36.Text;
                 ini.IniWriteValue("Neon 1", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
+                ////////UDP String GEneration
 
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 6; // 6 = NEON1 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Neon 1", "Status", "true");
+                ini.IniWriteValue("Neon 1", "UDP_PACKET", result);//UDP string Write in Config file
+
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1711,7 +1770,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Neon 1", "Status", "false");
-
+                ini.IniWriteValue("Neon 1", "hourOn1", "0");
+                ini.IniWriteValue("Neon 1", "minOn1", "0");
+                ini.IniWriteValue("Neon 1", "hourOff1", "0");
+                ini.IniWriteValue("Neon 1", "minOff1", "0");
+                ini.IniWriteValue("Neon 1", "UDP_PACKET", EMPTY_UDP);
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += "Neon 1 Timer is DISABLED \r\n";
@@ -1738,8 +1801,34 @@ private void RGB_config_info() {
                 String minOff1 = comboBox48.Text;
                 ini.IniWriteValue("Neon 2", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
+                ////////UDP String GEneration
 
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 7; // 7 = NEON2 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Neon 2", "Status", "true");
+                ini.IniWriteValue("Neon 2", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1750,6 +1839,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Neon 2", "Status", "false");
+                ini.IniWriteValue("Neon 2", "hourOn1", "0");
+                ini.IniWriteValue("Neon 2", "minOn1", "0");
+                ini.IniWriteValue("Neon 2", "hourOff1", "0");
+                ini.IniWriteValue("Neon 2", "minOff1", "0");
+                ini.IniWriteValue("Neon 2", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1778,7 +1872,34 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Neon 3", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 8; // 8 = NEON3 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Neon 3", "Status", "true");
+                ini.IniWriteValue("Neon 3", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1789,6 +1910,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Neon 3", "Status", "false");
+                ini.IniWriteValue("Neon 3", "hourOn1", "0");
+                ini.IniWriteValue("Neon 3", "minOn1", "0");
+                ini.IniWriteValue("Neon 3", "hourOff1", "0");
+                ini.IniWriteValue("Neon 3", "minOff1", "0");
+                ini.IniWriteValue("Neon 3", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1816,7 +1942,34 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Night 1", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 9; // 9 = NIGHT1 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Night 1", "Status", "true");
+                ini.IniWriteValue("Night 1", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1827,6 +1980,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Night 1", "Status", "false");
+                ini.IniWriteValue("Night 1", "hourOn1", "0");
+                ini.IniWriteValue("Night 1", "minOn1", "0");
+                ini.IniWriteValue("Night 1", "hourOff1", "0");
+                ini.IniWriteValue("Night 1", "minOff1", "0");
+                ini.IniWriteValue("Night 1", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1854,7 +2012,34 @@ private void RGB_config_info() {
                 ini.IniWriteValue("UV Light 1", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 10; // 10 = UV Light 1 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("UV Light 1", "Status", "true");
+                ini.IniWriteValue("UV Light 1", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1865,6 +2050,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("UV Light 1", "Status", "false");
+                ini.IniWriteValue("UV Light 1", "hourOn1", "0");
+                ini.IniWriteValue("UV Light 1", "minOn1", "0");
+                ini.IniWriteValue("UV Light 1", "hourOff1", "0");
+                ini.IniWriteValue("UV Light 1", "minOff1", "0");
+                ini.IniWriteValue("UV Light 1", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1872,7 +2062,7 @@ private void RGB_config_info() {
 
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////GENERATE Uv_2TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
+            //////////////////////////////GENERATE Uv_2TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
             if ((ACTIVATE_UV2 == true) & (Uv2HON == true) & (Uv2MON == true) & (Uv2HOFF == true) & (Uv2MOFF == true))
             {
 
@@ -1892,7 +2082,34 @@ private void RGB_config_info() {
                 ini.IniWriteValue("UV Light 2", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 11; // 11 = UV Light 2 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("UV Light 2", "Status", "true");
+                ini.IniWriteValue("UV Light 2", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1903,6 +2120,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("UV Light 2", "Status", "false");
+                ini.IniWriteValue("UV Light 2", "hourOn1", "0");
+                ini.IniWriteValue("UV Light 2", "minOn1", "0");
+                ini.IniWriteValue("UV Light 2", "hourOff1", "0");
+                ini.IniWriteValue("UV Light 2", "minOff1", "0");
+                ini.IniWriteValue("UV Light 2", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1919,16 +2141,41 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Slaves", "ADD 01", RTC1);
                 this.progressBar1.Increment(25);
 
-                RTC1 = comboBox55.Text;
-                ini.IniWriteValue("Slaves", "ADD 02", RTC1);
+                String RTC2 = comboBox55.Text;
+                ini.IniWriteValue("Slaves", "ADD 02", RTC2);
                 this.progressBar1.Increment(25);
 
-                RTC1 = comboBox61.Text;
-                ini.IniWriteValue("Slaves", "ADD 03", RTC1);
+                String RTC3 = comboBox61.Text;
+                ini.IniWriteValue("Slaves", "ADD 03", RTC3);
                 this.progressBar1.Increment(25);
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 11; // 11 = SLAVES  PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+                UDP_STRING_COMBINED[2] = RTC1.ToString(); //UDP SLAVE 1 address
+
+                UDP_STRING_COMBINED[3] = RTC2.ToString();//UDP SLAVE 2 address
+
+                UDP_STRING_COMBINED[4] = RTC3.ToString();//UDP SLAVE 3 address
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//NOT USED by UDP Slaves  type
+                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Slaves Update", "Status", "true");
-
+                ini.IniWriteValue("Slaves Update", "UDP_PACKET", result);//UDP string Write in Config file
 
 
                 richTextBox1.Text += (DateTime.Now);
@@ -1940,6 +2187,10 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Slaves Update", "Status", "false");
+                ini.IniWriteValue("Slaves Update", "ADD 01", "0");
+                ini.IniWriteValue("Slaves Update", "ADD 02", "0");
+                ini.IniWriteValue("Slaves Update", "ADD 03", "0");
+                ini.IniWriteValue("Slaves Update", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1951,27 +2202,53 @@ private void RGB_config_info() {
             if ((RTC_ACTIVATE == true) & (day == true) & (month == true) & (year == true) & (hour == true) & (minute == true))
             {
 
-                String ADDRESS = comboBox31.Text;
-                ini.IniWriteValue("RTC", "Day", ADDRESS);
+                String ADDRESS1 = comboBox31.Text;
+                ini.IniWriteValue("RTC", "Day", ADDRESS1);
                 this.progressBar1.Increment(25);
 
-                 ADDRESS = comboBox29.Text;
-                ini.IniWriteValue("RTC", "Month", ADDRESS);
+                String ADDRESS2 = comboBox29.Text;
+                ini.IniWriteValue("RTC", "Month", ADDRESS2);
                 this.progressBar1.Increment(25);
 
-                 ADDRESS = comboBox30.Text;
-                ini.IniWriteValue("RTC", "Year", ADDRESS);
+                String ADDRESS3 = comboBox30.Text;
+                ini.IniWriteValue("RTC", "Year", ADDRESS3);
                 this.progressBar1.Increment(25);
 
-                 ADDRESS = comboBox4.Text;
-                ini.IniWriteValue("RTC", "Hour", ADDRESS);
+                String ADDRESS4 = comboBox4.Text;
+                ini.IniWriteValue("RTC", "Hour", ADDRESS4);
                 this.progressBar1.Increment(25);
 
-                 ADDRESS = comboBox3.Text;
-                ini.IniWriteValue("RTC", "Minute", ADDRESS);
+                String ADDRESS5 = comboBox3.Text;
+                ini.IniWriteValue("RTC", "Minute", ADDRESS5);
                 this.progressBar1.Increment(25);
 
-                ini.IniWriteValue("RTC Update", "Status", "true");
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 12; // 12 = RTC  PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+                UDP_STRING_COMBINED[2] = ADDRESS1.ToString(); //UDP SLAVE 1 address
+
+                UDP_STRING_COMBINED[3] = ADDRESS2.ToString();//UDP SLAVE 2 address
+
+                UDP_STRING_COMBINED[4] = ADDRESS3.ToString();//UDP SLAVE 3 address
+
+                UDP_STRING_COMBINED[5] = ADDRESS4.ToString();//NOT USED by UDP Slaves  type
+
+                UDP_STRING_COMBINED[6] = ADDRESS5.ToString();//NOT USED by UDP Slaves  type
+                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
+                ini.IniWriteValue("RTC update", "Status", "true");
+                ini.IniWriteValue("RTC update", "UDP_PACKET", result);//UDP string Write in Config file
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1981,7 +2258,13 @@ private void RGB_config_info() {
 
             else
             {
-                ini.IniWriteValue("RTC Update", "Status", "false");
+                ini.IniWriteValue("RTC update", "Status", "false");
+                ini.IniWriteValue("RTC update", "Day", "0");
+                ini.IniWriteValue("RTC update" , "Month", "0");
+                ini.IniWriteValue("RTC update", "Year", "0");
+                ini.IniWriteValue("RTC update", "Hour", "0");
+                ini.IniWriteValue("RTC update", "Minute", "0");
+                ini.IniWriteValue("RTC update", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1991,7 +2274,10 @@ private void RGB_config_info() {
         }
 
 
-        public  void  GetUDP_Values(String[] AA )
+
+
+
+        public void  GetUDP_Values(String[] AA )
         {
 
             String.Join(":", AA);

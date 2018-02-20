@@ -35,20 +35,20 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label60 = new System.Windows.Forms.Label();
+            this.Neon3HON_Label = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.comboBox37 = new System.Windows.Forms.ComboBox();
             this.Neon2HON_Label = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
+            this.Neon3MOFF_Label = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.comboBox38 = new System.Windows.Forms.ComboBox();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.comboBox39 = new System.Windows.Forms.ComboBox();
             this.Neon1HON_Label = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
+            this.Neon3HOFF_Label = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
+            this.Neon3MON_Label = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.comboBox42 = new System.Windows.Forms.ComboBox();
@@ -370,20 +370,20 @@
             this.TIMERS.Controls.Add(this.panel11);
             this.TIMERS.Controls.Add(this.panel10);
             this.TIMERS.Controls.Add(this.panel9);
-            this.TIMERS.Controls.Add(this.label60);
+            this.TIMERS.Controls.Add(this.Neon3HON_Label);
             this.TIMERS.Controls.Add(this.label65);
             this.TIMERS.Controls.Add(this.label61);
             this.TIMERS.Controls.Add(this.comboBox37);
             this.TIMERS.Controls.Add(this.Neon2HON_Label);
-            this.TIMERS.Controls.Add(this.label62);
+            this.TIMERS.Controls.Add(this.Neon3MOFF_Label);
             this.TIMERS.Controls.Add(this.label66);
             this.TIMERS.Controls.Add(this.comboBox38);
             this.TIMERS.Controls.Add(this.comboBox41);
             this.TIMERS.Controls.Add(this.comboBox39);
             this.TIMERS.Controls.Add(this.Neon1HON_Label);
-            this.TIMERS.Controls.Add(this.label63);
+            this.TIMERS.Controls.Add(this.Neon3HOFF_Label);
             this.TIMERS.Controls.Add(this.label67);
-            this.TIMERS.Controls.Add(this.label64);
+            this.TIMERS.Controls.Add(this.Neon3MON_Label);
             this.TIMERS.Controls.Add(this.label71);
             this.TIMERS.Controls.Add(this.comboBox40);
             this.TIMERS.Controls.Add(this.comboBox42);
@@ -524,20 +524,20 @@
             this.panel9.Size = new System.Drawing.Size(879, 10);
             this.panel9.TabIndex = 0;
             // 
-            // label60
+            // Neon3HON_Label
             // 
-            this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label60.BackColor = System.Drawing.Color.CadetBlue;
-            this.label60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label60.Location = new System.Drawing.Point(311, 388);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(65, 35);
-            this.label60.TabIndex = 38;
-            this.label60.Text = "HOUR ON";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label60.UseMnemonic = false;
+            this.Neon3HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon3HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon3HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon3HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon3HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon3HON_Label.Location = new System.Drawing.Point(311, 388);
+            this.Neon3HON_Label.Name = "Neon3HON_Label";
+            this.Neon3HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon3HON_Label.TabIndex = 38;
+            this.Neon3HON_Label.Text = "HOUR ON";
+            this.Neon3HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon3HON_Label.UseMnemonic = false;
             // 
             // label65
             // 
@@ -622,20 +622,20 @@
             this.Neon2HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Neon2HON_Label.UseMnemonic = false;
             // 
-            // label62
+            // Neon3MOFF_Label
             // 
-            this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label62.BackColor = System.Drawing.Color.CadetBlue;
-            this.label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label62.Location = new System.Drawing.Point(525, 388);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(65, 35);
-            this.label62.TabIndex = 41;
-            this.label62.Text = "MINUTE OFF";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label62.UseMnemonic = false;
+            this.Neon3MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon3MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon3MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon3MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon3MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon3MOFF_Label.Location = new System.Drawing.Point(525, 388);
+            this.Neon3MOFF_Label.Name = "Neon3MOFF_Label";
+            this.Neon3MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon3MOFF_Label.TabIndex = 41;
+            this.Neon3MOFF_Label.Text = "MINUTE OFF";
+            this.Neon3MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon3MOFF_Label.UseMnemonic = false;
             // 
             // label66
             // 
@@ -846,20 +846,20 @@
             this.Neon1HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Neon1HON_Label.UseMnemonic = false;
             // 
-            // label63
+            // Neon3HOFF_Label
             // 
-            this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label63.BackColor = System.Drawing.Color.CadetBlue;
-            this.label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label63.Location = new System.Drawing.Point(454, 388);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(65, 35);
-            this.label63.TabIndex = 39;
-            this.label63.Text = "HOUR OFF";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label63.UseMnemonic = false;
+            this.Neon3HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon3HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon3HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon3HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon3HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon3HOFF_Label.Location = new System.Drawing.Point(454, 388);
+            this.Neon3HOFF_Label.Name = "Neon3HOFF_Label";
+            this.Neon3HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon3HOFF_Label.TabIndex = 39;
+            this.Neon3HOFF_Label.Text = "HOUR OFF";
+            this.Neon3HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon3HOFF_Label.UseMnemonic = false;
             // 
             // label67
             // 
@@ -876,20 +876,20 @@
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label67.UseMnemonic = false;
             // 
-            // label64
+            // Neon3MON_Label
             // 
-            this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label64.BackColor = System.Drawing.Color.CadetBlue;
-            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label64.Location = new System.Drawing.Point(382, 388);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(65, 35);
-            this.label64.TabIndex = 40;
-            this.label64.Text = "MINUTE ON";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label64.UseMnemonic = false;
+            this.Neon3MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon3MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon3MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon3MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon3MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon3MON_Label.Location = new System.Drawing.Point(382, 388);
+            this.Neon3MON_Label.Name = "Neon3MON_Label";
+            this.Neon3MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon3MON_Label.TabIndex = 40;
+            this.Neon3MON_Label.Text = "MINUTE ON";
+            this.Neon3MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon3MON_Label.UseMnemonic = false;
             // 
             // label71
             // 
@@ -6435,20 +6435,20 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label Neon3HON_Label;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.ComboBox comboBox37;
         private System.Windows.Forms.Label Neon2HON_Label;
-        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label Neon3MOFF_Label;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.ComboBox comboBox38;
         private System.Windows.Forms.ComboBox comboBox41;
         private System.Windows.Forms.ComboBox comboBox39;
         private System.Windows.Forms.Label Neon1HON_Label;
-        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label Neon3HOFF_Label;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label Neon3MON_Label;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.ComboBox comboBox40;
         private System.Windows.Forms.ComboBox comboBox42;
