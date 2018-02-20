@@ -204,7 +204,7 @@ namespace SC_AquaV1
             InitializeComponent();
             FOLDERS();
             comboBox49.SelectedIndex  = 0 ;
-           // serialPort1.Open();
+           
         }
 
 
@@ -410,43 +410,45 @@ private void RGB_config_info() {
 
         private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label16.BackColor = System.Drawing.Color.DarkOrange;
+            SunriseHON_Lable.BackColor = System.Drawing.Color.DarkOrange;
             //	System.Drawing.Color.Gray;
             SunriseHON = true;
         }
         private void comboBox13_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label14.BackColor = System.Drawing.Color.DarkOrange;
+            SunriseMON_Lable.BackColor = System.Drawing.Color.DarkOrange;
             SunriseMON = true;
         }
         private void comboBox14_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label13.BackColor = System.Drawing.Color.DarkOrange;
+            SunriseHOFF_Lable.BackColor = System.Drawing.Color.DarkOrange;
             SunriseHOFF = true;
         }
         private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label15.BackColor = System.Drawing.Color.DarkOrange;
+            SunriseMOFF_Lable.BackColor = System.Drawing.Color.DarkOrange;
             SunriseMOFF = true;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label40.BackColor = System.Drawing.Color.DarkOrange;
+            SRDUR_Lable.BackColor = System.Drawing.Color.DarkOrange;
             SRDUR = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             ///////////////////////////////sunrise main title color change 
-            if ((ACTIVATE_SUNRISE == true) & (SunriseHON == true) & (SunriseMON == true) & (SunriseHOFF == true) & (SunriseMOFF == true) & (SRDUR == true))
+            if ((SunriseHON == true) & (SunriseMON == true) & (SunriseHOFF == true) & (SunriseMOFF == true) & (SRDUR == true) & (Sunrise_checkBox.Checked == true))
             {
                 label42.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_SUNRISE = true;
             }
 
             else
             {
                 label42.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_SUNRISE = false;
             }
             ///////////////////////////////sunset main title color change 		 
 
@@ -607,7 +609,7 @@ private void RGB_config_info() {
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
-            	 if( checkBox4.Checked == true){
+            	 if( Sunrise_checkBox.Checked == true){
 		ACTIVATE_SUNRISE = true;
 			 richTextBox1.Text += (DateTime.Now );
 			 richTextBox1.Text += ("  ");
@@ -621,10 +623,10 @@ private void RGB_config_info() {
 	  }
         }
         //////////////////////////SUNSET////////////////////////////////////////////////////////////////////////////////////
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void Sunset_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox2.Checked == true)
+            if (Sunset_checkBox.Checked == true)
             {
                 ACTIVATE_SUNSET = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -643,29 +645,29 @@ private void RGB_config_info() {
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label5.BackColor = System.Drawing.Color.DarkOrange;
+            SunsetHON_Label.BackColor = System.Drawing.Color.DarkOrange;
             SunsetHON = true;
         }
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label6.BackColor = System.Drawing.Color.DarkOrange;
+            SunsetMON_Label.BackColor = System.Drawing.Color.DarkOrange;
             SunsetMON = true;
         }
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label8.BackColor = System.Drawing.Color.DarkOrange;
+            SunsetHOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             SunsetHOFF = true;
         }
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label7.BackColor = System.Drawing.Color.DarkOrange;
+            SunsetMOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             SunsetMOFF = true;
         }
 
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label39.BackColor = System.Drawing.Color.DarkOrange;
+            SSDUR_Lable.BackColor = System.Drawing.Color.DarkOrange;
             SSDUR = true;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -673,7 +675,7 @@ private void RGB_config_info() {
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox3.Checked == true)
+            if (Day1_checkBox.Checked == true)
             {
                 ACTIVATE_DAY1 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -691,25 +693,25 @@ private void RGB_config_info() {
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON DAYTIME 1
-            label9.BackColor = System.Drawing.Color.DarkOrange;
+            Day1HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day1HON = true;
         }
         private void comboBox10_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON DAYTIME 1
-            label11.BackColor = System.Drawing.Color.DarkOrange;
+            Day1MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day1MON = true;
         }
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF DAYTIME 1
-            label10.BackColor = System.Drawing.Color.DarkOrange;
+            Day1HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day1HOFF = true;
         }
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF DAYTIME 1
-            label12.BackColor = System.Drawing.Color.DarkOrange;
+            Day1MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day1MOFF = true;
         }
 
@@ -719,7 +721,7 @@ private void RGB_config_info() {
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox5.Checked == true)
+            if (Day3_checkBox.Checked == true)
             {
                 ACTIVATE_DAY3 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -737,25 +739,25 @@ private void RGB_config_info() {
         private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON DAYTIME3
-            label17.BackColor = System.Drawing.Color.DarkOrange;
+            Day3HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day3HON = true;
         }
         private void comboBox19_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON DAYTIME3
-            label21.BackColor = System.Drawing.Color.DarkOrange;
+            Day3MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day3MON = true;
         }
         private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF DAYTIME3
-            label20.BackColor = System.Drawing.Color.DarkOrange;
+            Day3HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day3HOFF = true;
         }
         private void comboBox20_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF DAYTIME3
-            label19.BackColor = System.Drawing.Color.DarkOrange;
+            Day3MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day3MOFF = true;
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -763,7 +765,7 @@ private void RGB_config_info() {
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox6.Checked == true)
+            if (Day2_checkBox.Checked == true)
             {
                 ACTIVATE_DAY2 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -781,25 +783,25 @@ private void RGB_config_info() {
         private void comboBox22_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON DAYTIME2
-            label22.BackColor = System.Drawing.Color.DarkOrange;
+            Day2HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day2HON = true;
         }
         private void comboBox23_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON DAYTIME2
-            label26.BackColor = System.Drawing.Color.DarkOrange;
+            Day2MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day2MON = true;
         }
         private void comboBox21_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF DAYTIME2
-            label25.BackColor = System.Drawing.Color.DarkOrange;
+            Day2HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day2HOFF = true;
         }
         private void comboBox24_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF DAYTIME2
-            label24.BackColor = System.Drawing.Color.DarkOrange;
+            Day2MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Day2MOFF = true;
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -809,7 +811,7 @@ private void RGB_config_info() {
         private void checkBox12_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox12.Checked == true)
+            if (Neon1_checkBox.Checked == true)
             {
                 ACTIVATE_NEON1 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -827,25 +829,25 @@ private void RGB_config_info() {
         private void comboBox34_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON NEON1
-            label54.BackColor = System.Drawing.Color.DarkOrange;
+            Neon1HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon1HON = true;
         }
         private void comboBox35_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON NEON1
-            label59.BackColor = System.Drawing.Color.DarkOrange;
+            Neon1MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon1MON = true;
         }
         private void comboBox33_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF NEON1
-            label58.BackColor = System.Drawing.Color.DarkOrange;
+            Neon1HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon1HOFF = true;
         }
         private void comboBox36_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF NEON1
-            label56.BackColor = System.Drawing.Color.DarkOrange;
+            Neon1MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon1MOFF = true;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -853,7 +855,7 @@ private void RGB_config_info() {
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox15.Checked == true)
+            if (Neon2_checkBox.Checked == true)
             {
                 ACTIVATE_NEON2 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -871,25 +873,25 @@ private void RGB_config_info() {
         private void comboBox46_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR ON Neon2
-            label70.BackColor = System.Drawing.Color.DarkOrange;
+            Neon2HON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon2HON = true;
         }
         private void comboBox47_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN ON Neon2
-            label74.BackColor = System.Drawing.Color.DarkOrange;
+            Neon2MON_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon2MON = true;
         }
         private void comboBox45_SelectedIndexChanged(object sender, EventArgs e)
         {
             //HOUR OFF Neon2
-            label73.BackColor = System.Drawing.Color.DarkOrange;
+            Neon2HOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon2HOFF = true;
         }
         private void comboBox48_SelectedIndexChanged(object sender, EventArgs e)
         {
             //MIN OFF Neon2
-            label72.BackColor = System.Drawing.Color.DarkOrange;
+            Neon2MOFF_Label.BackColor = System.Drawing.Color.DarkOrange;
             Neon2MOFF = true;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -897,7 +899,7 @@ private void RGB_config_info() {
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox13.Checked == true)
+            if (Neon3_checkBox.Checked == true)
             {
                 ACTIVATE_NEON3 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -1340,7 +1342,7 @@ private void RGB_config_info() {
             ini.IniWriteValue("Info Timers", "File Created ", DateTime.Now.ToString());
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            if ((ACTIVATE_SUNRISE == true) & (SunriseHON == true) & (SunriseMON == true) & (SunriseHOFF == true) & (SunriseMOFF == true) & (SRDUR == true))
+            if (ACTIVATE_SUNRISE)
             {
                 UDP_Timers_Digit_01 = 1;
                 UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();
@@ -1410,6 +1412,11 @@ private void RGB_config_info() {
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Sunrise Timer is DISABLED \r\n";
                 ini.IniWriteValue("Sunrise", "Status", "false");
+                ini.IniWriteValue("Sunrise", "hourOn1", "0");
+                ini.IniWriteValue("Sunrise", "minOn1", "0");
+                ini.IniWriteValue("Sunrise", "hourOff1", "0");
+                ini.IniWriteValue("Sunrise", "minOff1", "0");
+                ini.IniWriteValue("Sunrise", "duration", "0");
                 ini.IniWriteValue("Sunrise", "UDP_PACKET", EMPTY_UDP);
             }
 
@@ -1476,6 +1483,12 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Sunset", "Status", "false");
+                ini.IniWriteValue("Sunset", "Status", "false");
+                ini.IniWriteValue("Sunset", "hourOn1", "0");
+                ini.IniWriteValue("Sunset", "minOn1", "0");
+                ini.IniWriteValue("Sunset", "hourOff1", "0");
+                ini.IniWriteValue("Sunset", "minOff1", "0");
+                ini.IniWriteValue("Sunset", "duration", "0");
                 ini.IniWriteValue("Sunset", "UDP_PACKET", EMPTY_UDP);
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1483,7 +1496,6 @@ private void RGB_config_info() {
 
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
             //////////////////////////////GENERATE DAY 1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
             if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true))
             {
@@ -1505,8 +1517,34 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Day 1", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
 
-                ini.IniWriteValue("Day 1", "Status", "true");
+                ////////UDP String GEneration
 
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 3; // 3 = DAY1 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
+                ini.IniWriteValue("Day 1", "Status", "true");
+                ini.IniWriteValue("Day 1", "UDP_PACKET", result);//UDP string Write in Config file
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Day 1 files generated succesfully \r\n";
@@ -1516,7 +1554,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Day 1", "Status", "false");
-
+                ini.IniWriteValue("Day 1", "hourOn1", "0");
+                ini.IniWriteValue("Day 1", "minOn1", "0");
+                ini.IniWriteValue("Day 1", "hourOff1", "0");
+                ini.IniWriteValue("Day 1", "minOff1", "0");
+                ini.IniWriteValue("Day 1", "UDP_PACKET", EMPTY_UDP);
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Day 1 Timer is DISABLED \r\n";
@@ -1544,8 +1586,35 @@ private void RGB_config_info() {
                 String minOff1 = comboBox24.Text;
                 ini.IniWriteValue("Day 2", "minOff1", minOff1);
                 this.progressBar1.Increment(25);
+                ////////UDP String GEneration
 
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 4; // 4 = DAY2 TIMER PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = hourOn1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = minOn1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = hourOff1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = minOff1.ToString();//UDP TIMER minOff value
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//UDP TIMER duration value not applicable to this timer type
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP TIMER fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
                 ini.IniWriteValue("Day 2", "Status", "true");
+                ini.IniWriteValue("Day 2", "UDP_PACKET", result);//UDP string Write in Config file
+
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -1556,6 +1625,11 @@ private void RGB_config_info() {
             else
             {
                 ini.IniWriteValue("Day 2", "Status", "false");
+                ini.IniWriteValue("Day 2", "hourOn1", "0");
+                ini.IniWriteValue("Day 2", "minOn1", "0");
+                ini.IniWriteValue("Day 2", "hourOff1", "0");
+                ini.IniWriteValue("Day 2", "minOff1", "0");
+                ini.IniWriteValue("Day 2", "UDP_PACKET", EMPTY_UDP);
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2369,7 +2443,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox4.Checked = true; 
+                Sunrise_checkBox.Checked = true; 
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2383,7 +2457,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox4.Checked = false; 
+                Sunrise_checkBox.Checked = false; 
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2394,6 +2468,12 @@ private void RGB_config_info() {
 				SunriseHOFF = false;
                 SunriseMOFF = false;
 				SRDUR = false;
+                
+                SunriseHON_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SunriseMON_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SunriseMOFF_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SunriseHOFF_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SRDUR_Lable.BackColor = System.Drawing.Color.CadetBlue;
 
             }
 
@@ -2432,7 +2512,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox2.Checked = true;
+                Sunset_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2446,7 +2526,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox2.Checked = false;
+                Sunset_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2458,6 +2538,11 @@ private void RGB_config_info() {
                 SunsetMOFF = false;
                 SSDUR = false;
 
+                SunsetHON_Label.BackColor = System.Drawing.Color.CadetBlue;
+                SunsetMON_Label.BackColor = System.Drawing.Color.CadetBlue;
+                SunsetMOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+                SunsetHOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+                SSDUR_Lable.BackColor = System.Drawing.Color.CadetBlue;
             }
 
             Parameters_test1 = 0;
@@ -2487,7 +2572,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox3.Checked = true;
+                Day1_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2501,7 +2586,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox3.Checked = false;
+                Day1_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2542,7 +2627,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox6.Checked = true;
+                Day2_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2556,7 +2641,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox6.Checked = false;
+                Day2_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2596,7 +2681,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox5.Checked = true;
+                Day3_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2610,7 +2695,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox5.Checked = false;
+                Day3_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2760,7 +2845,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox12.Checked = true;
+                Neon1_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2774,7 +2859,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox12.Checked = false;
+                Neon1_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2815,7 +2900,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox15.Checked = true;
+                Neon2_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2829,7 +2914,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox15.Checked = false;
+                Neon2_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2871,7 +2956,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox13.Checked = true;
+                Neon3_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2885,7 +2970,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox13.Checked = false;
+                Neon3_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2970,11 +3055,11 @@ private void RGB_config_info() {
     {
         
 
-        if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
-        {
+       // if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
+       // {
             Generate_timers_config_file();
                // CreateUDP_Timers_String();
-        }
+    //    }
     }
 
     private void button11_Click(object sender, EventArgs e)
@@ -2985,24 +3070,10 @@ private void RGB_config_info() {
     private void button15_Click(object sender, EventArgs e)
     {
 
-        string name = "hhhh";
-        string message = "WQS";
-
-        Byte[] b = new byte[] { 0x7E, 0x00, 0x10, 0x17, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFE, 0x02, 0x44, 0x34, 0x05, 0x6D };
-       // serialPort1.Write(b, 0, b.Length);
-        serialPort1.WriteLine(String.Format("<{0}>: {1}", name, message));
-       // serialPort1.Write("FF \r\n");
-        serialPort1.WriteLine(" ");
-        //port.Write("+++");
-        System.Threading.Thread.Sleep(1000);
+      
     }
 
-    private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
-    {
 
-        richTextBox1.Text += (e.EventType.ToString());
-        richTextBox1.Text += (serialPort1.ReadExisting()); 
-    }
 
     private void button16_Click(object sender, EventArgs e)
     {
@@ -3010,9 +3081,6 @@ private void RGB_config_info() {
     }
 
 
-    
-    
-    
     }
 
 }

@@ -39,13 +39,13 @@
             this.label65 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.label70 = new System.Windows.Forms.Label();
+            this.Neon2HON_Label = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.comboBox38 = new System.Windows.Forms.ComboBox();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.comboBox39 = new System.Windows.Forms.ComboBox();
-            this.label54 = new System.Windows.Forms.Label();
+            this.Neon1HON_Label = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.comboBox43 = new System.Windows.Forms.ComboBox();
             this.label87 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
+            this.Neon2MOFF_Label = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.comboBox44 = new System.Windows.Forms.ComboBox();
@@ -64,23 +64,23 @@
             this.comboBox33 = new System.Windows.Forms.ComboBox();
             this.comboBox47 = new System.Windows.Forms.ComboBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
+            this.Neon2HOFF_Label = new System.Windows.Forms.Label();
+            this.Neon1MOFF_Label = new System.Windows.Forms.Label();
+            this.Neon2MON_Label = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.comboBox48 = new System.Windows.Forms.ComboBox();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
             this.label89 = new System.Windows.Forms.Label();
             this.comboBox35 = new System.Windows.Forms.ComboBox();
             this.label82 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
+            this.Neon1HOFF_Label = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
+            this.Neon1MON_Label = new System.Windows.Forms.Label();
             this.comboBox36 = new System.Windows.Forms.ComboBox();
             this.label91 = new System.Windows.Forms.Label();
             this.comboBox51 = new System.Windows.Forms.ComboBox();
             this.comboBox56 = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.Day3HON_Label = new System.Windows.Forms.Label();
             this.comboBox57 = new System.Windows.Forms.ComboBox();
             this.label83 = new System.Windows.Forms.Label();
             this.comboBox58 = new System.Windows.Forms.ComboBox();
@@ -94,64 +94,64 @@
             this.comboBox54 = new System.Windows.Forms.ComboBox();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.Day3MOFF_Label = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Day1HON_Label = new System.Windows.Forms.Label();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.SunsetHON_Label = new System.Windows.Forms.Label();
+            this.Day3HOFF_Label = new System.Windows.Forms.Label();
+            this.SunsetMON_Label = new System.Windows.Forms.Label();
+            this.Day3MON_Label = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.SunsetHOFF_Label = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.SunsetMOFF_Label = new System.Windows.Forms.Label();
+            this.SunriseHON_Lable = new System.Windows.Forms.Label();
+            this.SSDUR_Lable = new System.Windows.Forms.Label();
+            this.Day2HON_Label = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.SunriseHOFF_Lable = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.SRDUR_Lable = new System.Windows.Forms.Label();
+            this.Day1MOFF_Label = new System.Windows.Forms.Label();
+            this.SunriseMON_Lable = new System.Windows.Forms.Label();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.SunriseMOFF_Lable = new System.Windows.Forms.Label();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.Day1HOFF_Label = new System.Windows.Forms.Label();
+            this.Day2MOFF_Label = new System.Windows.Forms.Label();
+            this.Day1MON_Label = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.Sunrise_checkBox = new System.Windows.Forms.CheckBox();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.Sunset_checkBox = new System.Windows.Forms.CheckBox();
+            this.Day2HOFF_Label = new System.Windows.Forms.Label();
+            this.Day2MON_Label = new System.Windows.Forms.Label();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.Day1_checkBox = new System.Windows.Forms.CheckBox();
+            this.Day2_checkBox = new System.Windows.Forms.CheckBox();
+            this.Day3_checkBox = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.Neon1_checkBox = new System.Windows.Forms.CheckBox();
+            this.Neon2_checkBox = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.Neon3_checkBox = new System.Windows.Forms.CheckBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel55 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
@@ -282,7 +282,6 @@
             this.button13 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.timersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -375,13 +374,13 @@
             this.TIMERS.Controls.Add(this.label65);
             this.TIMERS.Controls.Add(this.label61);
             this.TIMERS.Controls.Add(this.comboBox37);
-            this.TIMERS.Controls.Add(this.label70);
+            this.TIMERS.Controls.Add(this.Neon2HON_Label);
             this.TIMERS.Controls.Add(this.label62);
             this.TIMERS.Controls.Add(this.label66);
             this.TIMERS.Controls.Add(this.comboBox38);
             this.TIMERS.Controls.Add(this.comboBox41);
             this.TIMERS.Controls.Add(this.comboBox39);
-            this.TIMERS.Controls.Add(this.label54);
+            this.TIMERS.Controls.Add(this.Neon1HON_Label);
             this.TIMERS.Controls.Add(this.label63);
             this.TIMERS.Controls.Add(this.label67);
             this.TIMERS.Controls.Add(this.label64);
@@ -392,7 +391,7 @@
             this.TIMERS.Controls.Add(this.comboBox43);
             this.TIMERS.Controls.Add(this.label87);
             this.TIMERS.Controls.Add(this.label68);
-            this.TIMERS.Controls.Add(this.label72);
+            this.TIMERS.Controls.Add(this.Neon2MOFF_Label);
             this.TIMERS.Controls.Add(this.label69);
             this.TIMERS.Controls.Add(this.label55);
             this.TIMERS.Controls.Add(this.comboBox44);
@@ -400,23 +399,23 @@
             this.TIMERS.Controls.Add(this.comboBox33);
             this.TIMERS.Controls.Add(this.comboBox47);
             this.TIMERS.Controls.Add(this.label88);
-            this.TIMERS.Controls.Add(this.label73);
-            this.TIMERS.Controls.Add(this.label56);
-            this.TIMERS.Controls.Add(this.label74);
+            this.TIMERS.Controls.Add(this.Neon2HOFF_Label);
+            this.TIMERS.Controls.Add(this.Neon1MOFF_Label);
+            this.TIMERS.Controls.Add(this.Neon2MON_Label);
             this.TIMERS.Controls.Add(this.label80);
             this.TIMERS.Controls.Add(this.comboBox48);
             this.TIMERS.Controls.Add(this.comboBox34);
             this.TIMERS.Controls.Add(this.label89);
             this.TIMERS.Controls.Add(this.comboBox35);
             this.TIMERS.Controls.Add(this.label82);
-            this.TIMERS.Controls.Add(this.label58);
+            this.TIMERS.Controls.Add(this.Neon1HOFF_Label);
             this.TIMERS.Controls.Add(this.label90);
-            this.TIMERS.Controls.Add(this.label59);
+            this.TIMERS.Controls.Add(this.Neon1MON_Label);
             this.TIMERS.Controls.Add(this.comboBox36);
             this.TIMERS.Controls.Add(this.label91);
             this.TIMERS.Controls.Add(this.comboBox51);
             this.TIMERS.Controls.Add(this.comboBox56);
-            this.TIMERS.Controls.Add(this.label17);
+            this.TIMERS.Controls.Add(this.Day3HON_Label);
             this.TIMERS.Controls.Add(this.comboBox57);
             this.TIMERS.Controls.Add(this.label83);
             this.TIMERS.Controls.Add(this.comboBox58);
@@ -430,59 +429,59 @@
             this.TIMERS.Controls.Add(this.comboBox54);
             this.TIMERS.Controls.Add(this.comboBox17);
             this.TIMERS.Controls.Add(this.comboBox1);
-            this.TIMERS.Controls.Add(this.label19);
+            this.TIMERS.Controls.Add(this.Day3MOFF_Label);
             this.TIMERS.Controls.Add(this.label43);
             this.TIMERS.Controls.Add(this.comboBox18);
-            this.TIMERS.Controls.Add(this.label9);
+            this.TIMERS.Controls.Add(this.Day1HON_Label);
             this.TIMERS.Controls.Add(this.comboBox19);
-            this.TIMERS.Controls.Add(this.label5);
-            this.TIMERS.Controls.Add(this.label20);
-            this.TIMERS.Controls.Add(this.label6);
-            this.TIMERS.Controls.Add(this.label21);
+            this.TIMERS.Controls.Add(this.SunsetHON_Label);
+            this.TIMERS.Controls.Add(this.Day3HOFF_Label);
+            this.TIMERS.Controls.Add(this.SunsetMON_Label);
+            this.TIMERS.Controls.Add(this.Day3MON_Label);
             this.TIMERS.Controls.Add(this.label42);
             this.TIMERS.Controls.Add(this.comboBox20);
-            this.TIMERS.Controls.Add(this.label8);
+            this.TIMERS.Controls.Add(this.SunsetHOFF_Label);
             this.TIMERS.Controls.Add(this.label57);
-            this.TIMERS.Controls.Add(this.label7);
-            this.TIMERS.Controls.Add(this.label16);
-            this.TIMERS.Controls.Add(this.label39);
-            this.TIMERS.Controls.Add(this.label22);
+            this.TIMERS.Controls.Add(this.SunsetMOFF_Label);
+            this.TIMERS.Controls.Add(this.SunriseHON_Lable);
+            this.TIMERS.Controls.Add(this.SSDUR_Lable);
+            this.TIMERS.Controls.Add(this.Day2HON_Label);
             this.TIMERS.Controls.Add(this.comboBox8);
             this.TIMERS.Controls.Add(this.comboBox14);
             this.TIMERS.Controls.Add(this.comboBox5);
             this.TIMERS.Controls.Add(this.comboBox9);
             this.TIMERS.Controls.Add(this.comboBox6);
-            this.TIMERS.Controls.Add(this.label13);
+            this.TIMERS.Controls.Add(this.SunriseHOFF_Lable);
             this.TIMERS.Controls.Add(this.comboBox7);
             this.TIMERS.Controls.Add(this.checkBox17);
-            this.TIMERS.Controls.Add(this.label40);
-            this.TIMERS.Controls.Add(this.label12);
-            this.TIMERS.Controls.Add(this.label14);
+            this.TIMERS.Controls.Add(this.SRDUR_Lable);
+            this.TIMERS.Controls.Add(this.Day1MOFF_Label);
+            this.TIMERS.Controls.Add(this.SunriseMON_Lable);
             this.TIMERS.Controls.Add(this.comboBox13);
             this.TIMERS.Controls.Add(this.label23);
             this.TIMERS.Controls.Add(this.comboBox16);
             this.TIMERS.Controls.Add(this.comboBox11);
-            this.TIMERS.Controls.Add(this.label15);
+            this.TIMERS.Controls.Add(this.SunriseMOFF_Lable);
             this.TIMERS.Controls.Add(this.comboBox21);
             this.TIMERS.Controls.Add(this.comboBox15);
             this.TIMERS.Controls.Add(this.comboBox10);
-            this.TIMERS.Controls.Add(this.label10);
-            this.TIMERS.Controls.Add(this.label24);
-            this.TIMERS.Controls.Add(this.label11);
+            this.TIMERS.Controls.Add(this.Day1HOFF_Label);
+            this.TIMERS.Controls.Add(this.Day2MOFF_Label);
+            this.TIMERS.Controls.Add(this.Day1MON_Label);
             this.TIMERS.Controls.Add(this.comboBox12);
             this.TIMERS.Controls.Add(this.comboBox22);
-            this.TIMERS.Controls.Add(this.checkBox4);
+            this.TIMERS.Controls.Add(this.Sunrise_checkBox);
             this.TIMERS.Controls.Add(this.comboBox23);
-            this.TIMERS.Controls.Add(this.checkBox2);
-            this.TIMERS.Controls.Add(this.label25);
-            this.TIMERS.Controls.Add(this.label26);
+            this.TIMERS.Controls.Add(this.Sunset_checkBox);
+            this.TIMERS.Controls.Add(this.Day2HOFF_Label);
+            this.TIMERS.Controls.Add(this.Day2MON_Label);
             this.TIMERS.Controls.Add(this.comboBox24);
-            this.TIMERS.Controls.Add(this.checkBox3);
-            this.TIMERS.Controls.Add(this.checkBox6);
-            this.TIMERS.Controls.Add(this.checkBox5);
+            this.TIMERS.Controls.Add(this.Day1_checkBox);
+            this.TIMERS.Controls.Add(this.Day2_checkBox);
+            this.TIMERS.Controls.Add(this.Day3_checkBox);
             this.TIMERS.Controls.Add(this.checkBox14);
-            this.TIMERS.Controls.Add(this.checkBox12);
-            this.TIMERS.Controls.Add(this.checkBox15);
+            this.TIMERS.Controls.Add(this.Neon1_checkBox);
+            this.TIMERS.Controls.Add(this.Neon2_checkBox);
             this.TIMERS.Controls.Add(this.checkBox16);
             this.TIMERS.Controls.Add(this.panel8);
             this.TIMERS.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -608,20 +607,20 @@
             this.comboBox37.UseWaitCursor = true;
             this.comboBox37.SelectedIndexChanged += new System.EventHandler(this.comboBox37_SelectedIndexChanged);
             // 
-            // label70
+            // Neon2HON_Label
             // 
-            this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label70.BackColor = System.Drawing.Color.CadetBlue;
-            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label70.Location = new System.Drawing.Point(612, 276);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(65, 35);
-            this.label70.TabIndex = 38;
-            this.label70.Text = "HOUR ON";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label70.UseMnemonic = false;
+            this.Neon2HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon2HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon2HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon2HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon2HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon2HON_Label.Location = new System.Drawing.Point(612, 276);
+            this.Neon2HON_Label.Name = "Neon2HON_Label";
+            this.Neon2HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon2HON_Label.TabIndex = 38;
+            this.Neon2HON_Label.Text = "HOUR ON";
+            this.Neon2HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon2HON_Label.UseMnemonic = false;
             // 
             // label62
             // 
@@ -832,20 +831,20 @@
             this.comboBox39.UseWaitCursor = true;
             this.comboBox39.SelectedIndexChanged += new System.EventHandler(this.comboBox39_SelectedIndexChanged);
             // 
-            // label54
+            // Neon1HON_Label
             // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.BackColor = System.Drawing.Color.CadetBlue;
-            this.label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label54.Location = new System.Drawing.Point(311, 276);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(65, 35);
-            this.label54.TabIndex = 38;
-            this.label54.Text = "HOUR ON";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label54.UseMnemonic = false;
+            this.Neon1HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon1HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon1HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon1HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon1HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon1HON_Label.Location = new System.Drawing.Point(311, 276);
+            this.Neon1HON_Label.Name = "Neon1HON_Label";
+            this.Neon1HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon1HON_Label.TabIndex = 38;
+            this.Neon1HON_Label.Text = "HOUR ON";
+            this.Neon1HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon1HON_Label.UseMnemonic = false;
             // 
             // label63
             // 
@@ -1190,20 +1189,20 @@
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label68.UseMnemonic = false;
             // 
-            // label72
+            // Neon2MOFF_Label
             // 
-            this.label72.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label72.BackColor = System.Drawing.Color.CadetBlue;
-            this.label72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label72.Location = new System.Drawing.Point(825, 276);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(65, 35);
-            this.label72.TabIndex = 41;
-            this.label72.Text = "MINUTE OFF";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label72.UseMnemonic = false;
+            this.Neon2MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon2MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon2MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon2MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon2MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon2MOFF_Label.Location = new System.Drawing.Point(825, 276);
+            this.Neon2MOFF_Label.Name = "Neon2MOFF_Label";
+            this.Neon2MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon2MOFF_Label.TabIndex = 41;
+            this.Neon2MOFF_Label.Text = "MINUTE OFF";
+            this.Neon2MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon2MOFF_Label.UseMnemonic = false;
             // 
             // label69
             // 
@@ -1506,50 +1505,50 @@
             this.label88.Text = "HOUR ON";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label73
+            // Neon2HOFF_Label
             // 
-            this.label73.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label73.BackColor = System.Drawing.Color.CadetBlue;
-            this.label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label73.Location = new System.Drawing.Point(754, 276);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(65, 35);
-            this.label73.TabIndex = 39;
-            this.label73.Text = "HOUR OFF";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label73.UseMnemonic = false;
+            this.Neon2HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon2HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon2HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon2HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon2HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon2HOFF_Label.Location = new System.Drawing.Point(754, 276);
+            this.Neon2HOFF_Label.Name = "Neon2HOFF_Label";
+            this.Neon2HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon2HOFF_Label.TabIndex = 39;
+            this.Neon2HOFF_Label.Text = "HOUR OFF";
+            this.Neon2HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon2HOFF_Label.UseMnemonic = false;
             // 
-            // label56
+            // Neon1MOFF_Label
             // 
-            this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label56.BackColor = System.Drawing.Color.CadetBlue;
-            this.label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label56.Location = new System.Drawing.Point(525, 276);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(65, 35);
-            this.label56.TabIndex = 41;
-            this.label56.Text = "MINUTE OFF";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label56.UseMnemonic = false;
+            this.Neon1MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon1MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon1MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon1MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon1MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon1MOFF_Label.Location = new System.Drawing.Point(525, 276);
+            this.Neon1MOFF_Label.Name = "Neon1MOFF_Label";
+            this.Neon1MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon1MOFF_Label.TabIndex = 41;
+            this.Neon1MOFF_Label.Text = "MINUTE OFF";
+            this.Neon1MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon1MOFF_Label.UseMnemonic = false;
             // 
-            // label74
+            // Neon2MON_Label
             // 
-            this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label74.BackColor = System.Drawing.Color.CadetBlue;
-            this.label74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label74.Location = new System.Drawing.Point(683, 276);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(65, 35);
-            this.label74.TabIndex = 40;
-            this.label74.Text = "MINUTE ON";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label74.UseMnemonic = false;
+            this.Neon2MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon2MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon2MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon2MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon2MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon2MON_Label.Location = new System.Drawing.Point(683, 276);
+            this.Neon2MON_Label.Name = "Neon2MON_Label";
+            this.Neon2MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon2MON_Label.TabIndex = 40;
+            this.Neon2MON_Label.Text = "MINUTE ON";
+            this.Neon2MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon2MON_Label.UseMnemonic = false;
             // 
             // label80
             // 
@@ -1812,20 +1811,20 @@
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label82.UseMnemonic = false;
             // 
-            // label58
+            // Neon1HOFF_Label
             // 
-            this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label58.BackColor = System.Drawing.Color.CadetBlue;
-            this.label58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label58.Location = new System.Drawing.Point(454, 276);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(65, 35);
-            this.label58.TabIndex = 39;
-            this.label58.Text = "HOUR OFF";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label58.UseMnemonic = false;
+            this.Neon1HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon1HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon1HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon1HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon1HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon1HOFF_Label.Location = new System.Drawing.Point(454, 276);
+            this.Neon1HOFF_Label.Name = "Neon1HOFF_Label";
+            this.Neon1HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon1HOFF_Label.TabIndex = 39;
+            this.Neon1HOFF_Label.Text = "HOUR OFF";
+            this.Neon1HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon1HOFF_Label.UseMnemonic = false;
             // 
             // label90
             // 
@@ -1843,20 +1842,20 @@
             this.label90.Text = "HOUR OFF";
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label59
+            // Neon1MON_Label
             // 
-            this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label59.BackColor = System.Drawing.Color.CadetBlue;
-            this.label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label59.Location = new System.Drawing.Point(382, 276);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(65, 35);
-            this.label59.TabIndex = 40;
-            this.label59.Text = "MINUTE ON";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label59.UseMnemonic = false;
+            this.Neon1MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Neon1MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Neon1MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Neon1MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon1MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon1MON_Label.Location = new System.Drawing.Point(382, 276);
+            this.Neon1MON_Label.Name = "Neon1MON_Label";
+            this.Neon1MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Neon1MON_Label.TabIndex = 40;
+            this.Neon1MON_Label.Text = "MINUTE ON";
+            this.Neon1MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Neon1MON_Label.UseMnemonic = false;
             // 
             // comboBox36
             // 
@@ -2030,20 +2029,20 @@
             this.comboBox56.UseWaitCursor = true;
             this.comboBox56.SelectedIndexChanged += new System.EventHandler(this.comboBox56_SelectedIndexChanged);
             // 
-            // label17
+            // Day3HON_Label
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.BackColor = System.Drawing.Color.CadetBlue;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(612, 161);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 35);
-            this.label17.TabIndex = 38;
-            this.label17.Text = "HOUR ON";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label17.UseMnemonic = false;
+            this.Day3HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day3HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day3HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day3HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day3HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day3HON_Label.Location = new System.Drawing.Point(612, 161);
+            this.Day3HON_Label.Name = "Day3HON_Label";
+            this.Day3HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day3HON_Label.TabIndex = 38;
+            this.Day3HON_Label.Text = "HOUR ON";
+            this.Day3HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day3HON_Label.UseMnemonic = false;
             // 
             // comboBox57
             // 
@@ -2447,7 +2446,7 @@
             this.comboBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "1",
+            "0",
             "30",
             "60",
             "90",
@@ -2586,7 +2585,7 @@
             this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "1",
+            "0",
             "30",
             "60",
             "90",
@@ -2598,20 +2597,20 @@
             this.comboBox1.UseWaitCursor = true;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label19
+            // Day3MOFF_Label
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.BackColor = System.Drawing.Color.CadetBlue;
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label19.Location = new System.Drawing.Point(825, 160);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 35);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "MINUTE OFF";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label19.UseMnemonic = false;
+            this.Day3MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day3MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day3MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day3MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day3MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day3MOFF_Label.Location = new System.Drawing.Point(825, 160);
+            this.Day3MOFF_Label.Name = "Day3MOFF_Label";
+            this.Day3MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day3MOFF_Label.TabIndex = 41;
+            this.Day3MOFF_Label.Text = "MINUTE OFF";
+            this.Day3MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day3MOFF_Label.UseMnemonic = false;
             // 
             // label43
             // 
@@ -2691,20 +2690,20 @@
             this.comboBox18.UseWaitCursor = true;
             this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.comboBox18_SelectedIndexChanged);
             // 
-            // label9
+            // Day1HON_Label
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.BackColor = System.Drawing.Color.CadetBlue;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(10, 161);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 35);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "HOUR ON";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.UseMnemonic = false;
+            this.Day1HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day1HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day1HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day1HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day1HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day1HON_Label.Location = new System.Drawing.Point(10, 161);
+            this.Day1HON_Label.Name = "Day1HON_Label";
+            this.Day1HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day1HON_Label.TabIndex = 38;
+            this.Day1HON_Label.Text = "HOUR ON";
+            this.Day1HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day1HON_Label.UseMnemonic = false;
             // 
             // comboBox19
             // 
@@ -2782,67 +2781,67 @@
             this.comboBox19.UseWaitCursor = true;
             this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.comboBox19_SelectedIndexChanged);
             // 
-            // label5
+            // SunsetHON_Label
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SunsetHON_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.BackColor = System.Drawing.Color.CadetBlue;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(532, 43);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 35);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "HOUR ON";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunsetHON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunsetHON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunsetHON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunsetHON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunsetHON_Label.Location = new System.Drawing.Point(532, 43);
+            this.SunsetHON_Label.Name = "SunsetHON_Label";
+            this.SunsetHON_Label.Size = new System.Drawing.Size(65, 35);
+            this.SunsetHON_Label.TabIndex = 4;
+            this.SunsetHON_Label.Text = "HOUR ON";
+            this.SunsetHON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // Day3HOFF_Label
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.BackColor = System.Drawing.Color.CadetBlue;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(754, 160);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 35);
-            this.label20.TabIndex = 39;
-            this.label20.Text = "HOUR OFF";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label20.UseMnemonic = false;
+            this.Day3HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day3HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day3HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day3HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day3HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day3HOFF_Label.Location = new System.Drawing.Point(754, 160);
+            this.Day3HOFF_Label.Name = "Day3HOFF_Label";
+            this.Day3HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day3HOFF_Label.TabIndex = 39;
+            this.Day3HOFF_Label.Text = "HOUR OFF";
+            this.Day3HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day3HOFF_Label.UseMnemonic = false;
             // 
-            // label6
+            // SunsetMON_Label
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SunsetMON_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.BackColor = System.Drawing.Color.CadetBlue;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(604, 43);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 35);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "MINUTE ON";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunsetMON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunsetMON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunsetMON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunsetMON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunsetMON_Label.Location = new System.Drawing.Point(604, 43);
+            this.SunsetMON_Label.Name = "SunsetMON_Label";
+            this.SunsetMON_Label.Size = new System.Drawing.Size(65, 35);
+            this.SunsetMON_Label.TabIndex = 5;
+            this.SunsetMON_Label.Text = "MINUTE ON";
+            this.SunsetMON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // Day3MON_Label
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.BackColor = System.Drawing.Color.CadetBlue;
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(683, 160);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(65, 35);
-            this.label21.TabIndex = 40;
-            this.label21.Text = "MINUTE ON";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label21.UseMnemonic = false;
+            this.Day3MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day3MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day3MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day3MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day3MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day3MON_Label.Location = new System.Drawing.Point(683, 160);
+            this.Day3MON_Label.Name = "Day3MON_Label";
+            this.Day3MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day3MON_Label.TabIndex = 40;
+            this.Day3MON_Label.Text = "MINUTE ON";
+            this.Day3MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day3MON_Label.UseMnemonic = false;
             // 
             // label42
             // 
@@ -2934,21 +2933,21 @@
             this.comboBox20.UseWaitCursor = true;
             this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.comboBox20_SelectedIndexChanged);
             // 
-            // label8
+            // SunsetHOFF_Label
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SunsetHOFF_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.BackColor = System.Drawing.Color.CadetBlue;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(674, 43);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 35);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "HOUR OFF";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunsetHOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunsetHOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunsetHOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunsetHOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunsetHOFF_Label.Location = new System.Drawing.Point(674, 43);
+            this.SunsetHOFF_Label.Name = "SunsetHOFF_Label";
+            this.SunsetHOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.SunsetHOFF_Label.TabIndex = 6;
+            this.SunsetHOFF_Label.Text = "HOUR OFF";
+            this.SunsetHOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label57
             // 
@@ -2963,67 +2962,67 @@
             this.label57.Text = "DAY TIMER 1";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // SunsetMOFF_Label
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SunsetMOFF_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.BackColor = System.Drawing.Color.CadetBlue;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(745, 43);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 35);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "MINUTE OFF";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunsetMOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunsetMOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunsetMOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunsetMOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunsetMOFF_Label.Location = new System.Drawing.Point(745, 43);
+            this.SunsetMOFF_Label.Name = "SunsetMOFF_Label";
+            this.SunsetMOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.SunsetMOFF_Label.TabIndex = 7;
+            this.SunsetMOFF_Label.Text = "MINUTE OFF";
+            this.SunsetMOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // SunriseHON_Lable
             // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.BackColor = System.Drawing.Color.CadetBlue;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(11, 42);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(65, 35);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "HOUR ON";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label16.UseMnemonic = false;
+            this.SunriseHON_Lable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SunriseHON_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunriseHON_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunriseHON_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunriseHON_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunriseHON_Lable.Location = new System.Drawing.Point(11, 42);
+            this.SunriseHON_Lable.Name = "SunriseHON_Lable";
+            this.SunriseHON_Lable.Size = new System.Drawing.Size(65, 35);
+            this.SunriseHON_Lable.TabIndex = 6;
+            this.SunriseHON_Lable.Text = "HOUR ON";
+            this.SunriseHON_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunriseHON_Lable.UseMnemonic = false;
             // 
-            // label39
+            // SSDUR_Lable
             // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SSDUR_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label39.BackColor = System.Drawing.Color.CadetBlue;
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label39.Location = new System.Drawing.Point(816, 43);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(75, 35);
-            this.label39.TabIndex = 16;
-            this.label39.Text = "DURATION";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SSDUR_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SSDUR_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SSDUR_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SSDUR_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SSDUR_Lable.Location = new System.Drawing.Point(816, 43);
+            this.SSDUR_Lable.Name = "SSDUR_Lable";
+            this.SSDUR_Lable.Size = new System.Drawing.Size(75, 35);
+            this.SSDUR_Lable.TabIndex = 16;
+            this.SSDUR_Lable.Text = "DURATION";
+            this.SSDUR_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // Day2HON_Label
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.BackColor = System.Drawing.Color.CadetBlue;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label22.Location = new System.Drawing.Point(311, 161);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 35);
-            this.label22.TabIndex = 38;
-            this.label22.Text = "HOUR ON";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label22.UseMnemonic = false;
+            this.Day2HON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day2HON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day2HON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day2HON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day2HON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day2HON_Label.Location = new System.Drawing.Point(311, 161);
+            this.Day2HON_Label.Name = "Day2HON_Label";
+            this.Day2HON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day2HON_Label.TabIndex = 38;
+            this.Day2HON_Label.Text = "HOUR ON";
+            this.Day2HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day2HON_Label.UseMnemonic = false;
             // 
             // comboBox8
             // 
@@ -3270,20 +3269,20 @@
             this.comboBox6.UseWaitCursor = true;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
-            // label13
+            // SunriseHOFF_Lable
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.BackColor = System.Drawing.Color.CadetBlue;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(153, 42);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 35);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "HOUR OFF";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.UseMnemonic = false;
+            this.SunriseHOFF_Lable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SunriseHOFF_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunriseHOFF_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunriseHOFF_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunriseHOFF_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunriseHOFF_Lable.Location = new System.Drawing.Point(153, 42);
+            this.SunriseHOFF_Lable.Name = "SunriseHOFF_Lable";
+            this.SunriseHOFF_Lable.Size = new System.Drawing.Size(65, 35);
+            this.SunriseHOFF_Lable.TabIndex = 6;
+            this.SunriseHOFF_Lable.Text = "HOUR OFF";
+            this.SunriseHOFF_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunriseHOFF_Lable.UseMnemonic = false;
             // 
             // comboBox7
             // 
@@ -3378,50 +3377,50 @@
             this.checkBox17.UseVisualStyleBackColor = false;
             this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
-            // label40
+            // SRDUR_Lable
             // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label40.BackColor = System.Drawing.Color.CadetBlue;
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label40.Location = new System.Drawing.Point(296, 42);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(75, 34);
-            this.label40.TabIndex = 14;
-            this.label40.Text = "DURATION";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label40.UseMnemonic = false;
+            this.SRDUR_Lable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SRDUR_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SRDUR_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SRDUR_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRDUR_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SRDUR_Lable.Location = new System.Drawing.Point(296, 42);
+            this.SRDUR_Lable.Name = "SRDUR_Lable";
+            this.SRDUR_Lable.Size = new System.Drawing.Size(75, 34);
+            this.SRDUR_Lable.TabIndex = 14;
+            this.SRDUR_Lable.Text = "DURATION";
+            this.SRDUR_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SRDUR_Lable.UseMnemonic = false;
             // 
-            // label12
+            // Day1MOFF_Label
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.BackColor = System.Drawing.Color.CadetBlue;
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(225, 161);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 35);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "MINUTE OFF";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.UseMnemonic = false;
+            this.Day1MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day1MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day1MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day1MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day1MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day1MOFF_Label.Location = new System.Drawing.Point(225, 161);
+            this.Day1MOFF_Label.Name = "Day1MOFF_Label";
+            this.Day1MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day1MOFF_Label.TabIndex = 41;
+            this.Day1MOFF_Label.Text = "MINUTE OFF";
+            this.Day1MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day1MOFF_Label.UseMnemonic = false;
             // 
-            // label14
+            // SunriseMON_Lable
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.BackColor = System.Drawing.Color.CadetBlue;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(83, 42);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 35);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "MINUTE ON";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label14.UseMnemonic = false;
+            this.SunriseMON_Lable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SunriseMON_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunriseMON_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunriseMON_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunriseMON_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunriseMON_Lable.Location = new System.Drawing.Point(83, 42);
+            this.SunriseMON_Lable.Name = "SunriseMON_Lable";
+            this.SunriseMON_Lable.Size = new System.Drawing.Size(65, 35);
+            this.SunriseMON_Lable.TabIndex = 6;
+            this.SunriseMON_Lable.Text = "MINUTE ON";
+            this.SunriseMON_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunriseMON_Lable.UseMnemonic = false;
             // 
             // comboBox13
             // 
@@ -3646,20 +3645,20 @@
             this.comboBox11.UseWaitCursor = true;
             this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.comboBox11_SelectedIndexChanged);
             // 
-            // label15
+            // SunriseMOFF_Lable
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.BackColor = System.Drawing.Color.CadetBlue;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(225, 42);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 35);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "MINUTE OFF";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.UseMnemonic = false;
+            this.SunriseMOFF_Lable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SunriseMOFF_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SunriseMOFF_Lable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SunriseMOFF_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SunriseMOFF_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SunriseMOFF_Lable.Location = new System.Drawing.Point(225, 42);
+            this.SunriseMOFF_Lable.Name = "SunriseMOFF_Lable";
+            this.SunriseMOFF_Lable.Size = new System.Drawing.Size(65, 35);
+            this.SunriseMOFF_Lable.TabIndex = 7;
+            this.SunriseMOFF_Lable.Text = "MINUTE OFF";
+            this.SunriseMOFF_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SunriseMOFF_Lable.UseMnemonic = false;
             // 
             // comboBox21
             // 
@@ -3855,50 +3854,50 @@
             this.comboBox10.UseWaitCursor = true;
             this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.comboBox10_SelectedIndexChanged);
             // 
-            // label10
+            // Day1HOFF_Label
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.BackColor = System.Drawing.Color.CadetBlue;
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(154, 161);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 35);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "HOUR OFF";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.UseMnemonic = false;
+            this.Day1HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day1HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day1HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day1HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day1HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day1HOFF_Label.Location = new System.Drawing.Point(154, 161);
+            this.Day1HOFF_Label.Name = "Day1HOFF_Label";
+            this.Day1HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day1HOFF_Label.TabIndex = 39;
+            this.Day1HOFF_Label.Text = "HOUR OFF";
+            this.Day1HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day1HOFF_Label.UseMnemonic = false;
             // 
-            // label24
+            // Day2MOFF_Label
             // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.BackColor = System.Drawing.Color.CadetBlue;
-            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label24.Location = new System.Drawing.Point(525, 160);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(65, 35);
-            this.label24.TabIndex = 41;
-            this.label24.Text = "MINUTE OFF";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label24.UseMnemonic = false;
+            this.Day2MOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day2MOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day2MOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day2MOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day2MOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day2MOFF_Label.Location = new System.Drawing.Point(525, 160);
+            this.Day2MOFF_Label.Name = "Day2MOFF_Label";
+            this.Day2MOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day2MOFF_Label.TabIndex = 41;
+            this.Day2MOFF_Label.Text = "MINUTE OFF";
+            this.Day2MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day2MOFF_Label.UseMnemonic = false;
             // 
-            // label11
+            // Day1MON_Label
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.BackColor = System.Drawing.Color.CadetBlue;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(82, 161);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 35);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "MINUTE ON";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.UseMnemonic = false;
+            this.Day1MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day1MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day1MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day1MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day1MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day1MON_Label.Location = new System.Drawing.Point(82, 161);
+            this.Day1MON_Label.Name = "Day1MON_Label";
+            this.Day1MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day1MON_Label.TabIndex = 40;
+            this.Day1MON_Label.Text = "MINUTE ON";
+            this.Day1MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day1MON_Label.UseMnemonic = false;
             // 
             // comboBox12
             // 
@@ -4041,20 +4040,20 @@
             this.comboBox22.UseWaitCursor = true;
             this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.comboBox22_SelectedIndexChanged);
             // 
-            // checkBox4
+            // Sunrise_checkBox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox4.Location = new System.Drawing.Point(911, 11);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(122, 17);
-            this.checkBox4.TabIndex = 12;
-            this.checkBox4.Text = "SUNRISE TIMER";
-            this.checkBox4.UseVisualStyleBackColor = false;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.Sunrise_checkBox.AutoSize = true;
+            this.Sunrise_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Sunrise_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Sunrise_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sunrise_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Sunrise_checkBox.Location = new System.Drawing.Point(911, 11);
+            this.Sunrise_checkBox.Name = "Sunrise_checkBox";
+            this.Sunrise_checkBox.Size = new System.Drawing.Size(122, 17);
+            this.Sunrise_checkBox.TabIndex = 12;
+            this.Sunrise_checkBox.Text = "SUNRISE TIMER";
+            this.Sunrise_checkBox.UseVisualStyleBackColor = false;
+            this.Sunrise_checkBox.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // comboBox23
             // 
@@ -4132,50 +4131,50 @@
             this.comboBox23.UseWaitCursor = true;
             this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.comboBox23_SelectedIndexChanged);
             // 
-            // checkBox2
+            // Sunset_checkBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox2.Location = new System.Drawing.Point(911, 36);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(117, 17);
-            this.checkBox2.TabIndex = 10;
-            this.checkBox2.Text = "SUNSET TIMER";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.Sunset_checkBox.AutoSize = true;
+            this.Sunset_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Sunset_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Sunset_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sunset_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Sunset_checkBox.Location = new System.Drawing.Point(911, 36);
+            this.Sunset_checkBox.Name = "Sunset_checkBox";
+            this.Sunset_checkBox.Size = new System.Drawing.Size(117, 17);
+            this.Sunset_checkBox.TabIndex = 10;
+            this.Sunset_checkBox.Text = "SUNSET TIMER";
+            this.Sunset_checkBox.UseVisualStyleBackColor = false;
+            this.Sunset_checkBox.CheckedChanged += new System.EventHandler(this.Sunset_CheckedChanged);
             // 
-            // label25
+            // Day2HOFF_Label
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.BackColor = System.Drawing.Color.CadetBlue;
-            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label25.Location = new System.Drawing.Point(454, 161);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(65, 35);
-            this.label25.TabIndex = 39;
-            this.label25.Text = "HOUR OFF";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label25.UseMnemonic = false;
+            this.Day2HOFF_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day2HOFF_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day2HOFF_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day2HOFF_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day2HOFF_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day2HOFF_Label.Location = new System.Drawing.Point(454, 161);
+            this.Day2HOFF_Label.Name = "Day2HOFF_Label";
+            this.Day2HOFF_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day2HOFF_Label.TabIndex = 39;
+            this.Day2HOFF_Label.Text = "HOUR OFF";
+            this.Day2HOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day2HOFF_Label.UseMnemonic = false;
             // 
-            // label26
+            // Day2MON_Label
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.BackColor = System.Drawing.Color.CadetBlue;
-            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(382, 161);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(65, 35);
-            this.label26.TabIndex = 40;
-            this.label26.Text = "MINUTE ON";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label26.UseMnemonic = false;
+            this.Day2MON_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Day2MON_Label.BackColor = System.Drawing.Color.CadetBlue;
+            this.Day2MON_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Day2MON_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day2MON_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day2MON_Label.Location = new System.Drawing.Point(382, 161);
+            this.Day2MON_Label.Name = "Day2MON_Label";
+            this.Day2MON_Label.Size = new System.Drawing.Size(65, 35);
+            this.Day2MON_Label.TabIndex = 40;
+            this.Day2MON_Label.Text = "MINUTE ON";
+            this.Day2MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Day2MON_Label.UseMnemonic = false;
             // 
             // comboBox24
             // 
@@ -4253,50 +4252,50 @@
             this.comboBox24.UseWaitCursor = true;
             this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.comboBox24_SelectedIndexChanged);
             // 
-            // checkBox3
+            // Day1_checkBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox3.Location = new System.Drawing.Point(911, 61);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(155, 17);
-            this.checkBox3.TabIndex = 42;
-            this.checkBox3.Text = "ENABLE DAY 1 TIMER";
-            this.checkBox3.UseVisualStyleBackColor = false;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.Day1_checkBox.AutoSize = true;
+            this.Day1_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Day1_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Day1_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day1_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day1_checkBox.Location = new System.Drawing.Point(911, 61);
+            this.Day1_checkBox.Name = "Day1_checkBox";
+            this.Day1_checkBox.Size = new System.Drawing.Size(155, 17);
+            this.Day1_checkBox.TabIndex = 42;
+            this.Day1_checkBox.Text = "ENABLE DAY 1 TIMER";
+            this.Day1_checkBox.UseVisualStyleBackColor = false;
+            this.Day1_checkBox.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox6
+            // Day2_checkBox
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox6.Location = new System.Drawing.Point(911, 84);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(155, 17);
-            this.checkBox6.TabIndex = 42;
-            this.checkBox6.Text = "ENABLE DAY 2 TIMER";
-            this.checkBox6.UseVisualStyleBackColor = false;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            this.Day2_checkBox.AutoSize = true;
+            this.Day2_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Day2_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Day2_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day2_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day2_checkBox.Location = new System.Drawing.Point(911, 84);
+            this.Day2_checkBox.Name = "Day2_checkBox";
+            this.Day2_checkBox.Size = new System.Drawing.Size(155, 17);
+            this.Day2_checkBox.TabIndex = 42;
+            this.Day2_checkBox.Text = "ENABLE DAY 2 TIMER";
+            this.Day2_checkBox.UseVisualStyleBackColor = false;
+            this.Day2_checkBox.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // checkBox5
+            // Day3_checkBox
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox5.Location = new System.Drawing.Point(911, 110);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(155, 17);
-            this.checkBox5.TabIndex = 42;
-            this.checkBox5.Text = "ENABLE DAY 3 TIMER";
-            this.checkBox5.UseVisualStyleBackColor = false;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.Day3_checkBox.AutoSize = true;
+            this.Day3_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Day3_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Day3_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Day3_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Day3_checkBox.Location = new System.Drawing.Point(911, 110);
+            this.Day3_checkBox.Name = "Day3_checkBox";
+            this.Day3_checkBox.Size = new System.Drawing.Size(155, 17);
+            this.Day3_checkBox.TabIndex = 42;
+            this.Day3_checkBox.Text = "ENABLE DAY 3 TIMER";
+            this.Day3_checkBox.UseVisualStyleBackColor = false;
+            this.Day3_checkBox.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // checkBox14
             // 
@@ -4313,35 +4312,35 @@
             this.checkBox14.UseVisualStyleBackColor = false;
             this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
-            // checkBox12
+            // Neon1_checkBox
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox12.Location = new System.Drawing.Point(911, 181);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(165, 17);
-            this.checkBox12.TabIndex = 42;
-            this.checkBox12.Text = "ENABLE NEON 1 TIMER";
-            this.checkBox12.UseVisualStyleBackColor = false;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            this.Neon1_checkBox.AutoSize = true;
+            this.Neon1_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Neon1_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Neon1_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon1_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon1_checkBox.Location = new System.Drawing.Point(911, 181);
+            this.Neon1_checkBox.Name = "Neon1_checkBox";
+            this.Neon1_checkBox.Size = new System.Drawing.Size(165, 17);
+            this.Neon1_checkBox.TabIndex = 42;
+            this.Neon1_checkBox.Text = "ENABLE NEON 1 TIMER";
+            this.Neon1_checkBox.UseVisualStyleBackColor = false;
+            this.Neon1_checkBox.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
-            // checkBox15
+            // Neon2_checkBox
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox15.Location = new System.Drawing.Point(911, 204);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(165, 17);
-            this.checkBox15.TabIndex = 42;
-            this.checkBox15.Text = "ENABLE NEON 2 TIMER";
-            this.checkBox15.UseVisualStyleBackColor = false;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
+            this.Neon2_checkBox.AutoSize = true;
+            this.Neon2_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Neon2_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Neon2_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon2_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon2_checkBox.Location = new System.Drawing.Point(911, 204);
+            this.Neon2_checkBox.Name = "Neon2_checkBox";
+            this.Neon2_checkBox.Size = new System.Drawing.Size(165, 17);
+            this.Neon2_checkBox.TabIndex = 42;
+            this.Neon2_checkBox.Text = "ENABLE NEON 2 TIMER";
+            this.Neon2_checkBox.UseVisualStyleBackColor = false;
+            this.Neon2_checkBox.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
             // checkBox16
             // 
@@ -4363,7 +4362,7 @@
             this.panel8.BackColor = System.Drawing.Color.Gainsboro;
             this.panel8.Controls.Add(this.button10);
             this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.checkBox13);
+            this.panel8.Controls.Add(this.Neon3_checkBox);
             this.panel8.Location = new System.Drawing.Point(903, 6);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(223, 461);
@@ -4397,20 +4396,20 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // checkBox13
+            // Neon3_checkBox
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox13.Location = new System.Drawing.Point(8, 222);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(165, 17);
-            this.checkBox13.TabIndex = 42;
-            this.checkBox13.Text = "ENABLE NEON 3 TIMER";
-            this.checkBox13.UseVisualStyleBackColor = false;
-            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
+            this.Neon3_checkBox.AutoSize = true;
+            this.Neon3_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Neon3_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Neon3_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Neon3_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Neon3_checkBox.Location = new System.Drawing.Point(8, 222);
+            this.Neon3_checkBox.Name = "Neon3_checkBox";
+            this.Neon3_checkBox.Size = new System.Drawing.Size(165, 17);
+            this.Neon3_checkBox.TabIndex = 42;
+            this.Neon3_checkBox.Text = "ENABLE NEON 3 TIMER";
+            this.Neon3_checkBox.UseVisualStyleBackColor = false;
+            this.Neon3_checkBox.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
             // tabPage7
             // 
@@ -6293,11 +6292,6 @@
             this.progressBar1.Size = new System.Drawing.Size(1139, 24);
             this.progressBar1.TabIndex = 33;
             // 
-            // serialPort1
-            // 
-            this.serialPort1.PortName = "COM2";
-            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -6445,13 +6439,13 @@
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.ComboBox comboBox37;
-        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label Neon2HON_Label;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.ComboBox comboBox38;
         private System.Windows.Forms.ComboBox comboBox41;
         private System.Windows.Forms.ComboBox comboBox39;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label Neon1HON_Label;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label64;
@@ -6462,7 +6456,7 @@
         private System.Windows.Forms.ComboBox comboBox43;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label Neon2MOFF_Label;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.ComboBox comboBox44;
@@ -6470,23 +6464,23 @@
         private System.Windows.Forms.ComboBox comboBox33;
         private System.Windows.Forms.ComboBox comboBox47;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label Neon2HOFF_Label;
+        private System.Windows.Forms.Label Neon1MOFF_Label;
+        private System.Windows.Forms.Label Neon2MON_Label;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.ComboBox comboBox48;
         private System.Windows.Forms.ComboBox comboBox34;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.ComboBox comboBox35;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label Neon1HOFF_Label;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label Neon1MON_Label;
         private System.Windows.Forms.ComboBox comboBox36;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.ComboBox comboBox51;
         private System.Windows.Forms.ComboBox comboBox56;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Day3HON_Label;
         private System.Windows.Forms.ComboBox comboBox57;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.ComboBox comboBox58;
@@ -6500,60 +6494,60 @@
         private System.Windows.Forms.ComboBox comboBox54;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label Day3MOFF_Label;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Day1HON_Label;
         private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label SunsetHON_Label;
+        private System.Windows.Forms.Label Day3HOFF_Label;
+        private System.Windows.Forms.Label SunsetMON_Label;
+        private System.Windows.Forms.Label Day3MON_Label;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label SunsetHOFF_Label;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label SunsetMOFF_Label;
+        private System.Windows.Forms.Label SunriseHON_Lable;
+        private System.Windows.Forms.Label SSDUR_Lable;
+        private System.Windows.Forms.Label Day2HON_Label;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label SunriseHOFF_Lable;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label SRDUR_Lable;
+        private System.Windows.Forms.Label Day1MOFF_Label;
+        private System.Windows.Forms.Label SunriseMON_Lable;
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label SunriseMOFF_Lable;
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label Day1HOFF_Label;
+        private System.Windows.Forms.Label Day2MOFF_Label;
+        private System.Windows.Forms.Label Day1MON_Label;
         private System.Windows.Forms.ComboBox comboBox12;
         private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox Sunrise_checkBox;
         private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.CheckBox Sunset_checkBox;
+        private System.Windows.Forms.Label Day2HOFF_Label;
+        private System.Windows.Forms.Label Day2MON_Label;
         private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox Day1_checkBox;
+        private System.Windows.Forms.CheckBox Day2_checkBox;
+        private System.Windows.Forms.CheckBox Day3_checkBox;
         private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox Neon3_checkBox;
+        private System.Windows.Forms.CheckBox Neon1_checkBox;
+        private System.Windows.Forms.CheckBox Neon2_checkBox;
         private System.Windows.Forms.CheckBox checkBox16;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TabPage tabPage7;
@@ -6684,7 +6678,6 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button9;
-        private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem timersToolStripMenuItem;
