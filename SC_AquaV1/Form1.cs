@@ -452,148 +452,163 @@ private void RGB_config_info() {
             }
             ///////////////////////////////sunset main title color change 		 
 
-            if ((ACTIVATE_SUNSET == true) & (SunsetHON == true) & (SunsetMON == true) & (SunsetHOFF == true) & (SunsetMOFF == true) & (SSDUR == true))
+            if ((ACTIVATE_SUNSET == true) & (SunsetHON == true) & (SunsetMON == true) & (SunsetHOFF == true) & (SunsetMOFF == true) & (SSDUR == true) & (Sunset_checkBox.Checked == true))
             {
 
                 label43.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_SUNSET = true;
             }
 
             else
             {
                 label43.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_SUNSET = false;
             }
             ///////////////////////////////daytime 1 main title color change 
-            if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true))
+            if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true)& (Day1_checkBox.Checked == true ))
             {
 
                 label57.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_DAY1 = true;
             }
 
             else
             {
                 label57.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_DAY1 = false;
             }
 
             ///////////////////////////////daytime 2 main title color change 
-            if ((ACTIVATE_DAY2 == true) & (Day2HON == true) & (Day2MON == true) & (Day2HOFF == true) & (Day2MOFF == true))
+            if ((ACTIVATE_DAY2 == true) & (Day2HON == true) & (Day2MON == true) & (Day2HOFF == true) & (Day2MOFF == true)& (Day2_checkBox.Checked == true))
             {
-
+                ACTIVATE_DAY2 = true;
                 label23.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
+                ACTIVATE_DAY2 = false;
                 label23.BackColor = System.Drawing.Color.DarkGray;
             }
 
             ///////////////////////////////daytime 3 main title color change 
-            if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true))
+            if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true) & (Day3_checkBox.Checked==true))
             {
-
+                ACTIVATE_DAY3 = true;
                 label18.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
+                ACTIVATE_DAY3 = false;
                 label18.BackColor = System.Drawing.Color.DarkGray;
             }
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////NEON 1 title color change 
-            if ((ACTIVATE_NEON1 == true) & (Neon1HON == true) & (Neon1MON == true) & (Neon1HOFF == true) & (Neon1MOFF == true))
+            if ((ACTIVATE_NEON1 == true) & (Neon1HON == true) & (Neon1MON == true) & (Neon1HOFF == true) & (Neon1MOFF == true) & (Neon1_checkBox.Checked == true))
             {
-
-                label55.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_NEON1 = true;
+                NEON1_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label55.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_NEON1 = false;
+                NEON1_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////		 
             ///////////////////////////////NEON 2 title color change 
-            if ((ACTIVATE_NEON2 == true) & (Neon2HON == true) & (Neon2MON == true) & (Neon2HOFF == true) & (Neon2MOFF == true))
+            if ((ACTIVATE_NEON2 == true) & (Neon2HON == true) & (Neon2MON == true) & (Neon2HOFF == true) & (Neon2MOFF == true) & (Neon2_checkBox.Checked == true))
             {
-
-                label71.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_NEON2 = true;
+                NEON2_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label71.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_NEON2 = false;
+                NEON2_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
             ///////////////////////////////NEON_3 title color change 
-            if ((ACTIVATE_NEON3 == true) & (Neon3HON == true) & (Neon3MON == true) & (Neon3HOFF == true) & (Neon3MOFF == true))
+            if ((ACTIVATE_NEON3 == true) & (Neon3HON == true) & (Neon3MON == true) & (Neon3HOFF == true) & (Neon3MOFF == true) & (Neon3_checkBox.Checked == true))
             {
-
-                label61.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_NEON3 = true;
+                NEON3_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label61.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_NEON3 = false;
+                NEON3_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////NIGHT_1 title color change 
-            if ((ACTIVATE_NIGHT1 == true) & (Night1HON == true) & (Night1MON == true) & (Night1HOFF == true) & (Night1MOFF == true))
+            if ((ACTIVATE_NIGHT1 == true) & (Night1HON == true) & (Night1MON == true) & (Night1HOFF == true) & (Night1MOFF == true) & (Night1_checkBox.Checked == true))
             {
-
-                label66.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_NIGHT1 = true;
+                NIGHT1_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label66.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_NIGHT1 = false;
+                   NIGHT1_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////UV_STERILIZER 1 title color change 
-            if ((ACTIVATE_UV1 == true) & (Uv1HON == true) & (Uv1MON == true) & (Uv1HOFF == true) & (Uv1MOFF == true))
+            if ((ACTIVATE_UV1 == true) & (Uv1HON == true) & (Uv1MON == true) & (Uv1HOFF == true) & (Uv1MOFF == true) & (Uv1_checkBox.Checked == true))
             {
-
-                label80.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_UV1 = true;
+                UV1_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label80.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_UV1 = false;
+                   UV1_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////UV_STERILIZER 2 title color change 
-            if ((ACTIVATE_UV2 == true) & (Uv2HON == true) & (Uv2MON == true) & (Uv2HOFF == true) & (Uv2MOFF == true))
+            if ((ACTIVATE_UV2 == true) & (Uv2HON == true) & (Uv2MON == true) & (Uv2HOFF == true) & (Uv2MOFF == true) & (Uv2_checkBox.Checked == true))
             {
-
-                label87.BackColor = System.Drawing.Color.DarkOrange;
+                ACTIVATE_UV2 = true;
+                UV2_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label87.BackColor = System.Drawing.Color.DarkGray;
+                ACTIVATE_UV2 = false;
+                   UV2_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////RTC UPDATE title color change 
             if ((RTC_ACTIVATE == true) & (day == true) & (month == true) & (year == true) & (hour == true) & (minute == true))
             {
-                label44.BackColor = System.Drawing.Color.DarkOrange;
-
+                RTC_Lable.BackColor = System.Drawing.Color.DarkOrange;
+                RTC_ACTIVATE = true;
             }
 
             else
             {
-                label44.BackColor = System.Drawing.Color.DarkGray;
+                RTC_ACTIVATE = false;
+                RTC_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////SLAVE number UPDATE title color change 
             if ((SLAVE_ADD_ACTIVATE == true) & (RGB1_6 == true) & (RGB7_12 == true) & (PH_TEMP == true))
             {
-                label84.BackColor = System.Drawing.Color.DarkOrange;
+                SLAVE_ADD_ACTIVATE = true;
+                Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
-                label84.BackColor = System.Drawing.Color.DarkGray;
+                SLAVE_ADD_ACTIVATE = false;
+                Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////LED TEST  UPDATE title color change # 1
             if ((NORMAL_MODE == true) || (DEBUG == true))
@@ -943,7 +958,7 @@ private void RGB_config_info() {
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox14.Checked == true)
+            if (Night1_checkBox.Checked == true)
             {
                 ACTIVATE_NIGHT1 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -987,7 +1002,7 @@ private void RGB_config_info() {
         private void checkBox16_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox16.Checked == true)
+            if (Uv1_checkBox.Checked == true)
             {
                 ACTIVATE_UV1 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -1031,7 +1046,7 @@ private void RGB_config_info() {
         private void checkBox17_CheckedChanged(object sender, EventArgs e)
         {
 
-            if (checkBox17.Checked == true)
+            if (Uv2_checkBox.Checked == true)
             {
                 ACTIVATE_UV2 = true;
                 richTextBox1.Text += (DateTime.Now);
@@ -1420,7 +1435,7 @@ private void RGB_config_info() {
                 ini.IniWriteValue("Sunrise", "UDP_PACKET", EMPTY_UDP);
             }
 
-            if ((ACTIVATE_SUNSET == true) & (SunsetHON == true) & (SunsetMON == true) & (SunsetHOFF == true) & (SunsetMOFF == true) & (SSDUR == true))
+            if (ACTIVATE_SUNSET)
             {
 
 
@@ -1498,7 +1513,7 @@ private void RGB_config_info() {
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //////////////////////////////GENERATE DAY 1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true))
+            if (ACTIVATE_DAY1)
             {
 
 
@@ -1569,7 +1584,7 @@ private void RGB_config_info() {
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //////////////////////////////GENERATE DAY 2 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_DAY2 == true) & (Day2HON == true) & (Day2MON == true) & (Day2HOFF == true) & (Day2MOFF == true))
+            if (ACTIVATE_DAY2)
             {
 
                 String hourOn1 = comboBox22.Text;
@@ -1641,7 +1656,7 @@ private void RGB_config_info() {
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       
                     ///////////////////////////////GENERATE DAY 3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true))
+            if (ACTIVATE_DAY3)
             {
 
                 String hourOn1 = comboBox18.Text;
@@ -1713,7 +1728,7 @@ private void RGB_config_info() {
 
 
             //////////////////////////////GENERATE NEON_1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_NEON1 == true) & (Neon1HON == true) & (Neon1MON == true) & (Neon1HOFF == true) & (Neon1MOFF == true))
+            if (ACTIVATE_NEON1)
             {
 
                 String hourOn1 = comboBox34.Text;
@@ -1783,7 +1798,7 @@ private void RGB_config_info() {
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //////////////////////////////GENERATE NEON_2 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_NEON2 == true) & (Neon2HON == true) & (Neon2MON == true) & (Neon2HOFF == true) & (Neon2MOFF == true))
+            if (ACTIVATE_NEON2)
             {
 
                 String hourOn1 = comboBox46.Text;
@@ -1853,7 +1868,7 @@ private void RGB_config_info() {
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE NEON_3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_NEON3 == true) & (Neon3HON == true) & (Neon3MON == true) & (Neon3HOFF == true) & (Neon3MOFF == true))
+            if (ACTIVATE_NEON3 == true)
             {
 
                 String hourOn1 = comboBox38.Text;
@@ -1923,7 +1938,7 @@ private void RGB_config_info() {
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE NIGHT_1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_NIGHT1 == true) & (Night1HON == true) & (Night1MON == true) & (Night1HOFF == true) & (Night1MOFF == true))
+            if (ACTIVATE_NIGHT1)
             {
 
                 String hourOn1 = comboBox42.Text;
@@ -1993,7 +2008,7 @@ private void RGB_config_info() {
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE UV_1 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_UV1 == true) & (Uv1HON == true) & (Uv1MON == true) & (Uv1HOFF == true) & (Uv1MOFF == true))
+            if (ACTIVATE_UV1)
             {
 
                 String hourOn1 = comboBox53.Text;
@@ -2063,7 +2078,7 @@ private void RGB_config_info() {
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE Uv_2TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
-            if ((ACTIVATE_UV2 == true) & (Uv2HON == true) & (Uv2MON == true) & (Uv2HOFF == true) & (Uv2MOFF == true))
+            if (ACTIVATE_UV2)
             {
 
                 String hourOn1 = comboBox56.Text;
@@ -2134,7 +2149,7 @@ private void RGB_config_info() {
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE SLAVE UPDATE FILE///////////////////////////////////////////////////////////////
-            if ((SLAVE_ADD_ACTIVATE == true) & (RGB1_6 == true) & (RGB7_12 == true) & (PH_TEMP == true))
+            if (SLAVE_ADD_ACTIVATE)
             {
 
                 String RTC1 = comboBox62.Text;
@@ -2199,7 +2214,7 @@ private void RGB_config_info() {
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////GENERATE RTC UPDATE FILE///////////////////////////////////////////////////////////////
-            if ((RTC_ACTIVATE == true) & (day == true) & (month == true) & (year == true) & (hour == true) & (minute == true))
+            if (RTC_ACTIVATE)
             {
 
                 String ADDRESS1 = comboBox31.Text;
@@ -2276,7 +2291,7 @@ private void RGB_config_info() {
 
 
 
-
+        /*
         public void  GetUDP_Values(String[] AA )
         {
 
@@ -2287,7 +2302,7 @@ private void RGB_config_info() {
            // return result.ToString();
         }
 
-
+        */
         private void CreateUDP_Timers_String()
         {
 
@@ -2367,13 +2382,26 @@ private void RGB_config_info() {
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
-            label44.BackColor = System.Drawing.Color.DarkOrange;
-            RTC_ACTIVATE = true;
+            if (RTCW_checkBox.Checked == true)
+            {
+                 RTC_ACTIVATE = true;
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " RTC Update activated \r\n";
+            }
+            else
+            {
+                RTC_ACTIVATE = false;
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " RTC Update dis activated \r\n";
+            }
+
         }
 
         private void checkBox18_CheckedChanged(object sender, EventArgs e)
         {
-            label84.BackColor = System.Drawing.Color.DarkOrange;
+            Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkOrange;
             SLAVE_ADD_ACTIVATE = true;
         }
 
@@ -3022,7 +3050,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox16.Checked = true;
+                Uv1_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -3036,7 +3064,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox16.Checked = false;
+                Uv1_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -3077,7 +3105,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox17.Checked = true;
+                Uv2_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -3091,7 +3119,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox17.Checked = false;
+                Uv2_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -3297,7 +3325,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox14.Checked = true;
+                Night1_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -3311,7 +3339,7 @@ private void RGB_config_info() {
             }
             else
             {
-                checkBox14.Checked = false;
+                Night1_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");

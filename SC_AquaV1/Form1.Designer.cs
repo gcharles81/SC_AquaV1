@@ -37,11 +37,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.Neon3HON_Label = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
+            this.NEON3_Lable = new System.Windows.Forms.Label();
             this.comboBox37 = new System.Windows.Forms.ComboBox();
             this.Neon2HON_Label = new System.Windows.Forms.Label();
             this.Neon3MOFF_Label = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.NIGHT1_Lable = new System.Windows.Forms.Label();
             this.comboBox38 = new System.Windows.Forms.ComboBox();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.comboBox39 = new System.Windows.Forms.ComboBox();
@@ -49,16 +49,16 @@
             this.Neon3HOFF_Label = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.Neon3MON_Label = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
+            this.NEON2_Lable = new System.Windows.Forms.Label();
             this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.comboBox42 = new System.Windows.Forms.ComboBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
             this.comboBox43 = new System.Windows.Forms.ComboBox();
-            this.label87 = new System.Windows.Forms.Label();
+            this.UV2_Lable = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.Neon2MOFF_Label = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.NEON1_Lable = new System.Windows.Forms.Label();
             this.comboBox44 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.comboBox33 = new System.Windows.Forms.ComboBox();
@@ -67,7 +67,7 @@
             this.Neon2HOFF_Label = new System.Windows.Forms.Label();
             this.Neon1MOFF_Label = new System.Windows.Forms.Label();
             this.Neon2MON_Label = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
+            this.UV1_Lable = new System.Windows.Forms.Label();
             this.comboBox48 = new System.Windows.Forms.ComboBox();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
             this.label89 = new System.Windows.Forms.Label();
@@ -118,7 +118,7 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.SunriseHOFF_Lable = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.Uv2_checkBox = new System.Windows.Forms.CheckBox();
             this.SRDUR_Lable = new System.Windows.Forms.Label();
             this.Day1MOFF_Label = new System.Windows.Forms.Label();
             this.SunriseMON_Lable = new System.Windows.Forms.Label();
@@ -144,10 +144,10 @@
             this.Day1_checkBox = new System.Windows.Forms.CheckBox();
             this.Day2_checkBox = new System.Windows.Forms.CheckBox();
             this.Day3_checkBox = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.Night1_checkBox = new System.Windows.Forms.CheckBox();
             this.Neon1_checkBox = new System.Windows.Forms.CheckBox();
             this.Neon2_checkBox = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.Uv1_checkBox = new System.Windows.Forms.CheckBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -248,7 +248,7 @@
             this.panel50 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.label96 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
+            this.Slave_ADD_checkBox = new System.Windows.Forms.Label();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.comboBox55 = new System.Windows.Forms.ComboBox();
             this.label92 = new System.Windows.Forms.Label();
@@ -265,8 +265,8 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.label44 = new System.Windows.Forms.Label();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.RTC_Lable = new System.Windows.Forms.Label();
+            this.RTCW_checkBox = new System.Windows.Forms.CheckBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -372,11 +372,11 @@
             this.TIMERS.Controls.Add(this.panel9);
             this.TIMERS.Controls.Add(this.Neon3HON_Label);
             this.TIMERS.Controls.Add(this.label65);
-            this.TIMERS.Controls.Add(this.label61);
+            this.TIMERS.Controls.Add(this.NEON3_Lable);
             this.TIMERS.Controls.Add(this.comboBox37);
             this.TIMERS.Controls.Add(this.Neon2HON_Label);
             this.TIMERS.Controls.Add(this.Neon3MOFF_Label);
-            this.TIMERS.Controls.Add(this.label66);
+            this.TIMERS.Controls.Add(this.NIGHT1_Lable);
             this.TIMERS.Controls.Add(this.comboBox38);
             this.TIMERS.Controls.Add(this.comboBox41);
             this.TIMERS.Controls.Add(this.comboBox39);
@@ -384,16 +384,16 @@
             this.TIMERS.Controls.Add(this.Neon3HOFF_Label);
             this.TIMERS.Controls.Add(this.label67);
             this.TIMERS.Controls.Add(this.Neon3MON_Label);
-            this.TIMERS.Controls.Add(this.label71);
+            this.TIMERS.Controls.Add(this.NEON2_Lable);
             this.TIMERS.Controls.Add(this.comboBox40);
             this.TIMERS.Controls.Add(this.comboBox42);
             this.TIMERS.Controls.Add(this.comboBox45);
             this.TIMERS.Controls.Add(this.comboBox43);
-            this.TIMERS.Controls.Add(this.label87);
+            this.TIMERS.Controls.Add(this.UV2_Lable);
             this.TIMERS.Controls.Add(this.label68);
             this.TIMERS.Controls.Add(this.Neon2MOFF_Label);
             this.TIMERS.Controls.Add(this.label69);
-            this.TIMERS.Controls.Add(this.label55);
+            this.TIMERS.Controls.Add(this.NEON1_Lable);
             this.TIMERS.Controls.Add(this.comboBox44);
             this.TIMERS.Controls.Add(this.comboBox46);
             this.TIMERS.Controls.Add(this.comboBox33);
@@ -402,7 +402,7 @@
             this.TIMERS.Controls.Add(this.Neon2HOFF_Label);
             this.TIMERS.Controls.Add(this.Neon1MOFF_Label);
             this.TIMERS.Controls.Add(this.Neon2MON_Label);
-            this.TIMERS.Controls.Add(this.label80);
+            this.TIMERS.Controls.Add(this.UV1_Lable);
             this.TIMERS.Controls.Add(this.comboBox48);
             this.TIMERS.Controls.Add(this.comboBox34);
             this.TIMERS.Controls.Add(this.label89);
@@ -453,7 +453,7 @@
             this.TIMERS.Controls.Add(this.comboBox6);
             this.TIMERS.Controls.Add(this.SunriseHOFF_Lable);
             this.TIMERS.Controls.Add(this.comboBox7);
-            this.TIMERS.Controls.Add(this.checkBox17);
+            this.TIMERS.Controls.Add(this.Uv2_checkBox);
             this.TIMERS.Controls.Add(this.SRDUR_Lable);
             this.TIMERS.Controls.Add(this.Day1MOFF_Label);
             this.TIMERS.Controls.Add(this.SunriseMON_Lable);
@@ -479,10 +479,10 @@
             this.TIMERS.Controls.Add(this.Day1_checkBox);
             this.TIMERS.Controls.Add(this.Day2_checkBox);
             this.TIMERS.Controls.Add(this.Day3_checkBox);
-            this.TIMERS.Controls.Add(this.checkBox14);
+            this.TIMERS.Controls.Add(this.Night1_checkBox);
             this.TIMERS.Controls.Add(this.Neon1_checkBox);
             this.TIMERS.Controls.Add(this.Neon2_checkBox);
-            this.TIMERS.Controls.Add(this.checkBox16);
+            this.TIMERS.Controls.Add(this.Uv1_checkBox);
             this.TIMERS.Controls.Add(this.panel8);
             this.TIMERS.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TIMERS.Location = new System.Drawing.Point(4, 25);
@@ -554,18 +554,18 @@
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label65.UseMnemonic = false;
             // 
-            // label61
+            // NEON3_Lable
             // 
-            this.label61.BackColor = System.Drawing.Color.DarkGray;
-            this.label61.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label61.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label61.Location = new System.Drawing.Point(311, 355);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(279, 28);
-            this.label61.TabIndex = 33;
-            this.label61.Text = "NEON 3";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NEON3_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.NEON3_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NEON3_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NEON3_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NEON3_Lable.Location = new System.Drawing.Point(311, 355);
+            this.NEON3_Lable.Name = "NEON3_Lable";
+            this.NEON3_Lable.Size = new System.Drawing.Size(279, 28);
+            this.NEON3_Lable.TabIndex = 33;
+            this.NEON3_Lable.Text = "NEON 3";
+            this.NEON3_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox37
             // 
@@ -637,18 +637,18 @@
             this.Neon3MOFF_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Neon3MOFF_Label.UseMnemonic = false;
             // 
-            // label66
+            // NIGHT1_Lable
             // 
-            this.label66.BackColor = System.Drawing.Color.DarkGray;
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label66.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label66.Location = new System.Drawing.Point(612, 355);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(279, 28);
-            this.label66.TabIndex = 33;
-            this.label66.Text = "NIGHT 1";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NIGHT1_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.NIGHT1_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NIGHT1_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NIGHT1_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NIGHT1_Lable.Location = new System.Drawing.Point(612, 355);
+            this.NIGHT1_Lable.Name = "NIGHT1_Lable";
+            this.NIGHT1_Lable.Size = new System.Drawing.Size(279, 28);
+            this.NIGHT1_Lable.TabIndex = 33;
+            this.NIGHT1_Lable.Text = "NIGHT 1";
+            this.NIGHT1_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox38
             // 
@@ -891,18 +891,18 @@
             this.Neon3MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Neon3MON_Label.UseMnemonic = false;
             // 
-            // label71
+            // NEON2_Lable
             // 
-            this.label71.BackColor = System.Drawing.Color.DarkGray;
-            this.label71.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label71.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label71.Location = new System.Drawing.Point(612, 243);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(280, 28);
-            this.label71.TabIndex = 33;
-            this.label71.Text = "NEON 2";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NEON2_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.NEON2_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NEON2_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NEON2_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NEON2_Lable.Location = new System.Drawing.Point(612, 243);
+            this.NEON2_Lable.Name = "NEON2_Lable";
+            this.NEON2_Lable.Size = new System.Drawing.Size(280, 28);
+            this.NEON2_Lable.TabIndex = 33;
+            this.NEON2_Lable.Text = "NEON 2";
+            this.NEON2_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox40
             // 
@@ -1161,18 +1161,18 @@
             this.comboBox43.UseWaitCursor = true;
             this.comboBox43.SelectedIndexChanged += new System.EventHandler(this.comboBox43_SelectedIndexChanged);
             // 
-            // label87
+            // UV2_Lable
             // 
-            this.label87.BackColor = System.Drawing.Color.DarkGray;
-            this.label87.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label87.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label87.Location = new System.Drawing.Point(10, 355);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(280, 28);
-            this.label87.TabIndex = 33;
-            this.label87.Text = "UV STERILIZER 2";
-            this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UV2_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.UV2_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UV2_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UV2_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UV2_Lable.Location = new System.Drawing.Point(10, 355);
+            this.UV2_Lable.Name = "UV2_Lable";
+            this.UV2_Lable.Size = new System.Drawing.Size(280, 28);
+            this.UV2_Lable.TabIndex = 33;
+            this.UV2_Lable.Text = "UV STERILIZER 2";
+            this.UV2_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label68
             // 
@@ -1219,18 +1219,18 @@
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label69.UseMnemonic = false;
             // 
-            // label55
+            // NEON1_Lable
             // 
-            this.label55.BackColor = System.Drawing.Color.DarkGray;
-            this.label55.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label55.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label55.Location = new System.Drawing.Point(311, 243);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(279, 28);
-            this.label55.TabIndex = 33;
-            this.label55.Text = "NEON 1";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NEON1_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.NEON1_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NEON1_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NEON1_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NEON1_Lable.Location = new System.Drawing.Point(311, 243);
+            this.NEON1_Lable.Name = "NEON1_Lable";
+            this.NEON1_Lable.Size = new System.Drawing.Size(279, 28);
+            this.NEON1_Lable.TabIndex = 33;
+            this.NEON1_Lable.Text = "NEON 1";
+            this.NEON1_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox44
             // 
@@ -1550,18 +1550,18 @@
             this.Neon2MON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Neon2MON_Label.UseMnemonic = false;
             // 
-            // label80
+            // UV1_Lable
             // 
-            this.label80.BackColor = System.Drawing.Color.DarkGray;
-            this.label80.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label80.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label80.Location = new System.Drawing.Point(10, 243);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(282, 28);
-            this.label80.TabIndex = 33;
-            this.label80.Text = "UV STERILIZER 1";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UV1_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.UV1_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UV1_Lable.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UV1_Lable.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UV1_Lable.Location = new System.Drawing.Point(10, 243);
+            this.UV1_Lable.Name = "UV1_Lable";
+            this.UV1_Lable.Size = new System.Drawing.Size(282, 28);
+            this.UV1_Lable.TabIndex = 33;
+            this.UV1_Lable.Text = "UV STERILIZER 1";
+            this.UV1_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox48
             // 
@@ -3362,20 +3362,20 @@
             this.comboBox7.UseWaitCursor = true;
             this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
-            // checkBox17
+            // Uv2_checkBox
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox17.Location = new System.Drawing.Point(911, 156);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(147, 17);
-            this.checkBox17.TabIndex = 10;
-            this.checkBox17.Text = "ENABLE UV 2 TIMER";
-            this.checkBox17.UseVisualStyleBackColor = false;
-            this.checkBox17.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
+            this.Uv2_checkBox.AutoSize = true;
+            this.Uv2_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Uv2_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Uv2_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uv2_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Uv2_checkBox.Location = new System.Drawing.Point(911, 156);
+            this.Uv2_checkBox.Name = "Uv2_checkBox";
+            this.Uv2_checkBox.Size = new System.Drawing.Size(147, 17);
+            this.Uv2_checkBox.TabIndex = 10;
+            this.Uv2_checkBox.Text = "ENABLE UV 2 TIMER";
+            this.Uv2_checkBox.UseVisualStyleBackColor = false;
+            this.Uv2_checkBox.CheckedChanged += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
             // SRDUR_Lable
             // 
@@ -4297,20 +4297,20 @@
             this.Day3_checkBox.UseVisualStyleBackColor = false;
             this.Day3_checkBox.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
-            // checkBox14
+            // Night1_checkBox
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox14.Location = new System.Drawing.Point(911, 254);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(169, 17);
-            this.checkBox14.TabIndex = 42;
-            this.checkBox14.Text = "ENABLE NIGHT 1 TIMER";
-            this.checkBox14.UseVisualStyleBackColor = false;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
+            this.Night1_checkBox.AutoSize = true;
+            this.Night1_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Night1_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Night1_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Night1_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Night1_checkBox.Location = new System.Drawing.Point(911, 254);
+            this.Night1_checkBox.Name = "Night1_checkBox";
+            this.Night1_checkBox.Size = new System.Drawing.Size(169, 17);
+            this.Night1_checkBox.TabIndex = 42;
+            this.Night1_checkBox.Text = "ENABLE NIGHT 1 TIMER";
+            this.Night1_checkBox.UseVisualStyleBackColor = false;
+            this.Night1_checkBox.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
             // Neon1_checkBox
             // 
@@ -4342,20 +4342,20 @@
             this.Neon2_checkBox.UseVisualStyleBackColor = false;
             this.Neon2_checkBox.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
-            // checkBox16
+            // Uv1_checkBox
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.checkBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox16.Location = new System.Drawing.Point(911, 133);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(147, 17);
-            this.checkBox16.TabIndex = 12;
-            this.checkBox16.Text = "ENABLE UV 1 TIMER";
-            this.checkBox16.UseVisualStyleBackColor = false;
-            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
+            this.Uv1_checkBox.AutoSize = true;
+            this.Uv1_checkBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.Uv1_checkBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Uv1_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uv1_checkBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Uv1_checkBox.Location = new System.Drawing.Point(911, 133);
+            this.Uv1_checkBox.Name = "Uv1_checkBox";
+            this.Uv1_checkBox.Size = new System.Drawing.Size(147, 17);
+            this.Uv1_checkBox.TabIndex = 12;
+            this.Uv1_checkBox.Text = "ENABLE UV 1 TIMER";
+            this.Uv1_checkBox.UseVisualStyleBackColor = false;
+            this.Uv1_checkBox.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // panel8
             // 
@@ -5543,7 +5543,7 @@
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel50.Controls.Add(this.button9);
             this.panel50.Controls.Add(this.label96);
-            this.panel50.Controls.Add(this.label84);
+            this.panel50.Controls.Add(this.Slave_ADD_checkBox);
             this.panel50.Controls.Add(this.checkBox18);
             this.panel50.Controls.Add(this.comboBox55);
             this.panel50.Controls.Add(this.label92);
@@ -5582,16 +5582,16 @@
             this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label96.UseWaitCursor = true;
             // 
-            // label84
+            // Slave_ADD_checkBox
             // 
-            this.label84.BackColor = System.Drawing.Color.DarkGray;
-            this.label84.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label84.Location = new System.Drawing.Point(-1, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(371, 28);
-            this.label84.TabIndex = 33;
-            this.label84.Text = "SLAVES ADDRESS SETTING";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkGray;
+            this.Slave_ADD_checkBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Slave_ADD_checkBox.Location = new System.Drawing.Point(-1, 0);
+            this.Slave_ADD_checkBox.Name = "Slave_ADD_checkBox";
+            this.Slave_ADD_checkBox.Size = new System.Drawing.Size(371, 28);
+            this.Slave_ADD_checkBox.TabIndex = 33;
+            this.Slave_ADD_checkBox.Text = "SLAVES ADDRESS SETTING";
+            this.Slave_ADD_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox18
             // 
@@ -5873,8 +5873,8 @@
             this.panel6.BackColor = System.Drawing.Color.LightGray;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.button8);
-            this.panel6.Controls.Add(this.label44);
-            this.panel6.Controls.Add(this.checkBox11);
+            this.panel6.Controls.Add(this.RTC_Lable);
+            this.panel6.Controls.Add(this.RTCW_checkBox);
             this.panel6.Controls.Add(this.comboBox4);
             this.panel6.Controls.Add(this.comboBox29);
             this.panel6.Controls.Add(this.label46);
@@ -5900,27 +5900,27 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // label44
+            // RTC_Lable
             // 
-            this.label44.BackColor = System.Drawing.Color.DarkGray;
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label44.Location = new System.Drawing.Point(0, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(371, 28);
-            this.label44.TabIndex = 33;
-            this.label44.Text = "REAL TIME CLOCK";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.RTC_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_Lable.Location = new System.Drawing.Point(0, 0);
+            this.RTC_Lable.Name = "RTC_Lable";
+            this.RTC_Lable.Size = new System.Drawing.Size(371, 28);
+            this.RTC_Lable.TabIndex = 33;
+            this.RTC_Lable.Text = "REAL TIME CLOCK";
+            this.RTC_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox11
+            // RTCW_checkBox
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(23, 95);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(157, 17);
-            this.checkBox11.TabIndex = 44;
-            this.checkBox11.Text = "ENABLE RTC UPDATE";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            this.RTCW_checkBox.AutoSize = true;
+            this.RTCW_checkBox.Location = new System.Drawing.Point(23, 95);
+            this.RTCW_checkBox.Name = "RTCW_checkBox";
+            this.RTCW_checkBox.Size = new System.Drawing.Size(157, 17);
+            this.RTCW_checkBox.TabIndex = 44;
+            this.RTCW_checkBox.Text = "ENABLE RTC UPDATE";
+            this.RTCW_checkBox.UseVisualStyleBackColor = true;
+            this.RTCW_checkBox.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // comboBox4
             // 
@@ -6437,11 +6437,11 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label Neon3HON_Label;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label NEON3_Lable;
         private System.Windows.Forms.ComboBox comboBox37;
         private System.Windows.Forms.Label Neon2HON_Label;
         private System.Windows.Forms.Label Neon3MOFF_Label;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label NIGHT1_Lable;
         private System.Windows.Forms.ComboBox comboBox38;
         private System.Windows.Forms.ComboBox comboBox41;
         private System.Windows.Forms.ComboBox comboBox39;
@@ -6449,16 +6449,16 @@
         private System.Windows.Forms.Label Neon3HOFF_Label;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label Neon3MON_Label;
-        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label NEON2_Lable;
         private System.Windows.Forms.ComboBox comboBox40;
         private System.Windows.Forms.ComboBox comboBox42;
         private System.Windows.Forms.ComboBox comboBox45;
         private System.Windows.Forms.ComboBox comboBox43;
-        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label UV2_Lable;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label Neon2MOFF_Label;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label NEON1_Lable;
         private System.Windows.Forms.ComboBox comboBox44;
         private System.Windows.Forms.ComboBox comboBox46;
         private System.Windows.Forms.ComboBox comboBox33;
@@ -6467,7 +6467,7 @@
         private System.Windows.Forms.Label Neon2HOFF_Label;
         private System.Windows.Forms.Label Neon1MOFF_Label;
         private System.Windows.Forms.Label Neon2MON_Label;
-        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label UV1_Lable;
         private System.Windows.Forms.ComboBox comboBox48;
         private System.Windows.Forms.ComboBox comboBox34;
         private System.Windows.Forms.Label label89;
@@ -6518,7 +6518,7 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label SunriseHOFF_Lable;
         private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox Uv2_checkBox;
         private System.Windows.Forms.Label SRDUR_Lable;
         private System.Windows.Forms.Label Day1MOFF_Label;
         private System.Windows.Forms.Label SunriseMON_Lable;
@@ -6544,11 +6544,11 @@
         private System.Windows.Forms.CheckBox Day1_checkBox;
         private System.Windows.Forms.CheckBox Day2_checkBox;
         private System.Windows.Forms.CheckBox Day3_checkBox;
-        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox Night1_checkBox;
         private System.Windows.Forms.CheckBox Neon3_checkBox;
         private System.Windows.Forms.CheckBox Neon1_checkBox;
         private System.Windows.Forms.CheckBox Neon2_checkBox;
-        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox Uv1_checkBox;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel55;
@@ -6634,7 +6634,7 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label Slave_ADD_checkBox;
         private System.Windows.Forms.CheckBox checkBox18;
         private System.Windows.Forms.ComboBox comboBox55;
         private System.Windows.Forms.Label label92;
@@ -6647,8 +6647,8 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.Label RTC_Lable;
+        private System.Windows.Forms.CheckBox RTCW_checkBox;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox29;
         private System.Windows.Forms.Label label46;
