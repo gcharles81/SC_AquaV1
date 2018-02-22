@@ -236,46 +236,53 @@
             this.label32 = new System.Windows.Forms.Label();
             this.trackBar12 = new System.Windows.Forms.TrackBar();
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Disconnect_button = new System.Windows.Forms.Button();
+            this.openPort = new System.Windows.Forms.Button();
+            this.Connect_button = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.UDP_CREATE_PACKET_BUTTON = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.UDP_CREATE_PACKET_BUTTON = new System.Windows.Forms.Button();
             this.panel50 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.label96 = new System.Windows.Forms.Label();
-            this.Slave_ADD_checkBox = new System.Windows.Forms.Label();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.SLAVE_ADD2_Lable = new System.Windows.Forms.Label();
+            this.Slave_ADD_Lable = new System.Windows.Forms.Label();
+            this.SLAVEADD_checkBox = new System.Windows.Forms.CheckBox();
             this.comboBox55 = new System.Windows.Forms.ComboBox();
-            this.label92 = new System.Windows.Forms.Label();
+            this.SLAVE_ADD_PH_Lable = new System.Windows.Forms.Label();
             this.comboBox61 = new System.Windows.Forms.ComboBox();
-            this.label95 = new System.Windows.Forms.Label();
+            this.SLAVE_ADD1_Lable = new System.Windows.Forms.Label();
             this.comboBox62 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.portTextBox = new System.Windows.Forms.TextBox();
+            this.statusLabel = new System.Windows.Forms.Label();
+            this.recipTextBox = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.destipTextBox = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.RTC_Lable = new System.Windows.Forms.Label();
-            this.RTCW_checkBox = new System.Windows.Forms.CheckBox();
+            this.RTC_checkBox = new System.Windows.Forms.CheckBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.label46 = new System.Windows.Forms.Label();
+            this.RTC_MINUTE_Lable = new System.Windows.Forms.Label();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
+            this.RTC_HOUR_Lable = new System.Windows.Forms.Label();
+            this.RTC_YEAR_Lable = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
+            this.RTC_DAY_Lable = new System.Windows.Forms.Label();
+            this.RTC_MONTH_Lable = new System.Windows.Forms.Label();
             this.comboBox31 = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -339,8 +346,8 @@
             this.panel37.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).BeginInit();
             this.tabPage10.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel13.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -2704,6 +2711,7 @@
             this.Day1HON_Label.Text = "HOUR ON";
             this.Day1HON_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Day1HON_Label.UseMnemonic = false;
+            this.Day1HON_Label.Click += new System.EventHandler(this.Day1HON_Label_Click);
             // 
             // comboBox19
             // 
@@ -5421,10 +5429,9 @@
             // tabPage10
             // 
             this.tabPage10.BackColor = System.Drawing.Color.CadetBlue;
-            this.tabPage10.Controls.Add(this.panel14);
+            this.tabPage10.Controls.Add(this.tabControl1);
             this.tabPage10.Controls.Add(this.button11);
             this.tabPage10.Controls.Add(this.button12);
-            this.tabPage10.Controls.Add(this.panel13);
             this.tabPage10.Controls.Add(this.panel50);
             this.tabPage10.Controls.Add(this.panel7);
             this.tabPage10.Controls.Add(this.panel6);
@@ -5435,37 +5442,90 @@
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "ADVANCED SETTINGS";
             // 
-            // panel14
+            // tabControl1
             // 
-            this.panel14.BackColor = System.Drawing.Color.LightGray;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label41);
-            this.panel14.Controls.Add(this.button15);
-            this.panel14.Location = new System.Drawing.Point(400, 237);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(709, 220);
-            this.panel14.TabIndex = 49;
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(441, 17);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(666, 478);
+            this.tabControl1.TabIndex = 51;
             // 
-            // label41
+            // tabPage2
             // 
-            this.label41.BackColor = System.Drawing.Color.DarkGray;
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label41.Location = new System.Drawing.Point(0, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(708, 28);
-            this.label41.TabIndex = 33;
-            this.label41.Text = "XBEE UPLOAD";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabPage2.Controls.Add(this.Disconnect_button);
+            this.tabPage2.Controls.Add(this.openPort);
+            this.tabPage2.Controls.Add(this.Connect_button);
+            this.tabPage2.Controls.Add(this.richTextBox2);
+            this.tabPage2.Controls.Add(this.UDP_CREATE_PACKET_BUTTON);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(658, 452);
+            this.tabPage2.TabIndex = 0;
+            this.tabPage2.Text = "UDP";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // Disconnect_button
             // 
-            this.button15.Location = new System.Drawing.Point(3, 183);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(180, 32);
-            this.button15.TabIndex = 48;
-            this.button15.Text = "XBEE TEST";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.Disconnect_button.BackColor = System.Drawing.Color.Red;
+            this.Disconnect_button.Location = new System.Drawing.Point(6, 152);
+            this.Disconnect_button.Name = "Disconnect_button";
+            this.Disconnect_button.Size = new System.Drawing.Size(90, 45);
+            this.Disconnect_button.TabIndex = 53;
+            this.Disconnect_button.Text = "Disconnect";
+            this.Disconnect_button.UseVisualStyleBackColor = false;
+            // 
+            // openPort
+            // 
+            this.openPort.Location = new System.Drawing.Point(6, 54);
+            this.openPort.Name = "openPort";
+            this.openPort.Size = new System.Drawing.Size(90, 44);
+            this.openPort.TabIndex = 52;
+            this.openPort.Text = "Open";
+            this.openPort.UseVisualStyleBackColor = true;
+            // 
+            // Connect_button
+            // 
+            this.Connect_button.BackColor = System.Drawing.Color.Orange;
+            this.Connect_button.Location = new System.Drawing.Point(6, 102);
+            this.Connect_button.Name = "Connect_button";
+            this.Connect_button.Size = new System.Drawing.Size(90, 44);
+            this.Connect_button.TabIndex = 52;
+            this.Connect_button.Text = "Connect";
+            this.Connect_button.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
+            this.richTextBox2.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(655, 45);
+            this.richTextBox2.TabIndex = 50;
+            this.richTextBox2.Text = "";
+            // 
+            // UDP_CREATE_PACKET_BUTTON
+            // 
+            this.UDP_CREATE_PACKET_BUTTON.Location = new System.Drawing.Point(105, 54);
+            this.UDP_CREATE_PACKET_BUTTON.Name = "UDP_CREATE_PACKET_BUTTON";
+            this.UDP_CREATE_PACKET_BUTTON.Size = new System.Drawing.Size(180, 44);
+            this.UDP_CREATE_PACKET_BUTTON.TabIndex = 49;
+            this.UDP_CREATE_PACKET_BUTTON.Text = "UDP CREATE PACKET";
+            this.UDP_CREATE_PACKET_BUTTON.UseVisualStyleBackColor = true;
+            this.UDP_CREATE_PACKET_BUTTON.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(658, 452);
+            this.tabPage3.TabIndex = 1;
+            this.tabPage3.Text = "XBEE";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
@@ -5473,12 +5533,13 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(15, 421);
+            this.button11.Location = new System.Drawing.Point(15, 460);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(169, 35);
             this.button11.TabIndex = 50;
             this.button11.Text = "Save  Files";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button12
             // 
@@ -5486,71 +5547,28 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(217, 421);
+            this.button12.Location = new System.Drawing.Point(217, 460);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(169, 35);
             this.button12.TabIndex = 49;
             this.button12.Text = "Load  Files";
             this.button12.UseVisualStyleBackColor = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.LightGray;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.richTextBox2);
-            this.panel13.Controls.Add(this.label51);
-            this.panel13.Controls.Add(this.UDP_CREATE_PACKET_BUTTON);
-            this.panel13.Location = new System.Drawing.Point(400, 17);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(709, 220);
-            this.panel13.TabIndex = 48;
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox2.Location = new System.Drawing.Point(-1, 34);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(705, 35);
-            this.richTextBox2.TabIndex = 50;
-            this.richTextBox2.Text = "";
-            // 
-            // label51
-            // 
-            this.label51.BackColor = System.Drawing.Color.DarkGray;
-            this.label51.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label51.Location = new System.Drawing.Point(0, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(708, 28);
-            this.label51.TabIndex = 33;
-            this.label51.Text = "UPD UPLOAD";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // UDP_CREATE_PACKET_BUTTON
-            // 
-            this.UDP_CREATE_PACKET_BUTTON.Location = new System.Drawing.Point(3, 181);
-            this.UDP_CREATE_PACKET_BUTTON.Name = "UDP_CREATE_PACKET_BUTTON";
-            this.UDP_CREATE_PACKET_BUTTON.Size = new System.Drawing.Size(180, 32);
-            this.UDP_CREATE_PACKET_BUTTON.TabIndex = 49;
-            this.UDP_CREATE_PACKET_BUTTON.Text = "UDP CREATE PACKET";
-            this.UDP_CREATE_PACKET_BUTTON.UseVisualStyleBackColor = true;
-            this.UDP_CREATE_PACKET_BUTTON.Click += new System.EventHandler(this.button16_Click);
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // panel50
             // 
             this.panel50.BackColor = System.Drawing.Color.LightGray;
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel50.Controls.Add(this.button9);
-            this.panel50.Controls.Add(this.label96);
-            this.panel50.Controls.Add(this.Slave_ADD_checkBox);
-            this.panel50.Controls.Add(this.checkBox18);
+            this.panel50.Controls.Add(this.SLAVE_ADD2_Lable);
+            this.panel50.Controls.Add(this.Slave_ADD_Lable);
+            this.panel50.Controls.Add(this.SLAVEADD_checkBox);
             this.panel50.Controls.Add(this.comboBox55);
-            this.panel50.Controls.Add(this.label92);
+            this.panel50.Controls.Add(this.SLAVE_ADD_PH_Lable);
             this.panel50.Controls.Add(this.comboBox61);
-            this.panel50.Controls.Add(this.label95);
+            this.panel50.Controls.Add(this.SLAVE_ADD1_Lable);
             this.panel50.Controls.Add(this.comboBox62);
-            this.panel50.Location = new System.Drawing.Point(15, 286);
+            this.panel50.Location = new System.Drawing.Point(15, 325);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(371, 129);
             this.panel50.TabIndex = 48;
@@ -5565,44 +5583,44 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // label96
+            // SLAVE_ADD2_Lable
             // 
-            this.label96.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SLAVE_ADD2_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label96.BackColor = System.Drawing.Color.CadetBlue;
-            this.label96.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.ForeColor = System.Drawing.Color.Black;
-            this.label96.Location = new System.Drawing.Point(111, 35);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(94, 26);
-            this.label96.TabIndex = 46;
-            this.label96.Text = "RGB CH 7 - 12";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label96.UseWaitCursor = true;
+            this.SLAVE_ADD2_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SLAVE_ADD2_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SLAVE_ADD2_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLAVE_ADD2_Lable.ForeColor = System.Drawing.Color.Black;
+            this.SLAVE_ADD2_Lable.Location = new System.Drawing.Point(111, 35);
+            this.SLAVE_ADD2_Lable.Name = "SLAVE_ADD2_Lable";
+            this.SLAVE_ADD2_Lable.Size = new System.Drawing.Size(94, 26);
+            this.SLAVE_ADD2_Lable.TabIndex = 46;
+            this.SLAVE_ADD2_Lable.Text = "RGB CH 7 - 12";
+            this.SLAVE_ADD2_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SLAVE_ADD2_Lable.UseWaitCursor = true;
             // 
-            // Slave_ADD_checkBox
+            // Slave_ADD_Lable
             // 
-            this.Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkGray;
-            this.Slave_ADD_checkBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Slave_ADD_checkBox.Location = new System.Drawing.Point(-1, 0);
-            this.Slave_ADD_checkBox.Name = "Slave_ADD_checkBox";
-            this.Slave_ADD_checkBox.Size = new System.Drawing.Size(371, 28);
-            this.Slave_ADD_checkBox.TabIndex = 33;
-            this.Slave_ADD_checkBox.Text = "SLAVES ADDRESS SETTING";
-            this.Slave_ADD_checkBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Slave_ADD_Lable.BackColor = System.Drawing.Color.DarkGray;
+            this.Slave_ADD_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Slave_ADD_Lable.Location = new System.Drawing.Point(-1, 0);
+            this.Slave_ADD_Lable.Name = "Slave_ADD_Lable";
+            this.Slave_ADD_Lable.Size = new System.Drawing.Size(371, 28);
+            this.Slave_ADD_Lable.TabIndex = 33;
+            this.Slave_ADD_Lable.Text = "SLAVES ADDRESS SETTING";
+            this.Slave_ADD_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox18
+            // SLAVEADD_checkBox
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(3, 97);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(232, 17);
-            this.checkBox18.TabIndex = 44;
-            this.checkBox18.Text = "ENABLE SLAVE NUMBER  UPDATE";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            this.checkBox18.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
+            this.SLAVEADD_checkBox.AutoSize = true;
+            this.SLAVEADD_checkBox.Location = new System.Drawing.Point(3, 97);
+            this.SLAVEADD_checkBox.Name = "SLAVEADD_checkBox";
+            this.SLAVEADD_checkBox.Size = new System.Drawing.Size(232, 17);
+            this.SLAVEADD_checkBox.TabIndex = 44;
+            this.SLAVEADD_checkBox.Text = "ENABLE SLAVE NUMBER  UPDATE";
+            this.SLAVEADD_checkBox.UseVisualStyleBackColor = true;
+            this.SLAVEADD_checkBox.CheckedChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
             // comboBox55
             // 
@@ -5634,22 +5652,22 @@
             this.comboBox55.UseWaitCursor = true;
             this.comboBox55.SelectedIndexChanged += new System.EventHandler(this.comboBox55_SelectedIndexChanged);
             // 
-            // label92
+            // SLAVE_ADD_PH_Lable
             // 
-            this.label92.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SLAVE_ADD_PH_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label92.BackColor = System.Drawing.Color.CadetBlue;
-            this.label92.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.ForeColor = System.Drawing.Color.Black;
-            this.label92.Location = new System.Drawing.Point(213, 35);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(138, 26);
-            this.label92.TabIndex = 36;
-            this.label92.Text = "PH & TEMPERATURE";
-            this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label92.UseWaitCursor = true;
+            this.SLAVE_ADD_PH_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SLAVE_ADD_PH_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SLAVE_ADD_PH_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLAVE_ADD_PH_Lable.ForeColor = System.Drawing.Color.Black;
+            this.SLAVE_ADD_PH_Lable.Location = new System.Drawing.Point(213, 35);
+            this.SLAVE_ADD_PH_Lable.Name = "SLAVE_ADD_PH_Lable";
+            this.SLAVE_ADD_PH_Lable.Size = new System.Drawing.Size(138, 26);
+            this.SLAVE_ADD_PH_Lable.TabIndex = 36;
+            this.SLAVE_ADD_PH_Lable.Text = "PH & TEMPERATURE";
+            this.SLAVE_ADD_PH_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SLAVE_ADD_PH_Lable.UseWaitCursor = true;
             // 
             // comboBox61
             // 
@@ -5681,22 +5699,22 @@
             this.comboBox61.UseWaitCursor = true;
             this.comboBox61.SelectedIndexChanged += new System.EventHandler(this.comboBox61_SelectedIndexChanged);
             // 
-            // label95
+            // SLAVE_ADD1_Lable
             // 
-            this.label95.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SLAVE_ADD1_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label95.BackColor = System.Drawing.Color.CadetBlue;
-            this.label95.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.ForeColor = System.Drawing.Color.Black;
-            this.label95.Location = new System.Drawing.Point(9, 35);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(94, 26);
-            this.label95.TabIndex = 43;
-            this.label95.Text = "RGB CH 1 - 6";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label95.UseWaitCursor = true;
+            this.SLAVE_ADD1_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.SLAVE_ADD1_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SLAVE_ADD1_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLAVE_ADD1_Lable.ForeColor = System.Drawing.Color.Black;
+            this.SLAVE_ADD1_Lable.Location = new System.Drawing.Point(9, 35);
+            this.SLAVE_ADD1_Lable.Name = "SLAVE_ADD1_Lable";
+            this.SLAVE_ADD1_Lable.Size = new System.Drawing.Size(94, 26);
+            this.SLAVE_ADD1_Lable.TabIndex = 43;
+            this.SLAVE_ADD1_Lable.Text = "RGB CH 1 - 6";
+            this.SLAVE_ADD1_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SLAVE_ADD1_Lable.UseWaitCursor = true;
             // 
             // comboBox62
             // 
@@ -5756,17 +5774,33 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.LightGray;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label53);
+            this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.comboBox25);
             this.panel7.Controls.Add(this.label28);
-            this.panel7.Controls.Add(this.textBox2);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.portTextBox);
+            this.panel7.Controls.Add(this.statusLabel);
+            this.panel7.Controls.Add(this.recipTextBox);
             this.panel7.Controls.Add(this.label38);
+            this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.label50);
-            this.panel7.Controls.Add(this.textBox7);
+            this.panel7.Controls.Add(this.destipTextBox);
             this.panel7.Location = new System.Drawing.Point(13, 16);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(371, 129);
+            this.panel7.Size = new System.Drawing.Size(411, 165);
             this.panel7.TabIndex = 47;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(21, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Controller";
             // 
             // label53
             // 
@@ -5777,13 +5811,22 @@
             this.label53.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(238, 44);
+            this.label53.Location = new System.Drawing.Point(283, 44);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(124, 26);
+            this.label53.Size = new System.Drawing.Size(119, 26);
             this.label53.TabIndex = 48;
             this.label53.Text = "CONNECTION";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label53.UseWaitCursor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(106, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "--------";
             // 
             // comboBox25
             // 
@@ -5797,11 +5840,12 @@
             "SERIAL",
             "NULL",
             "N/A"});
-            this.comboBox25.Location = new System.Drawing.Point(238, 73);
+            this.comboBox25.Location = new System.Drawing.Point(283, 73);
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(124, 21);
+            this.comboBox25.Size = new System.Drawing.Size(119, 21);
             this.comboBox25.TabIndex = 47;
             this.comboBox25.UseWaitCursor = true;
+            this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
             // 
             // label28
             // 
@@ -5812,24 +5856,50 @@
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(160, 44);
+            this.label28.Location = new System.Drawing.Point(178, 44);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(58, 26);
+            this.label28.Size = new System.Drawing.Size(98, 26);
             this.label28.TabIndex = 46;
             this.label28.Text = "PORT";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label28.UseWaitCursor = true;
             this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
-            // textBox2
+            // label8
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(160, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(58, 21);
-            this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "2014";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(21, 127);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Status";
+            // 
+            // portTextBox
+            // 
+            this.portTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.portTextBox.Location = new System.Drawing.Point(178, 73);
+            this.portTextBox.Name = "portTextBox";
+            this.portTextBox.Size = new System.Drawing.Size(58, 21);
+            this.portTextBox.TabIndex = 45;
+            this.portTextBox.Text = "2014";
+            this.portTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Location = new System.Drawing.Point(106, 127);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(39, 13);
+            this.statusLabel.TabIndex = 12;
+            this.statusLabel.Text = "--------";
+            // 
+            // recipTextBox
+            // 
+            this.recipTextBox.Location = new System.Drawing.Point(107, 104);
+            this.recipTextBox.Name = "recipTextBox";
+            this.recipTextBox.Size = new System.Drawing.Size(127, 20);
+            this.recipTextBox.TabIndex = 5;
             // 
             // label38
             // 
@@ -5848,25 +5918,36 @@
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label38.UseWaitCursor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(21, 107);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Receiving IP";
+            // 
             // label50
             // 
             this.label50.BackColor = System.Drawing.Color.DarkGray;
             this.label50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label50.Location = new System.Drawing.Point(0, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(371, 28);
+            this.label50.Size = new System.Drawing.Size(410, 28);
             this.label50.TabIndex = 33;
             this.label50.Text = "CONNECTION";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox7
+            // destipTextBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(20, 73);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 21);
-            this.textBox7.TabIndex = 29;
-            this.textBox7.Text = "192.168.1.177";
+            this.destipTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.destipTextBox.Location = new System.Drawing.Point(20, 73);
+            this.destipTextBox.Name = "destipTextBox";
+            this.destipTextBox.Size = new System.Drawing.Size(125, 21);
+            this.destipTextBox.TabIndex = 29;
+            this.destipTextBox.Text = "192.168.1.177";
+            this.destipTextBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // panel6
             // 
@@ -5874,18 +5955,18 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.RTC_Lable);
-            this.panel6.Controls.Add(this.RTCW_checkBox);
+            this.panel6.Controls.Add(this.RTC_checkBox);
             this.panel6.Controls.Add(this.comboBox4);
             this.panel6.Controls.Add(this.comboBox29);
-            this.panel6.Controls.Add(this.label46);
+            this.panel6.Controls.Add(this.RTC_MINUTE_Lable);
             this.panel6.Controls.Add(this.comboBox30);
-            this.panel6.Controls.Add(this.label45);
-            this.panel6.Controls.Add(this.label47);
+            this.panel6.Controls.Add(this.RTC_HOUR_Lable);
+            this.panel6.Controls.Add(this.RTC_YEAR_Lable);
             this.panel6.Controls.Add(this.comboBox3);
-            this.panel6.Controls.Add(this.label48);
-            this.panel6.Controls.Add(this.label49);
+            this.panel6.Controls.Add(this.RTC_DAY_Lable);
+            this.panel6.Controls.Add(this.RTC_MONTH_Lable);
             this.panel6.Controls.Add(this.comboBox31);
-            this.panel6.Location = new System.Drawing.Point(14, 151);
+            this.panel6.Location = new System.Drawing.Point(14, 187);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(371, 129);
             this.panel6.TabIndex = 46;
@@ -5911,16 +5992,16 @@
             this.RTC_Lable.Text = "REAL TIME CLOCK";
             this.RTC_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // RTCW_checkBox
+            // RTC_checkBox
             // 
-            this.RTCW_checkBox.AutoSize = true;
-            this.RTCW_checkBox.Location = new System.Drawing.Point(23, 95);
-            this.RTCW_checkBox.Name = "RTCW_checkBox";
-            this.RTCW_checkBox.Size = new System.Drawing.Size(157, 17);
-            this.RTCW_checkBox.TabIndex = 44;
-            this.RTCW_checkBox.Text = "ENABLE RTC UPDATE";
-            this.RTCW_checkBox.UseVisualStyleBackColor = true;
-            this.RTCW_checkBox.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            this.RTC_checkBox.AutoSize = true;
+            this.RTC_checkBox.Location = new System.Drawing.Point(23, 95);
+            this.RTC_checkBox.Name = "RTC_checkBox";
+            this.RTC_checkBox.Size = new System.Drawing.Size(157, 17);
+            this.RTC_checkBox.TabIndex = 44;
+            this.RTC_checkBox.Text = "ENABLE RTC UPDATE";
+            this.RTC_checkBox.UseVisualStyleBackColor = true;
+            this.RTC_checkBox.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // comboBox4
             // 
@@ -6011,22 +6092,22 @@
             this.comboBox29.UseWaitCursor = true;
             this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.comboBox29_SelectedIndexChanged);
             // 
-            // label46
+            // RTC_MINUTE_Lable
             // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RTC_MINUTE_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.BackColor = System.Drawing.Color.CadetBlue;
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(291, 35);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(60, 26);
-            this.label46.TabIndex = 36;
-            this.label46.Text = "MINUTE";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label46.UseWaitCursor = true;
+            this.RTC_MINUTE_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.RTC_MINUTE_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_MINUTE_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTC_MINUTE_Lable.ForeColor = System.Drawing.Color.Black;
+            this.RTC_MINUTE_Lable.Location = new System.Drawing.Point(291, 35);
+            this.RTC_MINUTE_Lable.Name = "RTC_MINUTE_Lable";
+            this.RTC_MINUTE_Lable.Size = new System.Drawing.Size(60, 26);
+            this.RTC_MINUTE_Lable.TabIndex = 36;
+            this.RTC_MINUTE_Lable.Text = "MINUTE";
+            this.RTC_MINUTE_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_MINUTE_Lable.UseWaitCursor = true;
             // 
             // comboBox30
             // 
@@ -6054,39 +6135,39 @@
             this.comboBox30.UseWaitCursor = true;
             this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged);
             // 
-            // label45
+            // RTC_HOUR_Lable
             // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RTC_HOUR_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.BackColor = System.Drawing.Color.CadetBlue;
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(225, 35);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(60, 26);
-            this.label45.TabIndex = 37;
-            this.label45.Text = "HOUR";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label45.UseWaitCursor = true;
+            this.RTC_HOUR_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.RTC_HOUR_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_HOUR_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTC_HOUR_Lable.ForeColor = System.Drawing.Color.Black;
+            this.RTC_HOUR_Lable.Location = new System.Drawing.Point(225, 35);
+            this.RTC_HOUR_Lable.Name = "RTC_HOUR_Lable";
+            this.RTC_HOUR_Lable.Size = new System.Drawing.Size(60, 26);
+            this.RTC_HOUR_Lable.TabIndex = 37;
+            this.RTC_HOUR_Lable.Text = "HOUR";
+            this.RTC_HOUR_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_HOUR_Lable.UseWaitCursor = true;
             // 
-            // label47
+            // RTC_YEAR_Lable
             // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RTC_YEAR_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label47.BackColor = System.Drawing.Color.CadetBlue;
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(158, 35);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(60, 26);
-            this.label47.TabIndex = 42;
-            this.label47.Text = "YEAR";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label47.UseWaitCursor = true;
+            this.RTC_YEAR_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.RTC_YEAR_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_YEAR_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTC_YEAR_Lable.ForeColor = System.Drawing.Color.Black;
+            this.RTC_YEAR_Lable.Location = new System.Drawing.Point(158, 35);
+            this.RTC_YEAR_Lable.Name = "RTC_YEAR_Lable";
+            this.RTC_YEAR_Lable.Size = new System.Drawing.Size(60, 26);
+            this.RTC_YEAR_Lable.TabIndex = 42;
+            this.RTC_YEAR_Lable.Text = "YEAR";
+            this.RTC_YEAR_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_YEAR_Lable.UseWaitCursor = true;
             // 
             // comboBox3
             // 
@@ -6162,39 +6243,39 @@
             this.comboBox3.UseWaitCursor = true;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // label48
+            // RTC_DAY_Lable
             // 
-            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RTC_DAY_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label48.BackColor = System.Drawing.Color.CadetBlue;
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(23, 35);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(60, 26);
-            this.label48.TabIndex = 43;
-            this.label48.Text = "DAY";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label48.UseWaitCursor = true;
+            this.RTC_DAY_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.RTC_DAY_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_DAY_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTC_DAY_Lable.ForeColor = System.Drawing.Color.Black;
+            this.RTC_DAY_Lable.Location = new System.Drawing.Point(23, 35);
+            this.RTC_DAY_Lable.Name = "RTC_DAY_Lable";
+            this.RTC_DAY_Lable.Size = new System.Drawing.Size(60, 26);
+            this.RTC_DAY_Lable.TabIndex = 43;
+            this.RTC_DAY_Lable.Text = "DAY";
+            this.RTC_DAY_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_DAY_Lable.UseWaitCursor = true;
             // 
-            // label49
+            // RTC_MONTH_Lable
             // 
-            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RTC_MONTH_Lable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label49.BackColor = System.Drawing.Color.CadetBlue;
-            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(91, 35);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(60, 26);
-            this.label49.TabIndex = 41;
-            this.label49.Text = "MONTH";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label49.UseWaitCursor = true;
+            this.RTC_MONTH_Lable.BackColor = System.Drawing.Color.CadetBlue;
+            this.RTC_MONTH_Lable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.RTC_MONTH_Lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RTC_MONTH_Lable.ForeColor = System.Drawing.Color.Black;
+            this.RTC_MONTH_Lable.Location = new System.Drawing.Point(91, 35);
+            this.RTC_MONTH_Lable.Name = "RTC_MONTH_Lable";
+            this.RTC_MONTH_Lable.Size = new System.Drawing.Size(60, 26);
+            this.RTC_MONTH_Lable.TabIndex = 41;
+            this.RTC_MONTH_Lable.Text = "MONTH";
+            this.RTC_MONTH_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RTC_MONTH_Lable.UseWaitCursor = true;
             // 
             // comboBox31
             // 
@@ -6411,8 +6492,8 @@
             this.panel37.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).EndInit();
             this.tabPage10.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -6633,31 +6714,31 @@
         private System.Windows.Forms.TrackBar trackBar12;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label Slave_ADD_checkBox;
-        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.Label SLAVE_ADD2_Lable;
+        private System.Windows.Forms.Label Slave_ADD_Lable;
+        private System.Windows.Forms.CheckBox SLAVEADD_checkBox;
         private System.Windows.Forms.ComboBox comboBox55;
-        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label SLAVE_ADD_PH_Lable;
         private System.Windows.Forms.ComboBox comboBox61;
-        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label SLAVE_ADD1_Lable;
         private System.Windows.Forms.ComboBox comboBox62;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox destipTextBox;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label RTC_Lable;
-        private System.Windows.Forms.CheckBox RTCW_checkBox;
+        private System.Windows.Forms.CheckBox RTC_checkBox;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox29;
-        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label RTC_MINUTE_Lable;
         private System.Windows.Forms.ComboBox comboBox30;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label RTC_HOUR_Lable;
+        private System.Windows.Forms.Label RTC_YEAR_Lable;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label RTC_DAY_Lable;
+        private System.Windows.Forms.Label RTC_MONTH_Lable;
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.RichTextBox richTextBox1;
@@ -6666,28 +6747,35 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox portTextBox;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.ComboBox comboBox25;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem timersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lEDChannelsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button UDP_CREATE_PACKET_BUTTON;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Button openPort;
+        private System.Windows.Forms.Button Disconnect_button;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Connect_button;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label statusLabel;
+        private System.Windows.Forms.TextBox recipTextBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 

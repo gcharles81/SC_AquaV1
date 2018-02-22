@@ -18,7 +18,7 @@ namespace SC_AquaV1
         char UDP_DELIMINER = ':';//
         char UDP_START = ' ';  //// A-Z
         int UDP_FUNCT = 0; //// 0-255
-        String[] UDP_STRING_COMBINED =  new String [8];
+        String[] UDP_STRING_COMBINED = new String[8];
         String[] TEMP_STRING_DATA = new String[7];
         String EMPTY_UDP = "K:0:0:0:0:0:0:0";
         Char UDP_Timers_Digit_00 = ' ';
@@ -203,54 +203,54 @@ namespace SC_AquaV1
         {
             InitializeComponent();
             FOLDERS();
-            comboBox49.SelectedIndex  = 0 ;
-           
+            comboBox49.SelectedIndex = 0;
+
         }
 
 
-       
+
         /// Create folders if not found
-        
-private  void FOLDERS() {
-				 
-        String path18 = "config";
-  
-        if ( Directory.Exists( path18 ) )    {
 
-       }
-        else{DirectoryInfo di = Directory.CreateDirectory(path18);
-      }
-}
-/// <summary>
-/// /
+        private void FOLDERS() {
 
-/// <param name="e"></param>
-/// ///////////////////////////////////////////////////////////////////////////////////////////////////
-private void RGB_config_info() {
-    /*
-			StreamWriter outFile = new StreamWriter("config/RGBCONFIG.txt");
-			outFile.Write("\n");
-			outFile.Write("//");
-			outFile.Write(DateTime.Now );
-		    outFile.Write("\n");
-			outFile.Write("//File format created by Charles Galea 2016.");
-		    outFile.Write("\n");
-			outFile.Write("//This file consists of all RGB4 pwm values.");
-		    outFile.Write("\n");
-			outFile.Write("//It is supported from SC_AquaV1 onwards ");
-			outFile.Write("\n");
-			outFile.Write("//0 = OFF  while 255 = MAX VALUE");
-			outFile.Write("\n");
-			outFile.Write("\n");
-    */
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
-    IniFile ini = new IniFile("config/rgb.ini");
+            String path18 = "config";
 
-    ini.IniWriteValue("Info RGB", "File info ", "//File format created by Charles Galea 2018.");
-    ini.IniWriteValue("Info RGB", "File Created ", DateTime.Now.ToString());
+            if (Directory.Exists(path18)) {
 
-    
-   			if (ACTIVATE_RGB1 == true){
+            }
+            else { DirectoryInfo di = Directory.CreateDirectory(path18);
+            }
+        }
+        /// <summary>
+        /// /
+
+        /// <param name="e"></param>
+        /// ///////////////////////////////////////////////////////////////////////////////////////////////////
+        private void RGB_config_info() {
+            /*
+                    StreamWriter outFile = new StreamWriter("config/RGBCONFIG.txt");
+                    outFile.Write("\n");
+                    outFile.Write("//");
+                    outFile.Write(DateTime.Now );
+                    outFile.Write("\n");
+                    outFile.Write("//File format created by Charles Galea 2016.");
+                    outFile.Write("\n");
+                    outFile.Write("//This file consists of all RGB4 pwm values.");
+                    outFile.Write("\n");
+                    outFile.Write("//It is supported from SC_AquaV1 onwards ");
+                    outFile.Write("\n");
+                    outFile.Write("//0 = OFF  while 255 = MAX VALUE");
+                    outFile.Write("\n");
+                    outFile.Write("\n");
+            */
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
+            IniFile ini = new IniFile("config/rgb.ini");
+
+            ini.IniWriteValue("Info RGB", "File info ", "//File format created by Charles Galea 2018.");
+            ini.IniWriteValue("Info RGB", "File Created ", DateTime.Now.ToString());
+
+
+            if (ACTIVATE_RGB1 == true) {
 
                 String RED1 = label1.Text;
                 ini.IniWriteValue("RGB1", "Red", RED1);
@@ -260,15 +260,15 @@ private void RGB_config_info() {
 
                 String BLUE1 = label3.Text;
                 ini.IniWriteValue("RGB1", "Blue", BLUE1);
-            
+
                 ini.IniWriteValue("RGB1", "Status", "true");
 
-			}
+            }
 
-		    else if (ACTIVATE_RGB1 == false){
+            else if (ACTIVATE_RGB1 == false) {
 
                 String RED1 = label1.Text;
-                ini.IniWriteValue("RGB1", "Red","0");
+                ini.IniWriteValue("RGB1", "Red", "0");
 
                 String GREEN1 = label2.Text;
                 ini.IniWriteValue("RGB1", "Green", "0");
@@ -277,12 +277,12 @@ private void RGB_config_info() {
                 ini.IniWriteValue("RGB1", "Blue", "0");
 
                 ini.IniWriteValue("RGB1", "Status", "false");
-			 }
-			
+            }
 
 
-			
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
             if (ACTIVATE_RGB2 == true)
             {
 
@@ -313,7 +313,7 @@ private void RGB_config_info() {
 
                 ini.IniWriteValue("RGB2", "Status", "false");
             }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (ACTIVATE_RGB3 == true)
             {
 
@@ -344,7 +344,7 @@ private void RGB_config_info() {
 
                 ini.IniWriteValue("RGB3", "Status", "false");
             }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (ACTIVATE_RGB4 == true)
             {
 
@@ -375,34 +375,34 @@ private void RGB_config_info() {
 
                 ini.IniWriteValue("RGB4", "Status", "false");
             }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-			
-			if ((DEBUG == true) & (NORMAL_MODE == false) & (LED_TEST_DELAY == true)){
+
+            if ((DEBUG == true) & (NORMAL_MODE == false) & (LED_TEST_DELAY == true)) {
 
                 String delay1 = comboBox49.Text;
-                ini.IniWriteValue("LED MODE", "Debug","true");
+                ini.IniWriteValue("LED MODE", "Debug", "true");
                 ini.IniWriteValue("LED MODE", "Normal", "false");
                 ini.IniWriteValue("LED MODE", "Delay", delay1);
-			}
+            }
 
-		    else if ((DEBUG == false) & (NORMAL_MODE == true )){
+            else if ((DEBUG == false) & (NORMAL_MODE == true)) {
                 String delay1 = comboBox49.Text;
                 ini.IniWriteValue("LED MODE", "Debug", "false");
                 ini.IniWriteValue("LED MODE", "Normal", "true");
                 ini.IniWriteValue("LED MODE", "Delay", delay1);
-			 }
-
-			
-
-			richTextBox1.Text += (DateTime.Now );
-			richTextBox1.Text += ("  ");		
-			richTextBox1.Text += " RGB Config file generated successfully \r\n";
-		 
-		 }
+            }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
+            richTextBox1.Text += (DateTime.Now);
+            richTextBox1.Text += ("  ");
+            richTextBox1.Text += " RGB Config file generated successfully \r\n";
+
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////
         private void Exit_Button_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -465,7 +465,7 @@ private void RGB_config_info() {
                 ACTIVATE_SUNSET = false;
             }
             ///////////////////////////////daytime 1 main title color change 
-            if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true)& (Day1_checkBox.Checked == true ))
+            if ((ACTIVATE_DAY1 == true) & (Day1HON == true) & (Day1MON == true) & (Day1HOFF == true) & (Day1MOFF == true) & (Day1_checkBox.Checked == true))
             {
 
                 label57.BackColor = System.Drawing.Color.DarkOrange;
@@ -479,7 +479,7 @@ private void RGB_config_info() {
             }
 
             ///////////////////////////////daytime 2 main title color change 
-            if ((ACTIVATE_DAY2 == true) & (Day2HON == true) & (Day2MON == true) & (Day2HOFF == true) & (Day2MOFF == true)& (Day2_checkBox.Checked == true))
+            if ((ACTIVATE_DAY2 == true) & (Day2HON == true) & (Day2MON == true) & (Day2HOFF == true) & (Day2MOFF == true) & (Day2_checkBox.Checked == true))
             {
                 ACTIVATE_DAY2 = true;
                 label23.BackColor = System.Drawing.Color.DarkOrange;
@@ -492,7 +492,7 @@ private void RGB_config_info() {
             }
 
             ///////////////////////////////daytime 3 main title color change 
-            if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true) & (Day3_checkBox.Checked==true))
+            if ((ACTIVATE_DAY3 == true) & (Day3HON == true) & (Day3MON == true) & (Day3HOFF == true) & (Day3MOFF == true) & (Day3_checkBox.Checked == true))
             {
                 ACTIVATE_DAY3 = true;
                 label18.BackColor = System.Drawing.Color.DarkOrange;
@@ -555,7 +555,7 @@ private void RGB_config_info() {
             else
             {
                 ACTIVATE_NIGHT1 = false;
-                   NIGHT1_Lable.BackColor = System.Drawing.Color.DarkGray;
+                NIGHT1_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////UV_STERILIZER 1 title color change 
@@ -568,7 +568,7 @@ private void RGB_config_info() {
             else
             {
                 ACTIVATE_UV1 = false;
-                   UV1_Lable.BackColor = System.Drawing.Color.DarkGray;
+                UV1_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////UV_STERILIZER 2 title color change 
@@ -581,11 +581,11 @@ private void RGB_config_info() {
             else
             {
                 ACTIVATE_UV2 = false;
-                   UV2_Lable.BackColor = System.Drawing.Color.DarkGray;
+                UV2_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////RTC UPDATE title color change 
-            if ((RTC_ACTIVATE == true) & (day == true) & (month == true) & (year == true) & (hour == true) & (minute == true))
+            if ((RTC_ACTIVATE == true) & (day == true) & (month == true) & (year == true) & (hour == true) & (minute == true) & (RTC_checkBox.Checked == true))
             {
                 RTC_Lable.BackColor = System.Drawing.Color.DarkOrange;
                 RTC_ACTIVATE = true;
@@ -599,16 +599,16 @@ private void RGB_config_info() {
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////SLAVE number UPDATE title color change 
-            if ((SLAVE_ADD_ACTIVATE == true) & (RGB1_6 == true) & (RGB7_12 == true) & (PH_TEMP == true))
+            if ((SLAVE_ADD_ACTIVATE == true) & (RGB1_6 == true) & (RGB7_12 == true) & (PH_TEMP == true) && (SLAVEADD_checkBox.Checked == true))
             {
                 SLAVE_ADD_ACTIVATE = true;
-                Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkOrange;
+                Slave_ADD_Lable.BackColor = System.Drawing.Color.DarkOrange;
             }
 
             else
             {
                 SLAVE_ADD_ACTIVATE = false;
-                Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkGray;
+                Slave_ADD_Lable.BackColor = System.Drawing.Color.DarkGray;
             }
             ///////////////////////////////LED TEST  UPDATE title color change # 1
             if ((NORMAL_MODE == true) || (DEBUG == true))
@@ -624,18 +624,18 @@ private void RGB_config_info() {
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
-            	 if( Sunrise_checkBox.Checked == true){
-		ACTIVATE_SUNRISE = true;
-			 richTextBox1.Text += (DateTime.Now );
-			 richTextBox1.Text += ("  ");
-		richTextBox1.Text += " sunrise activated \r\n";
-	 }
-    else{
-		ACTIVATE_SUNRISE = false;
-			 richTextBox1.Text += (DateTime.Now );
-			 richTextBox1.Text += ("  ");
-		richTextBox1.Text += " sunrise dis activated \r\n";
-	  }
+            if (Sunrise_checkBox.Checked == true) {
+                ACTIVATE_SUNRISE = true;
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " sunrise activated \r\n";
+            }
+            else {
+                ACTIVATE_SUNRISE = false;
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " sunrise dis activated \r\n";
+            }
         }
         //////////////////////////SUNSET////////////////////////////////////////////////////////////////////////////////////
         private void Sunset_CheckedChanged(object sender, EventArgs e)
@@ -656,7 +656,7 @@ private void RGB_config_info() {
                 richTextBox1.Text += " sunset dis activated \r\n";
             }
         }
-        
+
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1296,12 +1296,12 @@ private void RGB_config_info() {
         private void button1_Click(object sender, EventArgs e)
         {
             RGB_config_info();
-            
+
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-                    }
+        }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -1311,19 +1311,19 @@ private void RGB_config_info() {
         private void radioButton1_Click(object sender, EventArgs e)
         {
             DEBUG = true;
-			 NORMAL_MODE = false;
-			 richTextBox1.Text += (DateTime.Now );
-			 richTextBox1.Text += ("  ");
-			 richTextBox1.Text += " RGB Led channels test mode activated \r\n";
+            NORMAL_MODE = false;
+            richTextBox1.Text += (DateTime.Now);
+            richTextBox1.Text += ("  ");
+            richTextBox1.Text += " RGB Led channels test mode activated \r\n";
         }
 
         private void radioButton2_Click(object sender, EventArgs e)
         {
             DEBUG = false;
-			 NORMAL_MODE = true;
-			 richTextBox1.Text += (DateTime.Now );
-			 richTextBox1.Text += ("  ");
-			 richTextBox1.Text += " RGB Led channels normal mode activated  \r\n";
+            NORMAL_MODE = true;
+            richTextBox1.Text += (DateTime.Now);
+            richTextBox1.Text += ("  ");
+            richTextBox1.Text += " RGB Led channels normal mode activated  \r\n";
         }
 
         private void comboBox49_SelectedIndexChanged(object sender, EventArgs e)
@@ -1339,8 +1339,8 @@ private void RGB_config_info() {
 
         private void button14_Click(object sender, EventArgs e)
         {
-           //IniFile ini = new IniFile("config/rgb.ini");
-          //  ini.IniWriteValue("RGB3", "Red","DGSDG");
+            //IniFile ini = new IniFile("config/rgb.ini");
+            //  ini.IniWriteValue("RGB3", "Red","DGSDG");
             Load_Saved_RGB_Settings();
         }
 
@@ -1359,8 +1359,7 @@ private void RGB_config_info() {
 
             if (ACTIVATE_SUNRISE)
             {
-                UDP_Timers_Digit_01 = 1;
-                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();
+
 
                 String hourOn1 = comboBox16.Text;
                 ini.IniWriteValue("Sunrise", "hourOn1", hourOn1);
@@ -1654,8 +1653,8 @@ private void RGB_config_info() {
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      
-                    ///////////////////////////////GENERATE DAY 3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
+
+            ///////////////////////////////GENERATE DAY 3 TEXT FILES ON & OFF///////////////////////////////////////////////////////////////
             if (ACTIVATE_DAY3)
             {
 
@@ -2148,144 +2147,8 @@ private void RGB_config_info() {
             }
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////GENERATE SLAVE UPDATE FILE///////////////////////////////////////////////////////////////
-            if (SLAVE_ADD_ACTIVATE)
-            {
-
-                String RTC1 = comboBox62.Text;
-                ini.IniWriteValue("Slaves", "ADD 01", RTC1);
-                this.progressBar1.Increment(25);
-
-                String RTC2 = comboBox55.Text;
-                ini.IniWriteValue("Slaves", "ADD 02", RTC2);
-                this.progressBar1.Increment(25);
-
-                String RTC3 = comboBox61.Text;
-                ini.IniWriteValue("Slaves", "ADD 03", RTC3);
-                this.progressBar1.Increment(25);
-
-                ////////UDP String GEneration
-
-                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
-                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
-
-                UDP_Timers_Digit_01 = 11; // 11 = SLAVES  PARAMETER
-                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
-
-                UDP_STRING_COMBINED[2] = RTC1.ToString(); //UDP SLAVE 1 address
-
-                UDP_STRING_COMBINED[3] = RTC2.ToString();//UDP SLAVE 2 address
-
-                UDP_STRING_COMBINED[4] = RTC3.ToString();//UDP SLAVE 3 address
-
-                UDP_STRING_COMBINED[5] = "0".ToString();//NOT USED by UDP Slaves  type
-
-                UDP_STRING_COMBINED[6] = "0".ToString();//NOT USED by UDP Slaves  type
-                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
-
-                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
-                var builder = new StringBuilder();
-                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
-                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
-
-                ////UDP String Creation Ends  
-                ini.IniWriteValue("Slaves Update", "Status", "true");
-                ini.IniWriteValue("Slaves Update", "UDP_PACKET", result);//UDP string Write in Config file
 
 
-                richTextBox1.Text += (DateTime.Now);
-                richTextBox1.Text += ("  ");
-                richTextBox1.Text += "Slaves addresses generated succesfully \r\n";
-
-            }
-
-            else
-            {
-                ini.IniWriteValue("Slaves Update", "Status", "false");
-                ini.IniWriteValue("Slaves Update", "ADD 01", "0");
-                ini.IniWriteValue("Slaves Update", "ADD 02", "0");
-                ini.IniWriteValue("Slaves Update", "ADD 03", "0");
-                ini.IniWriteValue("Slaves Update", "UDP_PACKET", EMPTY_UDP);
-
-                richTextBox1.Text += (DateTime.Now);
-                richTextBox1.Text += ("  ");
-                richTextBox1.Text += "Slaves addresses are disabled \r\n";
-
-            }
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////GENERATE RTC UPDATE FILE///////////////////////////////////////////////////////////////
-            if (RTC_ACTIVATE)
-            {
-
-                String ADDRESS1 = comboBox31.Text;
-                ini.IniWriteValue("RTC", "Day", ADDRESS1);
-                this.progressBar1.Increment(25);
-
-                String ADDRESS2 = comboBox29.Text;
-                ini.IniWriteValue("RTC", "Month", ADDRESS2);
-                this.progressBar1.Increment(25);
-
-                String ADDRESS3 = comboBox30.Text;
-                ini.IniWriteValue("RTC", "Year", ADDRESS3);
-                this.progressBar1.Increment(25);
-
-                String ADDRESS4 = comboBox4.Text;
-                ini.IniWriteValue("RTC", "Hour", ADDRESS4);
-                this.progressBar1.Increment(25);
-
-                String ADDRESS5 = comboBox3.Text;
-                ini.IniWriteValue("RTC", "Minute", ADDRESS5);
-                this.progressBar1.Increment(25);
-
-                ////////UDP String GEneration
-
-                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
-                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
-
-                UDP_Timers_Digit_01 = 12; // 12 = RTC  PARAMETER
-                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
-
-                UDP_STRING_COMBINED[2] = ADDRESS1.ToString(); //UDP SLAVE 1 address
-
-                UDP_STRING_COMBINED[3] = ADDRESS2.ToString();//UDP SLAVE 2 address
-
-                UDP_STRING_COMBINED[4] = ADDRESS3.ToString();//UDP SLAVE 3 address
-
-                UDP_STRING_COMBINED[5] = ADDRESS4.ToString();//NOT USED by UDP Slaves  type
-
-                UDP_STRING_COMBINED[6] = ADDRESS5.ToString();//NOT USED by UDP Slaves  type
-                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
-
-                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
-                var builder = new StringBuilder();
-                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
-                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
-
-                ////UDP String Creation Ends  
-                ini.IniWriteValue("RTC update", "Status", "true");
-                ini.IniWriteValue("RTC update", "UDP_PACKET", result);//UDP string Write in Config file
-
-                richTextBox1.Text += (DateTime.Now);
-                richTextBox1.Text += ("  ");
-                richTextBox1.Text += "RTC Data generated succesfully \r\n";
-
-            }
-
-            else
-            {
-                ini.IniWriteValue("RTC update", "Status", "false");
-                ini.IniWriteValue("RTC update", "Day", "0");
-                ini.IniWriteValue("RTC update" , "Month", "0");
-                ini.IniWriteValue("RTC update", "Year", "0");
-                ini.IniWriteValue("RTC update", "Hour", "0");
-                ini.IniWriteValue("RTC update", "Minute", "0");
-                ini.IniWriteValue("RTC update", "UDP_PACKET", EMPTY_UDP);
-
-                richTextBox1.Text += (DateTime.Now);
-                richTextBox1.Text += ("  ");
-                richTextBox1.Text += "RTC update is disabled \r\n";
-
-            }
         }
 
 
@@ -2314,10 +2177,10 @@ private void RGB_config_info() {
                 switch (i)
                 {
 
-                    
-                   // case 1:
-                     //   UDP_STRING_COMBINED[i] = UDP_Timers_Digit_01.ToString();
-                       // break;
+
+                    // case 1:
+                    //   UDP_STRING_COMBINED[i] = UDP_Timers_Digit_01.ToString();
+                    // break;
 
                     case 2:
                         UDP_STRING_COMBINED[i] = UDP_Timers_Digit_02.ToString();
@@ -2343,7 +2206,7 @@ private void RGB_config_info() {
                         break;
                 }
 
-                
+
             }
 
             string.Join(":", UDP_STRING_COMBINED);
@@ -2368,7 +2231,7 @@ private void RGB_config_info() {
             }
             */
             richTextBox1.Text += "String GEnerated \r\n";
-          
+
         }
         private void button8_Click(object sender, EventArgs e)
         {
@@ -2382,9 +2245,9 @@ private void RGB_config_info() {
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
-            if (RTCW_checkBox.Checked == true)
+            if (RTC_checkBox.Checked == true)
             {
-                 RTC_ACTIVATE = true;
+                RTC_ACTIVATE = true;
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " RTC Update activated \r\n";
@@ -2401,14 +2264,32 @@ private void RGB_config_info() {
 
         private void checkBox18_CheckedChanged(object sender, EventArgs e)
         {
-            Slave_ADD_checkBox.BackColor = System.Drawing.Color.DarkOrange;
-            SLAVE_ADD_ACTIVATE = true;
+            if (SLAVEADD_checkBox.Checked == true)
+            {
+
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " SLAVE ADDRESS  Update activated \r\n";
+                SLAVE_ADD_ACTIVATE = true;
+            }
+
+            else
+            {
+
+
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " SLAVE ADDRESS  Update dis activated \r\n";
+                SLAVE_ADD_ACTIVATE = false;
+            }
+
+
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -2427,50 +2308,50 @@ private void RGB_config_info() {
 
         private void comboBox62_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label95.BackColor = System.Drawing.Color.DarkOrange;
+            SLAVE_ADD1_Lable.BackColor = System.Drawing.Color.DarkOrange;
             RGB1_6 = true;
-        
+
         }
 
         private void comboBox55_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label96.BackColor = System.Drawing.Color.DarkOrange;
+            SLAVE_ADD2_Lable.BackColor = System.Drawing.Color.DarkOrange;
             RGB7_12 = true;
         }
 
         private void comboBox61_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label92.BackColor = System.Drawing.Color.DarkOrange;
+            SLAVE_ADD_PH_Lable.BackColor = System.Drawing.Color.DarkOrange;
             PH_TEMP = true;
         }
 
         private void comboBox31_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label48.BackColor = System.Drawing.Color.DarkOrange;
+            RTC_DAY_Lable.BackColor = System.Drawing.Color.DarkOrange;
             day = true;
         }
 
         private void comboBox29_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label49.BackColor = System.Drawing.Color.DarkOrange;
+            RTC_MONTH_Lable.BackColor = System.Drawing.Color.DarkOrange;
             month = true;
         }
 
         private void comboBox30_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label47.BackColor = System.Drawing.Color.DarkOrange;
+            RTC_YEAR_Lable.BackColor = System.Drawing.Color.DarkOrange;
             year = true;
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label45.BackColor = System.Drawing.Color.DarkOrange;
+            RTC_HOUR_Lable.BackColor = System.Drawing.Color.DarkOrange;
             hour = true;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label46.BackColor = System.Drawing.Color.DarkOrange;
+            RTC_MINUTE_Lable.BackColor = System.Drawing.Color.DarkOrange;
             minute = true;
         }
 
@@ -2513,7 +2394,7 @@ private void RGB_config_info() {
 
             if (newMessage3 == "TRUE")
             {
-                checkBox1.Checked = true; 
+                checkBox1.Checked = true;
                 ACTIVATE_RGB1 = true;
                 RED1 = true;
                 BLUE1 = true;
@@ -2523,11 +2404,11 @@ private void RGB_config_info() {
                 richTextBox1.Text += " RGB CH1 activated \r\n";
                 label76.BackColor = System.Drawing.Color.DarkOrange;
                 RGB_COLOR1_panel52();
-                
+
             }
             else
             {
-                checkBox1.Checked = false; 
+                checkBox1.Checked = false;
                 ACTIVATE_RGB1 = false;
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2712,9 +2593,9 @@ private void RGB_config_info() {
             richTextBox1.Text += (DateTime.Now);
             richTextBox1.Text += ("  ");
             richTextBox1.Text += " config/rgb.ini file loaded \r\n";
-        
+
         }
-    private void Load_Saved_TIMERS_Settings()
+        private void Load_Saved_TIMERS_Settings()
         {
 
             IniParser parser = new IniParser("config/timers.ini");
@@ -2727,62 +2608,62 @@ private void RGB_config_info() {
             newMessage = parser.GetSetting("Sunrise", "hourOn1");//// Load Sunrise hourOn1 Stored values in timers.ini file 
             Parameters_test1 = Convert.ToInt32(newMessage);
             comboBox16.SelectedIndex = (Parameters_test1);
-            
+
 
 
             newMessage1 = parser.GetSetting("Sunrise", "minOn1");//// Load Sunrise minOn1 Stored values in timers.ini file 
             Parameters_test2 = Convert.ToInt32(newMessage1);
             comboBox13.SelectedIndex = Parameters_test2;
-           
+
 
 
 
             newMessage2 = parser.GetSetting("Sunrise", "hourOff1");//// Load Sunrise hourOff1 Stored values in timers.ini file 
             Parameters_test3 = Convert.ToInt32(newMessage2);
             comboBox14.SelectedIndex = Parameters_test3;
-           
+
 
             newMessage4 = parser.GetSetting("Sunrise", "minOff1");//// Load Sunrise minOff1 Stored values in timers.ini file 
             Parameters_test4 = Convert.ToInt32(newMessage4);
             comboBox15.SelectedIndex = Parameters_test4;
-           
-			
-			newMessage5 = parser.GetSetting("Sunrise", "duration");//// Load Sunrise duration Stored values in timers.ini file 
+
+
+            newMessage5 = parser.GetSetting("Sunrise", "duration");//// Load Sunrise duration Stored values in timers.ini file 
             Parameters_test5 = Convert.ToInt32(newMessage5);
-            comboBox1.SelectedIndex = Parameters_test5/30;
-            
-			
-			
+            comboBox1.SelectedIndex = Parameters_test5 / 30;
+
+
+
             newMessage3 = parser.GetSetting("Sunrise", "Status");//// Load Sunrise STATUS (true or false) Stored values in timers.ini file 
 
             if (newMessage3 == "TRUE")
             {
-                Sunrise_checkBox.Checked = true; 
+                Sunrise_checkBox.Checked = true;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Sunrise Timer activated \r\n";
-				ACTIVATE_SUNRISE = true;			
-				SunriseHON = true;
-				SunriseMON = true;
-				SunriseHOFF = true;
+                ACTIVATE_SUNRISE = true;
+                SunriseHON = true;
+                SunriseMON = true;
+                SunriseHOFF = true;
                 SunriseMOFF = true;
-				SRDUR = true;
+                SRDUR = true;
             }
             else
             {
-                Sunrise_checkBox.Checked = false; 
+                Sunrise_checkBox.Checked = false;
 
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
-                richTextBox1.Text += " Sunrise Timer CH1 disactivated \r\n";			
-				ACTIVATE_SUNRISE = false;			
-				SunriseHON = false;
-				SunriseMON = false;
-				SunriseHOFF = false;
+                richTextBox1.Text += " Sunrise Timer CH1 disactivated \r\n";
+                ACTIVATE_SUNRISE = false;
+                SunriseHON = false;
+                SunriseMON = false;
+                SunriseHOFF = false;
                 SunriseMOFF = false;
-				SRDUR = false;
-                
+                SRDUR = false;
+
                 SunriseHON_Lable.BackColor = System.Drawing.Color.CadetBlue;
                 SunriseMON_Lable.BackColor = System.Drawing.Color.CadetBlue;
                 SunriseMOFF_Lable.BackColor = System.Drawing.Color.CadetBlue;
@@ -2794,8 +2675,8 @@ private void RGB_config_info() {
             Parameters_test1 = 0;
             Parameters_test2 = 0;
             Parameters_test3 = 0;
-			Parameters_test4 = 0;
-			Parameters_test5 = 0;
+            Parameters_test4 = 0;
+            Parameters_test5 = 0;
 
 
 
@@ -2831,7 +2712,7 @@ private void RGB_config_info() {
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Sunset Timer activated \r\n";
-                ACTIVATE_SUNSET = true; 
+                ACTIVATE_SUNSET = true;
                 SunsetHON = true;
                 SunsetMON = true;
                 SunsetHOFF = true;
@@ -2864,7 +2745,7 @@ private void RGB_config_info() {
             Parameters_test3 = 0;
             Parameters_test4 = 0;
             Parameters_test5 = 0;
-	            //// Load Day 1 Stored values in timers.ini file 
+            //// Load Day 1 Stored values in timers.ini file 
 
             newMessage = parser.GetSetting("Day 1", "hourOn1");//// Load Day 1 hourOn1 Stored values in timers.ini file 
             Parameters_test1 = Convert.ToInt32(newMessage);
@@ -2891,12 +2772,12 @@ private void RGB_config_info() {
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Day 1 Timer activated \r\n";
-                ACTIVATE_DAY1 = true; 
+                ACTIVATE_DAY1 = true;
                 Day1HON = true;
                 Day1MON = true;
                 Day1HOFF = true;
                 Day1MOFF = true;
-            
+
             }
             else
             {
@@ -2910,7 +2791,7 @@ private void RGB_config_info() {
                 Day1MON = false;
                 Day1HOFF = false;
                 Day1MOFF = false;
-            
+
 
             }
 
@@ -2918,8 +2799,8 @@ private void RGB_config_info() {
             Parameters_test2 = 0;
             Parameters_test3 = 0;
             Parameters_test4 = 0;
-			
-                //// Load Day 2 Stored values in timers.ini file 
+
+            //// Load Day 2 Stored values in timers.ini file 
 
             newMessage = parser.GetSetting("Day 2", "hourOn1");//// Load Day 2 hourOn1 Stored values in timers.ini file 
             Parameters_test1 = Convert.ToInt32(newMessage);
@@ -2946,12 +2827,12 @@ private void RGB_config_info() {
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " Day 2 Timer activated \r\n";
-                ACTIVATE_DAY2 = true; 
+                ACTIVATE_DAY2 = true;
                 Day2HON = true;
                 Day2MON = true;
                 Day2HOFF = true;
                 Day2MOFF = true;
-            
+
             }
             else
             {
@@ -2965,7 +2846,7 @@ private void RGB_config_info() {
                 Day2MON = false;
                 Day2HOFF = false;
                 Day2MOFF = false;
-            
+
 
             }
 
@@ -3248,7 +3129,7 @@ private void RGB_config_info() {
             Parameters_test4 = 0;
 
 
-                    //// Load Neon 3 Stored values in timers.ini file 
+            //// Load Neon 3 Stored values in timers.ini file 
 
             newMessage = parser.GetSetting("Neon 3", "hourOn1");//// Load Neon 3 hourOn1 Stored values in timers.ini file 
             Parameters_test1 = Convert.ToInt32(newMessage);
@@ -3357,44 +3238,218 @@ private void RGB_config_info() {
             Parameters_test2 = 0;
             Parameters_test3 = 0;
             Parameters_test4 = 0;
-		
-    }
 
-    private void button2_Click_1(object sender, EventArgs e)
-    {
-        Load_Saved_TIMERS_Settings();
-    }
+        }
 
-    private void button10_Click_1(object sender, EventArgs e)
-    {
-        
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Load_Saved_TIMERS_Settings();
+        }
 
-       // if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
-       // {
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+
+
+            // if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
+            // {
             Generate_timers_config_file();
-               // CreateUDP_Timers_String();
-    //    }
-    }
+            // CreateUDP_Timers_String();
+            //    }
+        }
 
-    private void button11_Click(object sender, EventArgs e)
-    {
+        private void button11_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    private void button15_Click(object sender, EventArgs e)
-    {
-
-      
-    }
+        private void button15_Click(object sender, EventArgs e)
+        {
 
 
+        }
 
-    private void button16_Click(object sender, EventArgs e)
-    {
+
+
+        private void button16_Click(object sender, EventArgs e)
+        {
             CreateUDP_Timers_String();
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            Generate_AdvancedIO_config_file();
+        }
+
+        private void Generate_AdvancedIO_config_file()
+        {
+
+            //GENETATE Settings OF ALL AdvancedIO IN ONE FILE NAMED AdvancedIO.txt////////////////////////////////////////////////
+            // Includes the following RTC Update data , Slave Address Data , IP address , UDP Port 
+
+            IniFile ini = new IniFile("config/AdvancedIO.ini");// Create general file for all timer values CHGA 29/8/2016 
+
+            ini.IniWriteValue("AdvancedIO", "File info ", "//File format created by Charles Galea 2018.");
+            ini.IniWriteValue("AdvancedIO", "File Created ", DateTime.Now.ToString());
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //////////////////////////////GENERATE RTC UPDATE FILE///////////////////////////////////////////////////////////////
+            if (RTC_ACTIVATE)
+            {
+
+                String ADDRESS1 = comboBox31.Text;
+                ini.IniWriteValue("RTC", "Day", ADDRESS1);
+                this.progressBar1.Increment(25);
+
+                String ADDRESS2 = comboBox29.Text;
+                ini.IniWriteValue("RTC", "Month", ADDRESS2);
+                this.progressBar1.Increment(25);
+
+                String ADDRESS3 = comboBox30.Text;
+                ini.IniWriteValue("RTC", "Year", ADDRESS3);
+                this.progressBar1.Increment(25);
+
+                String ADDRESS4 = comboBox4.Text;
+                ini.IniWriteValue("RTC", "Hour", ADDRESS4);
+                this.progressBar1.Increment(25);
+
+                String ADDRESS5 = comboBox3.Text;
+                ini.IniWriteValue("RTC", "Minute", ADDRESS5);
+                this.progressBar1.Increment(25);
+
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 12; // 12 = RTC  PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+                UDP_STRING_COMBINED[2] = ADDRESS1.ToString(); //UDP SLAVE 1 address
+
+                UDP_STRING_COMBINED[3] = ADDRESS2.ToString();//UDP SLAVE 2 address
+
+                UDP_STRING_COMBINED[4] = ADDRESS3.ToString();//UDP SLAVE 3 address
+
+                UDP_STRING_COMBINED[5] = ADDRESS4.ToString();//NOT USED by UDP Slaves  type
+
+                UDP_STRING_COMBINED[6] = ADDRESS5.ToString();//NOT USED by UDP Slaves  type
+                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
+                ini.IniWriteValue("RTC", "Status", "true");
+                ini.IniWriteValue("RTC", "UDP_PACKET", result);//UDP string Write in Config file
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += "RTC Data generated succesfully \r\n";
+
+            }
+
+            else
+            {
+                ini.IniWriteValue("RTC", "Status", "false");
+                ini.IniWriteValue("RTC", "Day", "0");
+                ini.IniWriteValue("RTC", "Month", "0");
+                ini.IniWriteValue("RTC", "Year", "0");
+                ini.IniWriteValue("RTC", "Hour", "0");
+                ini.IniWriteValue("RTC", "Minute", "0");
+                ini.IniWriteValue("RTC", "UDP_PACKET", EMPTY_UDP);
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += "RTC update is disabled \r\n";
+
+            }
+            //////////////////////////////GENERATE SLAVE UPDATE FILE///////////////////////////////////////////////////////////////
+            if (SLAVE_ADD_ACTIVATE)
+            {
+
+                String RTC1 = comboBox62.Text;
+                ini.IniWriteValue("Slaves", "ADD 01", RTC1);
+                this.progressBar1.Increment(25);
+
+                String RTC2 = comboBox55.Text;
+                ini.IniWriteValue("Slaves", "ADD 02", RTC2);
+                this.progressBar1.Increment(25);
+
+                String RTC3 = comboBox61.Text;
+                ini.IniWriteValue("Slaves", "ADD 03", RTC3);
+                this.progressBar1.Increment(25);
+
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'A'; // A = UDP TIMER/SLAVES PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 11; // 11 = SLAVES  PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+                UDP_STRING_COMBINED[2] = RTC1.ToString(); //UDP SLAVE 1 address
+
+                UDP_STRING_COMBINED[3] = RTC2.ToString();//UDP SLAVE 2 address
+
+                UDP_STRING_COMBINED[4] = RTC3.ToString();//UDP SLAVE 3 address
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                UDP_STRING_COMBINED[6] = "0".ToString();//NOT USED by UDP Slaves  type
+                UDP_STRING_COMBINED[7] = "0".ToString();//NOT USED by UDP Slaves  type
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+                ////UDP String Creation Ends  
+                ini.IniWriteValue("Slaves", "Status", "true");
+                ini.IniWriteValue("Slaves", "UDP_PACKET", result);//UDP string Write in Config file
+
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += "Slaves addresses generated succesfully \r\n";
+
+            }
+
+            else
+            {
+                ini.IniWriteValue("Slaves", "Status", "false");
+                ini.IniWriteValue("Slaves", "ADD 01", "0");
+                ini.IniWriteValue("Slaves", "ADD 02", "0");
+                ini.IniWriteValue("Slaves", "ADD 03", "0");
+                ini.IniWriteValue("Slaves", "UDP_PACKET", EMPTY_UDP);
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += "Slaves addresses are disabled \r\n";
+
+            }
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        }
+
+        private void Day1HON_Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-
-
-    }
-
 }
