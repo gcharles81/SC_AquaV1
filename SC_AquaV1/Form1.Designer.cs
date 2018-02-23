@@ -274,16 +274,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.RTC_Lable = new System.Windows.Forms.Label();
             this.RTC_checkBox = new System.Windows.Forms.CheckBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.Hour_comboBox = new System.Windows.Forms.ComboBox();
+            this.Month_comboBox = new System.Windows.Forms.ComboBox();
             this.RTC_MINUTE_Lable = new System.Windows.Forms.Label();
-            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.Year_comboBox = new System.Windows.Forms.ComboBox();
             this.RTC_HOUR_Lable = new System.Windows.Forms.Label();
             this.RTC_YEAR_Lable = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.Minute_comboBox = new System.Windows.Forms.ComboBox();
             this.RTC_DAY_Lable = new System.Windows.Forms.Label();
             this.RTC_MONTH_Lable = new System.Windows.Forms.Label();
-            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.Day_comboBox = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button13 = new System.Windows.Forms.Button();
@@ -295,6 +295,7 @@
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label52 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -5430,8 +5431,6 @@
             // 
             this.tabPage10.BackColor = System.Drawing.Color.CadetBlue;
             this.tabPage10.Controls.Add(this.tabControl1);
-            this.tabPage10.Controls.Add(this.button11);
-            this.tabPage10.Controls.Add(this.button12);
             this.tabPage10.Controls.Add(this.panel50);
             this.tabPage10.Controls.Add(this.panel7);
             this.tabPage10.Controls.Add(this.panel6);
@@ -5533,11 +5532,11 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(15, 460);
+            this.button11.Location = new System.Drawing.Point(3, 130);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(169, 35);
+            this.button11.Size = new System.Drawing.Size(59, 35);
             this.button11.TabIndex = 50;
-            this.button11.Text = "Save  Files";
+            this.button11.Text = "Save";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
@@ -5547,11 +5546,11 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(217, 460);
+            this.button12.Location = new System.Drawing.Point(68, 130);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(169, 35);
+            this.button12.Size = new System.Drawing.Size(59, 35);
             this.button12.TabIndex = 49;
-            this.button12.Text = "Load  Files";
+            this.button12.Text = "Load";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
@@ -5560,6 +5559,8 @@
             this.panel50.BackColor = System.Drawing.Color.LightGray;
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel50.Controls.Add(this.button9);
+            this.panel50.Controls.Add(this.button11);
+            this.panel50.Controls.Add(this.button12);
             this.panel50.Controls.Add(this.SLAVE_ADD2_Lable);
             this.panel50.Controls.Add(this.Slave_ADD_Lable);
             this.panel50.Controls.Add(this.SLAVEADD_checkBox);
@@ -5570,17 +5571,18 @@
             this.panel50.Controls.Add(this.comboBox62);
             this.panel50.Location = new System.Drawing.Point(15, 325);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(371, 129);
+            this.panel50.Size = new System.Drawing.Size(371, 170);
             this.panel50.TabIndex = 48;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(257, 90);
+            this.button9.BackColor = System.Drawing.Color.OrangeRed;
+            this.button9.Location = new System.Drawing.Point(257, 131);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(109, 32);
             this.button9.TabIndex = 47;
             this.button9.Text = "OTA Update";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // SLAVE_ADD2_Lable
@@ -5953,19 +5955,20 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.button15);
             this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.RTC_Lable);
             this.panel6.Controls.Add(this.RTC_checkBox);
-            this.panel6.Controls.Add(this.comboBox4);
-            this.panel6.Controls.Add(this.comboBox29);
+            this.panel6.Controls.Add(this.Hour_comboBox);
+            this.panel6.Controls.Add(this.Month_comboBox);
             this.panel6.Controls.Add(this.RTC_MINUTE_Lable);
-            this.panel6.Controls.Add(this.comboBox30);
+            this.panel6.Controls.Add(this.Year_comboBox);
             this.panel6.Controls.Add(this.RTC_HOUR_Lable);
             this.panel6.Controls.Add(this.RTC_YEAR_Lable);
-            this.panel6.Controls.Add(this.comboBox3);
+            this.panel6.Controls.Add(this.Minute_comboBox);
             this.panel6.Controls.Add(this.RTC_DAY_Lable);
             this.panel6.Controls.Add(this.RTC_MONTH_Lable);
-            this.panel6.Controls.Add(this.comboBox31);
+            this.panel6.Controls.Add(this.Day_comboBox);
             this.panel6.Location = new System.Drawing.Point(14, 187);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(371, 129);
@@ -6003,12 +6006,12 @@
             this.RTC_checkBox.UseVisualStyleBackColor = true;
             this.RTC_checkBox.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
-            // comboBox4
+            // Hour_comboBox
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Hour_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            this.Hour_comboBox.AutoCompleteCustomSource.AddRange(new string[] {
             "0",
             "1",
             "2",
@@ -6033,8 +6036,8 @@
             "21",
             "22",
             "23"});
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.Hour_comboBox.FormattingEnabled = true;
+            this.Hour_comboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -6059,20 +6062,20 @@
             "22",
             "23",
             "0"});
-            this.comboBox4.Location = new System.Drawing.Point(225, 64);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(60, 21);
-            this.comboBox4.TabIndex = 34;
-            this.comboBox4.UseWaitCursor = true;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            this.Hour_comboBox.Location = new System.Drawing.Point(225, 64);
+            this.Hour_comboBox.Name = "Hour_comboBox";
+            this.Hour_comboBox.Size = new System.Drawing.Size(60, 21);
+            this.Hour_comboBox.TabIndex = 34;
+            this.Hour_comboBox.UseWaitCursor = true;
+            this.Hour_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
-            // comboBox29
+            // Month_comboBox
             // 
-            this.comboBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Month_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Items.AddRange(new object[] {
+            this.Month_comboBox.FormattingEnabled = true;
+            this.Month_comboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -6085,12 +6088,12 @@
             "10",
             "11",
             "12"});
-            this.comboBox29.Location = new System.Drawing.Point(91, 64);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(60, 21);
-            this.comboBox29.TabIndex = 39;
-            this.comboBox29.UseWaitCursor = true;
-            this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.comboBox29_SelectedIndexChanged);
+            this.Month_comboBox.Location = new System.Drawing.Point(91, 64);
+            this.Month_comboBox.Name = "Month_comboBox";
+            this.Month_comboBox.Size = new System.Drawing.Size(60, 21);
+            this.Month_comboBox.TabIndex = 39;
+            this.Month_comboBox.UseWaitCursor = true;
+            this.Month_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox29_SelectedIndexChanged);
             // 
             // RTC_MINUTE_Lable
             // 
@@ -6109,13 +6112,13 @@
             this.RTC_MINUTE_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RTC_MINUTE_Lable.UseWaitCursor = true;
             // 
-            // comboBox30
+            // Year_comboBox
             // 
-            this.comboBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Year_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Items.AddRange(new object[] {
+            this.Year_comboBox.FormattingEnabled = true;
+            this.Year_comboBox.Items.AddRange(new object[] {
             "2014",
             "2015",
             "2016",
@@ -6128,12 +6131,12 @@
             "2023",
             "2024",
             "2025"});
-            this.comboBox30.Location = new System.Drawing.Point(158, 64);
-            this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(60, 21);
-            this.comboBox30.TabIndex = 40;
-            this.comboBox30.UseWaitCursor = true;
-            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged);
+            this.Year_comboBox.Location = new System.Drawing.Point(158, 64);
+            this.Year_comboBox.Name = "Year_comboBox";
+            this.Year_comboBox.Size = new System.Drawing.Size(60, 21);
+            this.Year_comboBox.TabIndex = 40;
+            this.Year_comboBox.UseWaitCursor = true;
+            this.Year_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged);
             // 
             // RTC_HOUR_Lable
             // 
@@ -6169,13 +6172,13 @@
             this.RTC_YEAR_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RTC_YEAR_Lable.UseWaitCursor = true;
             // 
-            // comboBox3
+            // Minute_comboBox
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Minute_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.Minute_comboBox.FormattingEnabled = true;
+            this.Minute_comboBox.Items.AddRange(new object[] {
             "0",
             "1",
             "2",
@@ -6236,12 +6239,12 @@
             "57",
             "58",
             "59"});
-            this.comboBox3.Location = new System.Drawing.Point(291, 64);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(60, 21);
-            this.comboBox3.TabIndex = 35;
-            this.comboBox3.UseWaitCursor = true;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.Minute_comboBox.Location = new System.Drawing.Point(291, 64);
+            this.Minute_comboBox.Name = "Minute_comboBox";
+            this.Minute_comboBox.Size = new System.Drawing.Size(60, 21);
+            this.Minute_comboBox.TabIndex = 35;
+            this.Minute_comboBox.UseWaitCursor = true;
+            this.Minute_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // RTC_DAY_Lable
             // 
@@ -6277,13 +6280,12 @@
             this.RTC_MONTH_Lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RTC_MONTH_Lable.UseWaitCursor = true;
             // 
-            // comboBox31
+            // Day_comboBox
             // 
-            this.comboBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Day_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox31.AutoCompleteCustomSource.AddRange(new string[] {
-            "0",
+            this.Day_comboBox.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -6306,22 +6308,54 @@
             "20",
             "21",
             "22",
-            "23"});
-            this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.Items.AddRange(new object[] {
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.Day_comboBox.FormattingEnabled = true;
+            this.Day_comboBox.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6",
-            "7"});
-            this.comboBox31.Location = new System.Drawing.Point(23, 64);
-            this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(60, 21);
-            this.comboBox31.TabIndex = 38;
-            this.comboBox31.UseWaitCursor = true;
-            this.comboBox31.SelectedIndexChanged += new System.EventHandler(this.comboBox31_SelectedIndexChanged);
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.Day_comboBox.Location = new System.Drawing.Point(23, 64);
+            this.Day_comboBox.Name = "Day_comboBox";
+            this.Day_comboBox.Size = new System.Drawing.Size(60, 21);
+            this.Day_comboBox.TabIndex = 38;
+            this.Day_comboBox.UseWaitCursor = true;
+            this.Day_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox31_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -6419,6 +6453,16 @@
             this.label52.Size = new System.Drawing.Size(41, 13);
             this.label52.TabIndex = 35;
             this.label52.Text = "label52";
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(177, 95);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 29);
+            this.button15.TabIndex = 54;
+            this.button15.Text = "Get date";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // Form1
             // 
@@ -6730,16 +6774,16 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label RTC_Lable;
         private System.Windows.Forms.CheckBox RTC_checkBox;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox Hour_comboBox;
+        private System.Windows.Forms.ComboBox Month_comboBox;
         private System.Windows.Forms.Label RTC_MINUTE_Lable;
-        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.ComboBox Year_comboBox;
         private System.Windows.Forms.Label RTC_HOUR_Lable;
         private System.Windows.Forms.Label RTC_YEAR_Lable;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox Minute_comboBox;
         private System.Windows.Forms.Label RTC_DAY_Lable;
         private System.Windows.Forms.Label RTC_MONTH_Lable;
-        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox Day_comboBox;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button13;
@@ -6776,6 +6820,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button button15;
     }
 }
 

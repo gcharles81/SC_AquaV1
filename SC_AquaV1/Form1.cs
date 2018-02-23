@@ -169,9 +169,9 @@ namespace SC_AquaV1
         ///////////////////////////////////////////////
         ///////////////////SLAVE ADDRESSS UPDATE related
         bool SLAVE_ADD_ACTIVATE = false;
-        bool RGB1_6 = false;
-        bool RGB7_12 = false;
-        bool PH_TEMP = false;
+        bool SLAVE_ADD_1_6 = false;
+        bool SLAVE_ADD_7_12 = false;
+        bool SLAVE_ADD_PH = false;
         ////////////////////////////////////////////////
         /// <Load Saved setting related>
         /// ///////////////////////////////////////////
@@ -599,7 +599,7 @@ namespace SC_AquaV1
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////SLAVE number UPDATE title color change 
-            if ((SLAVE_ADD_ACTIVATE == true) & (RGB1_6 == true) & (RGB7_12 == true) & (PH_TEMP == true) && (SLAVEADD_checkBox.Checked == true))
+            if ((SLAVE_ADD_ACTIVATE == true) & (SLAVE_ADD_1_6 == true) & (SLAVE_ADD_7_12 == true) & (SLAVE_ADD_PH == true) && (SLAVEADD_checkBox.Checked == true))
             {
                 SLAVE_ADD_ACTIVATE = true;
                 Slave_ADD_Lable.BackColor = System.Drawing.Color.DarkOrange;
@@ -2309,20 +2309,20 @@ namespace SC_AquaV1
         private void comboBox62_SelectedIndexChanged(object sender, EventArgs e)
         {
             SLAVE_ADD1_Lable.BackColor = System.Drawing.Color.DarkOrange;
-            RGB1_6 = true;
+            SLAVE_ADD_1_6 = true;
 
         }
 
         private void comboBox55_SelectedIndexChanged(object sender, EventArgs e)
         {
             SLAVE_ADD2_Lable.BackColor = System.Drawing.Color.DarkOrange;
-            RGB7_12 = true;
+            SLAVE_ADD_7_12 = true;
         }
 
         private void comboBox61_SelectedIndexChanged(object sender, EventArgs e)
         {
             SLAVE_ADD_PH_Lable.BackColor = System.Drawing.Color.DarkOrange;
-            PH_TEMP = true;
+            SLAVE_ADD_PH = true;
         }
 
         private void comboBox31_SelectedIndexChanged(object sender, EventArgs e)
@@ -2353,6 +2353,7 @@ namespace SC_AquaV1
         {
             RTC_MINUTE_Lable.BackColor = System.Drawing.Color.DarkOrange;
             minute = true;
+            
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -3287,7 +3288,7 @@ namespace SC_AquaV1
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-
+            Load_SLAVE_ADDRESSES_settings();
         }
 
         private void button11_Click_1(object sender, EventArgs e)
@@ -3311,23 +3312,23 @@ namespace SC_AquaV1
             if (RTC_ACTIVATE)
             {
 
-                String ADDRESS1 = comboBox31.Text;
+                String ADDRESS1 = Day_comboBox.Text;
                 ini.IniWriteValue("RTC", "Day", ADDRESS1);
                 this.progressBar1.Increment(25);
 
-                String ADDRESS2 = comboBox29.Text;
+                String ADDRESS2 = Month_comboBox.Text;
                 ini.IniWriteValue("RTC", "Month", ADDRESS2);
                 this.progressBar1.Increment(25);
 
-                String ADDRESS3 = comboBox30.Text;
+                String ADDRESS3 = Year_comboBox.Text;
                 ini.IniWriteValue("RTC", "Year", ADDRESS3);
                 this.progressBar1.Increment(25);
 
-                String ADDRESS4 = comboBox4.Text;
+                String ADDRESS4 = Hour_comboBox.Text;
                 ini.IniWriteValue("RTC", "Hour", ADDRESS4);
                 this.progressBar1.Increment(25);
 
-                String ADDRESS5 = comboBox3.Text;
+                String ADDRESS5 = Minute_comboBox.Text;
                 ini.IniWriteValue("RTC", "Minute", ADDRESS5);
                 this.progressBar1.Increment(25);
 
@@ -3447,8 +3448,130 @@ namespace SC_AquaV1
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
 
+
+
+void Load_SLAVE_ADDRESSES_settings() {
+
+            IniParser parser = new IniParser("config/AdvancedIO.ini");
+
+
+            //// Load SLAVES Stored values in AdvancedIO.ini file 
+
+
+            newMessage3 = parser.GetSetting("Slaves", "Status");//// Load Sunrise STATUS (true or false) Stored values in timers.ini file 
+
+            if (newMessage3 == "TRUE")
+            {
+
+                
+
+
+
+
+                newMessage1 = parser.GetSetting("Slaves", "ADD 01");//// Load Sunrise minOn1 Stored values in timers.ini file 
+                Parameters_test2 = Convert.ToInt32(newMessage1);
+                comboBox62.SelectedIndex = Parameters_test2;
+
+
+
+
+                newMessage2 = parser.GetSetting("Slaves", "ADD 02");//// Load Sunrise hourOff1 Stored values in timers.ini file 
+                Parameters_test3 = Convert.ToInt32(newMessage2);
+                comboBox55.SelectedIndex = Parameters_test3;
+
+
+                newMessage4 = parser.GetSetting("Slaves", "ADD 03");//// Load Sunrise minOff1 Stored values in timers.ini file 
+                Parameters_test4 = Convert.ToInt32(newMessage4);
+                comboBox61.SelectedIndex = Parameters_test4;
+
+
+                SLAVEADD_checkBox.Checked = true;
+                SLAVE_ADD_1_6 = true;
+                SLAVE_ADD_7_12 = true;
+                SLAVE_ADD_PH = true;
+
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " SLAVE Update activated & Settings loaded \r\n";
+
+            }
+            else
+            {
+               
+
+ 
+                SLAVE_ADD_1_6 = false;
+                SLAVE_ADD_7_12 = false;
+                SLAVE_ADD_PH = false;
+                SLAVEADD_checkBox.Checked =false;
+
+                SLAVE_ADD1_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SLAVE_ADD2_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                SLAVE_ADD_PH_Lable.BackColor = System.Drawing.Color.CadetBlue;
+                Slave_ADD_Lable.BackColor = System.Drawing.Color.CadetBlue;
+
+                richTextBox1.Text += (DateTime.Now);
+                richTextBox1.Text += ("  ");
+                richTextBox1.Text += " SLAVE Update dis activated & Settings not loaded \r\n";
+
+            }
+
+
+            Parameters_test1 = 0;
+            Parameters_test2 = 0;
+            Parameters_test3 = 0;
+            Parameters_test4 = 0;
+            Parameters_test5 = 0;
+
+    }
+    
+
         private void Day1HON_Label_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button15_Click_1(object sender, EventArgs e)
+        {
+            List<DateTime[]> list = new List<DateTime[]>();
+            DateTime[] array1 = new[] { DateTime.Now, DateTime.Now };
+            DateTime[] array2 = new[] { DateTime.Today, DateTime.UtcNow };
+
+            list.Add(array1);
+            list.Add(array2);
+
+            int R = array2[1].Day;
+
+            Day_comboBox.SelectedIndex = R-1;
+            RTC_DAY_Lable.BackColor = System.Drawing.Color.DarkOrange;
+            day = true;
+
+            R = array2[1].Month;
+
+            Month_comboBox.SelectedIndex = R - 1;
+            RTC_MONTH_Lable.BackColor = System.Drawing.Color.DarkOrange;
+            month = true;
+
+            R = array2[1].Year;
+
+            Year_comboBox.SelectedIndex = R - 2014;
+            RTC_YEAR_Lable.BackColor = System.Drawing.Color.DarkOrange;
+            year = true;
+
+            R = array2[1].Hour;
+
+            Hour_comboBox.SelectedIndex = R ;
+            RTC_HOUR_Lable.BackColor = System.Drawing.Color.DarkOrange;
+            hour = true;
+
+            R = array2[1].Minute;
+
+            Minute_comboBox.SelectedIndex = R ;
+            RTC_MINUTE_Lable.BackColor = System.Drawing.Color.DarkOrange;
+            minute = true;
+
+
 
         }
     }
