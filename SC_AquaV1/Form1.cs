@@ -227,22 +227,7 @@ namespace SC_AquaV1
         /// <param name="e"></param>
         /// ///////////////////////////////////////////////////////////////////////////////////////////////////
         private void RGB_config_info() {
-            /*
-                    StreamWriter outFile = new StreamWriter("config/RGBCONFIG.txt");
-                    outFile.Write("\n");
-                    outFile.Write("//");
-                    outFile.Write(DateTime.Now );
-                    outFile.Write("\n");
-                    outFile.Write("//File format created by Charles Galea 2016.");
-                    outFile.Write("\n");
-                    outFile.Write("//This file consists of all RGB4 pwm values.");
-                    outFile.Write("\n");
-                    outFile.Write("//It is supported from SC_AquaV1 onwards ");
-                    outFile.Write("\n");
-                    outFile.Write("//0 = OFF  while 255 = MAX VALUE");
-                    outFile.Write("\n");
-                    outFile.Write("\n");
-            */
+
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
             IniFile ini = new IniFile("config/rgb.ini");
 
@@ -263,6 +248,38 @@ namespace SC_AquaV1
 
                 ini.IniWriteValue("RGB1", "Status", "true");
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'B'; // B = UDP RGB PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 1; // 1 = RGB1 PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = RED1.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = GREEN1.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = BLUE1.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                UDP_STRING_COMBINED[6] = "255".ToString();//UDP RGB fill SPARE last value with 0
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+
+ 
+
+                ini.IniWriteValue("RGB1", "UDP_PACKET", result);//UDP string Write in Config file
+
+
+
             }
 
             else if (ACTIVATE_RGB1 == false) {
@@ -277,6 +294,8 @@ namespace SC_AquaV1
                 ini.IniWriteValue("RGB1", "Blue", "0");
 
                 ini.IniWriteValue("RGB1", "Status", "false");
+
+                ini.IniWriteValue("RGB1", "UDP_PACKET", EMPTY_UDP);
             }
 
 
@@ -297,6 +316,36 @@ namespace SC_AquaV1
 
                 ini.IniWriteValue("RGB2", "Status", "true");
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'B'; // B = UDP RGB PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 2; // 1 = RGB1 PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = RED2.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = GREEN2.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = BLUE2.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                UDP_STRING_COMBINED[6] = "255".ToString();//UDP RGB fill SPARE last value with 0
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+
+
+
+                ini.IniWriteValue("RGB2", "UDP_PACKET", result);//UDP string Write in Config file
+
             }
 
             else if (ACTIVATE_RGB2 == false)
@@ -312,6 +361,7 @@ namespace SC_AquaV1
                 ini.IniWriteValue("RGB2", "Blue", "0");
 
                 ini.IniWriteValue("RGB2", "Status", "false");
+                ini.IniWriteValue("RGB2", "UDP_PACKET", EMPTY_UDP);
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (ACTIVATE_RGB3 == true)
@@ -328,6 +378,36 @@ namespace SC_AquaV1
 
                 ini.IniWriteValue("RGB3", "Status", "true");
 
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'B'; // B = UDP RGB PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 3; // 1 = RGB1 PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = RED3.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = GREEN3.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = BLUE3.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                UDP_STRING_COMBINED[6] = "255".ToString();//UDP RGB fill SPARE last value with 0
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+
+
+
+                ini.IniWriteValue("RGB3", "UDP_PACKET", result);//UDP string Write in Config file
+
             }
 
             else if (ACTIVATE_RGB3 == false)
@@ -343,6 +423,7 @@ namespace SC_AquaV1
                 ini.IniWriteValue("RGB3", "Blue", "0");
 
                 ini.IniWriteValue("RGB3", "Status", "false");
+                ini.IniWriteValue("RGB3", "UDP_PACKET", EMPTY_UDP);
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (ACTIVATE_RGB4 == true)
@@ -358,6 +439,35 @@ namespace SC_AquaV1
                 ini.IniWriteValue("RGB4", "Blue", BLUE4);
 
                 ini.IniWriteValue("RGB4", "Status", "true");
+                ////////UDP String GEneration
+
+                UDP_Timers_Digit_00 = 'B'; // B = UDP RGB PARAMETER 
+                UDP_STRING_COMBINED[0] = UDP_Timers_Digit_00.ToString(); //UDP Fitst Letter set to A : 
+
+                UDP_Timers_Digit_01 = 4; // 1 = RGB1 PARAMETER
+                UDP_STRING_COMBINED[1] = UDP_Timers_Digit_01.ToString();//UDP TIMER number 1 in UDP String 2nd Character after A
+
+
+                UDP_STRING_COMBINED[2] = RED4.ToString(); //UDP TIMER hourOn value
+
+                UDP_STRING_COMBINED[3] = GREEN4.ToString();//UDP TIMER minOn value
+
+                UDP_STRING_COMBINED[4] = BLUE4.ToString();//UDP TIMER hourOff value
+
+                UDP_STRING_COMBINED[5] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                UDP_STRING_COMBINED[6] = "255".ToString();//UDP RGB fill SPARE last value with 0
+                UDP_STRING_COMBINED[7] = "0".ToString();//UDP RGB fill SPARE last value with 0
+
+                String.Join(UDP_DELIMINER.ToString(), UDP_STRING_COMBINED);//UDP join all values to one string
+                var builder = new StringBuilder();
+                Array.ForEach(UDP_STRING_COMBINED, x => builder.Append(x));
+                var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
+
+
+
+
+                ini.IniWriteValue("RGB4", "UDP_PACKET", result);//UDP string Write in Config file
 
             }
 
@@ -374,6 +484,7 @@ namespace SC_AquaV1
                 ini.IniWriteValue("RGB4", "Blue", "0");
 
                 ini.IniWriteValue("RGB4", "Status", "false");
+                ini.IniWriteValue("RGB4", "UDP_PACKET", EMPTY_UDP);
             }
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -3251,11 +3362,9 @@ namespace SC_AquaV1
         {
 
 
-            // if (ACTIVATE_SUNRISE || ACTIVATE_SUNSET || ACTIVATE_DAY1 || ACTIVATE_DAY2 || ACTIVATE_DAY3 ||ACTIVATE_NEON1 || ACTIVATE_NEON2 || ACTIVATE_NEON3 || ACTIVATE_NIGHT1 == true)
-            // {
+ 
             Generate_timers_config_file();
-            // CreateUDP_Timers_String();
-            //    }
+           
         }
 
         private void button11_Click(object sender, EventArgs e)
