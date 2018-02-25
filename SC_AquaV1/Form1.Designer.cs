@@ -290,6 +290,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.destipTextBox = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.RTC_Lable = new System.Windows.Forms.Label();
             this.RTC_checkBox = new System.Windows.Forms.CheckBox();
@@ -314,7 +315,6 @@
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label52 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -7320,7 +7320,7 @@
             this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
             this.richTextBox2.Location = new System.Drawing.Point(0, 163);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(655, 32);
+            this.richTextBox2.Size = new System.Drawing.Size(655, 283);
             this.richTextBox2.TabIndex = 50;
             this.richTextBox2.Text = "";
             // 
@@ -7781,6 +7781,16 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(371, 129);
             this.panel6.TabIndex = 46;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.OrangeRed;
+            this.button8.Location = new System.Drawing.Point(257, 91);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(109, 32);
+            this.button8.TabIndex = 51;
+            this.button8.Text = "OTA Update";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
@@ -8261,16 +8271,6 @@
             this.label52.Size = new System.Drawing.Size(41, 13);
             this.label52.TabIndex = 35;
             this.label52.Text = "label52";
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.OrangeRed;
-            this.button8.Location = new System.Drawing.Point(257, 91);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 32);
-            this.button8.TabIndex = 51;
-            this.button8.Text = "OTA Update";
-            this.button8.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 

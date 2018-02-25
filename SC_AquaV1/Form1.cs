@@ -20,7 +20,7 @@ namespace SC_AquaV1
     {
 
         /// <RElated to Ini Config file added 14.02.2018 >
-        
+
         String newMessageA = "TEST1";
         String newMessage1B = "TEST2";
         String newMessageC = "Test SN Number 007";
@@ -38,12 +38,12 @@ namespace SC_AquaV1
         int CNT = 0;
 
         Boolean Connection_TRY = false;
-      
+
         String ID_Received = ".................";
-       
+
         String Connect_phrase = "Z:255";
         String DisConnect_phrase = "Z:1";
- 
+
         UdpClient udpclient;
         IPEndPoint remoteipendpoint;
         IPEndPoint sourceipendpoint;
@@ -248,7 +248,7 @@ namespace SC_AquaV1
             comboBox49.SelectedIndex = 0;
             Connect_button.Visible = false;
             Disconnect_button.Visible = false;
-           button9.Visible = false;
+            button9.Visible = false;
             button8.Visible = false;
             String path21 = "config/config.ini";
             if (File.Exists(path21))
@@ -270,7 +270,7 @@ namespace SC_AquaV1
             }
         }
 
-       
+
         private void DISCONNECT()
         {
             try
@@ -283,14 +283,18 @@ namespace SC_AquaV1
             {
             }
         }
-        private void FOLDERS() {
+        private void FOLDERS()
+        {
 
             String path18 = "config";
 
-            if (Directory.Exists(path18)) {
+            if (Directory.Exists(path18))
+            {
 
             }
-            else { DirectoryInfo di = Directory.CreateDirectory(path18);
+            else
+            {
+                DirectoryInfo di = Directory.CreateDirectory(path18);
             }
         }
         /// <summary>
@@ -298,7 +302,8 @@ namespace SC_AquaV1
 
         /// <param name="e"></param>
         /// ///////////////////////////////////////////////////////////////////////////////////////////////////
-        private void RGB_config_info() {
+        private void RGB_config_info()
+        {
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
             IniFile ini = new IniFile("config/rgb.ini");
@@ -307,7 +312,8 @@ namespace SC_AquaV1
             ini.IniWriteValue("Info RGB", "File Created ", DateTime.Now.ToString());
 
 
-            if (ACTIVATE_RGB1 == true) {
+            if (ACTIVATE_RGB1 == true)
+            {
 
                 String RED1 = label1.Text;
                 ini.IniWriteValue("RGB1", "Red", RED1);
@@ -346,7 +352,7 @@ namespace SC_AquaV1
                 var result = String.Join(":", UDP_STRING_COMBINED.ToArray());//Result contains the NEW String with Deliminer
 
 
- 
+
 
                 ini.IniWriteValue("RGB1", "UDP_PACKET", result);//UDP string Write in Config file
 
@@ -354,7 +360,8 @@ namespace SC_AquaV1
 
             }
 
-            else if (ACTIVATE_RGB1 == false) {
+            else if (ACTIVATE_RGB1 == false)
+            {
 
                 String RED1 = label1.Text;
                 ini.IniWriteValue("RGB1", "Red", "0");
@@ -561,7 +568,8 @@ namespace SC_AquaV1
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-            if ((DEBUG == true) & (NORMAL_MODE == false) & (LED_TEST_DELAY == true)) {
+            if ((DEBUG == true) & (NORMAL_MODE == false) & (LED_TEST_DELAY == true))
+            {
 
                 String delay1 = comboBox49.Text;
                 ini.IniWriteValue("LED MODE", "Debug", "true");
@@ -569,7 +577,8 @@ namespace SC_AquaV1
                 ini.IniWriteValue("LED MODE", "Delay", delay1);
             }
 
-            else if ((DEBUG == false) & (NORMAL_MODE == true)) {
+            else if ((DEBUG == false) & (NORMAL_MODE == true))
+            {
                 String delay1 = comboBox49.Text;
                 ini.IniWriteValue("LED MODE", "Debug", "false");
                 ini.IniWriteValue("LED MODE", "Normal", "true");
@@ -807,13 +816,15 @@ namespace SC_AquaV1
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
-            if (Sunrise_checkBox.Checked == true) {
+            if (Sunrise_checkBox.Checked == true)
+            {
                 ACTIVATE_SUNRISE = true;
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
                 richTextBox1.Text += " sunrise activated \r\n";
             }
-            else {
+            else
+            {
                 ACTIVATE_SUNRISE = false;
                 richTextBox1.Text += (DateTime.Now);
                 richTextBox1.Text += ("  ");
@@ -2536,7 +2547,7 @@ namespace SC_AquaV1
         {
             RTC_MINUTE_Lable.BackColor = System.Drawing.Color.DarkOrange;
             minute = true;
-            
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -3434,9 +3445,9 @@ namespace SC_AquaV1
         {
 
 
- 
+
             Generate_timers_config_file();
-           
+
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -3631,7 +3642,8 @@ namespace SC_AquaV1
 
 
 
-void Load_SLAVE_ADDRESSES_settings() {
+        void Load_SLAVE_ADDRESSES_settings()
+        {
 
             IniParser parser = new IniParser("config/AdvancedIO.ini");
 
@@ -3644,7 +3656,7 @@ void Load_SLAVE_ADDRESSES_settings() {
             if (newMessage3 == "TRUE")
             {
 
-                
+
 
 
 
@@ -3679,13 +3691,13 @@ void Load_SLAVE_ADDRESSES_settings() {
             }
             else
             {
-               
 
- 
+
+
                 SLAVE_ADD_1_6 = false;
                 SLAVE_ADD_7_12 = false;
                 SLAVE_ADD_PH = false;
-                SLAVEADD_checkBox.Checked =false;
+                SLAVEADD_checkBox.Checked = false;
 
                 SLAVE_ADD1_Lable.BackColor = System.Drawing.Color.CadetBlue;
                 SLAVE_ADD2_Lable.BackColor = System.Drawing.Color.CadetBlue;
@@ -3705,8 +3717,8 @@ void Load_SLAVE_ADDRESSES_settings() {
             Parameters_test4 = 0;
             Parameters_test5 = 0;
 
-    }
-    
+        }
+
 
         private void Day1HON_Label_Click(object sender, EventArgs e)
         {
@@ -3724,7 +3736,7 @@ void Load_SLAVE_ADDRESSES_settings() {
 
             int R = array2[1].Day;
 
-            Day_comboBox.SelectedIndex = R-1;
+            Day_comboBox.SelectedIndex = R - 1;
             RTC_DAY_Lable.BackColor = System.Drawing.Color.DarkOrange;
             day = true;
 
@@ -3742,13 +3754,13 @@ void Load_SLAVE_ADDRESSES_settings() {
 
             R = array2[1].Hour;
 
-            Hour_comboBox.SelectedIndex = R ;
+            Hour_comboBox.SelectedIndex = R;
             RTC_HOUR_Lable.BackColor = System.Drawing.Color.DarkOrange;
             hour = true;
 
             R = array2[1].Minute;
 
-            Minute_comboBox.SelectedIndex = R ;
+            Minute_comboBox.SelectedIndex = R;
             RTC_MINUTE_Lable.BackColor = System.Drawing.Color.DarkOrange;
             minute = true;
 
@@ -3790,7 +3802,7 @@ void Load_SLAVE_ADDRESSES_settings() {
 
             newMessage = parser.GetSetting("ID", "ID");//// Load Sunrise hourOn1 Stored values in timers.ini file 
 
-          //  toolStripStatusLabel4.Text = newMessage.ToString();
+            //  toolStripStatusLabel4.Text = newMessage.ToString();
 
 
             newMessage = parser.GetSetting("IP", "IP");//// Load Sunrise minOn1 Stored values in timers.ini file 
@@ -3833,31 +3845,21 @@ void Load_SLAVE_ADDRESSES_settings() {
 
         private void statusExpress(object sender, EventArgs e)
         {
+            // String[] Buffer = new String[50];
+            string str = returnData;
 
-            
-            if (Connection_TRY == true && CNT <1)
-            {
-       //         toolStripStatusLabel1.Text = returnData;
-         //       toolStripStatusLabel2.Text = remoteIP;
-                statusLabel.Text = "Connected";
-                recipTextBox.Text = remoteIP;
+            char[] seps = { ':' };
 
-                richTextBox2.Text = returnData;
-                //     ID_Received = toolStripStatusLabel1.Text.ToString();
-                CNT++;
-                return;
-                
-            }
+            string[] parts = str.Split(seps);
+            //  richTextBox2.Text = parts[1].ToString();
+            //   richTextBox2.Text += " \r\n";
 
-            else
-            {
-                statusLabel.Text = returnData;
-                recipTextBox.Text = remoteIP;
-
-            }
-            Connection_TRY = false;
-            CNT = 0;
+            for (int i = 0; i < parts.Length; i++) { 
+                richTextBox2.Text += parts[i].ToString();
+            richTextBox2.Text += " \r\n";
         }
+        }
+      
         private void openPort_Click(object sender, EventArgs e)
         {
             //  
