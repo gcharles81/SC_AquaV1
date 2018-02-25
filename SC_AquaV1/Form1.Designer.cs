@@ -238,16 +238,35 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
             this.Disconnect_button = new System.Windows.Forms.Button();
             this.openPort = new System.Windows.Forms.Button();
             this.Connect_button = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.UDP_CREATE_PACKET_BUTTON = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.panel50 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.SLAVE_ADD2_Lable = new System.Windows.Forms.Label();
             this.Slave_ADD_Lable = new System.Windows.Forms.Label();
             this.SLAVEADD_checkBox = new System.Windows.Forms.CheckBox();
@@ -271,7 +290,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.destipTextBox = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.RTC_Lable = new System.Windows.Forms.Label();
             this.RTC_checkBox = new System.Windows.Forms.CheckBox();
             this.Hour_comboBox = new System.Windows.Forms.ComboBox();
@@ -295,7 +314,7 @@
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label52 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -349,6 +368,7 @@
             this.tabPage10.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -5453,11 +5473,11 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel13);
             this.tabPage2.Controls.Add(this.Disconnect_button);
             this.tabPage2.Controls.Add(this.openPort);
             this.tabPage2.Controls.Add(this.Connect_button);
             this.tabPage2.Controls.Add(this.richTextBox2);
-            this.tabPage2.Controls.Add(this.UDP_CREATE_PACKET_BUTTON);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -5466,55 +5486,1843 @@
             this.tabPage2.Text = "UDP";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Silver;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.button16);
+            this.panel13.Controls.Add(this.label7);
+            this.panel13.Controls.Add(this.label10);
+            this.panel13.Controls.Add(this.label14);
+            this.panel13.Controls.Add(this.comboBox3);
+            this.panel13.Controls.Add(this.label13);
+            this.panel13.Controls.Add(this.comboBox4);
+            this.panel13.Controls.Add(this.label12);
+            this.panel13.Controls.Add(this.comboBox26);
+            this.panel13.Controls.Add(this.label11);
+            this.panel13.Controls.Add(this.comboBox27);
+            this.panel13.Controls.Add(this.label15);
+            this.panel13.Controls.Add(this.comboBox28);
+            this.panel13.Controls.Add(this.label16);
+            this.panel13.Controls.Add(this.comboBox29);
+            this.panel13.Controls.Add(this.label17);
+            this.panel13.Controls.Add(this.comboBox30);
+            this.panel13.Controls.Add(this.label19);
+            this.panel13.Controls.Add(this.comboBox31);
+            this.panel13.Location = new System.Drawing.Point(3, 39);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(646, 118);
+            this.panel13.TabIndex = 54;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.DarkRed;
+            this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button16.Location = new System.Drawing.Point(4, 68);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(118, 42);
+            this.button16.TabIndex = 36;
+            this.button16.Text = "SEND";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(140, 93);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 13);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Fotmatted Last Sent Value";
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Lime;
+            this.label10.Location = new System.Drawing.Point(303, 88);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(322, 22);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "EMPTY";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(457, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(16, 16);
+            this.label14.TabIndex = 33;
+            this.label14.Text = "8";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox3.Location = new System.Drawing.Point(438, 35);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(56, 21);
+            this.comboBox3.TabIndex = 32;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(395, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(16, 16);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "7";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox4.Location = new System.Drawing.Point(376, 35);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(56, 21);
+            this.comboBox4.TabIndex = 30;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged_1);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(333, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(16, 16);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "6";
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox26.Location = new System.Drawing.Point(314, 35);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(56, 21);
+            this.comboBox26.TabIndex = 28;
+            this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.comboBox26_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(271, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(16, 16);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "5";
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox27.Location = new System.Drawing.Point(252, 35);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(56, 21);
+            this.comboBox27.TabIndex = 26;
+            this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.comboBox27_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(209, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(16, 16);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "4";
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox28.Location = new System.Drawing.Point(190, 35);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(56, 21);
+            this.comboBox28.TabIndex = 24;
+            this.comboBox28.SelectedIndexChanged += new System.EventHandler(this.comboBox28_SelectedIndexChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(147, 18);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(16, 16);
+            this.label16.TabIndex = 23;
+            this.label16.Text = "3";
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132",
+            "133",
+            "134",
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "141",
+            "142",
+            "143",
+            "144",
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156",
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174",
+            "175",
+            "176",
+            "177",
+            "178",
+            "179",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "186",
+            "187",
+            "188",
+            "189",
+            "190",
+            "191",
+            "192",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197",
+            "198",
+            "199",
+            "200",
+            "201",
+            "202",
+            "203",
+            "204",
+            "205",
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232",
+            "233",
+            "234",
+            "235",
+            "236",
+            "237",
+            "238",
+            "239",
+            "240",
+            "241",
+            "242",
+            "243",
+            "244",
+            "245",
+            "246",
+            "247",
+            "248",
+            "249",
+            "250",
+            "251",
+            "252",
+            "253",
+            "254",
+            "255"});
+            this.comboBox29.Location = new System.Drawing.Point(128, 35);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(56, 21);
+            this.comboBox29.TabIndex = 22;
+            this.comboBox29.SelectedIndexChanged += new System.EventHandler(this.comboBox29_SelectedIndexChanged_1);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(85, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(16, 16);
+            this.label17.TabIndex = 21;
+            this.label17.Text = "2";
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"});
+            this.comboBox30.Location = new System.Drawing.Point(66, 35);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(56, 21);
+            this.comboBox30.TabIndex = 20;
+            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged_1);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(23, 18);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(16, 16);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "1";
+            // 
+            // comboBox31
+            // 
+            this.comboBox31.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M"});
+            this.comboBox31.Location = new System.Drawing.Point(4, 35);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(56, 21);
+            this.comboBox31.TabIndex = 0;
+            this.comboBox31.SelectedIndexChanged += new System.EventHandler(this.comboBox31_SelectedIndexChanged_1);
+            // 
             // Disconnect_button
             // 
             this.Disconnect_button.BackColor = System.Drawing.Color.Red;
-            this.Disconnect_button.Location = new System.Drawing.Point(6, 152);
+            this.Disconnect_button.Location = new System.Drawing.Point(197, 6);
             this.Disconnect_button.Name = "Disconnect_button";
-            this.Disconnect_button.Size = new System.Drawing.Size(90, 45);
+            this.Disconnect_button.Size = new System.Drawing.Size(90, 27);
             this.Disconnect_button.TabIndex = 53;
             this.Disconnect_button.Text = "Disconnect";
             this.Disconnect_button.UseVisualStyleBackColor = false;
+            this.Disconnect_button.Click += new System.EventHandler(this.Disconnect_button_Click);
             // 
             // openPort
             // 
-            this.openPort.Location = new System.Drawing.Point(6, 54);
+            this.openPort.Location = new System.Drawing.Point(6, 6);
             this.openPort.Name = "openPort";
-            this.openPort.Size = new System.Drawing.Size(90, 44);
+            this.openPort.Size = new System.Drawing.Size(90, 27);
             this.openPort.TabIndex = 52;
             this.openPort.Text = "Open";
             this.openPort.UseVisualStyleBackColor = true;
+            this.openPort.Click += new System.EventHandler(this.openPort_Click);
             // 
             // Connect_button
             // 
             this.Connect_button.BackColor = System.Drawing.Color.Orange;
-            this.Connect_button.Location = new System.Drawing.Point(6, 102);
+            this.Connect_button.Location = new System.Drawing.Point(101, 6);
             this.Connect_button.Name = "Connect_button";
-            this.Connect_button.Size = new System.Drawing.Size(90, 44);
+            this.Connect_button.Size = new System.Drawing.Size(90, 27);
             this.Connect_button.TabIndex = 52;
             this.Connect_button.Text = "Connect";
             this.Connect_button.UseVisualStyleBackColor = false;
+            this.Connect_button.Click += new System.EventHandler(this.Connect_button_Click);
             // 
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuText;
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox2.Location = new System.Drawing.Point(0, 163);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(655, 45);
+            this.richTextBox2.Size = new System.Drawing.Size(655, 32);
             this.richTextBox2.TabIndex = 50;
             this.richTextBox2.Text = "";
-            // 
-            // UDP_CREATE_PACKET_BUTTON
-            // 
-            this.UDP_CREATE_PACKET_BUTTON.Location = new System.Drawing.Point(105, 54);
-            this.UDP_CREATE_PACKET_BUTTON.Name = "UDP_CREATE_PACKET_BUTTON";
-            this.UDP_CREATE_PACKET_BUTTON.Size = new System.Drawing.Size(180, 44);
-            this.UDP_CREATE_PACKET_BUTTON.TabIndex = 49;
-            this.UDP_CREATE_PACKET_BUTTON.Text = "UDP CREATE PACKET";
-            this.UDP_CREATE_PACKET_BUTTON.UseVisualStyleBackColor = true;
-            this.UDP_CREATE_PACKET_BUTTON.Click += new System.EventHandler(this.button16_Click);
             // 
             // tabPage3
             // 
@@ -5525,34 +7333,6 @@
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "XBEE";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Gray;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(3, 130);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(59, 35);
-            this.button11.TabIndex = 50;
-            this.button11.Text = "Save";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click_1);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(68, 130);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(59, 35);
-            this.button12.TabIndex = 49;
-            this.button12.Text = "Load";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // panel50
             // 
@@ -5584,6 +7364,34 @@
             this.button9.Text = "OTA Update";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Gray;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(3, 130);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(59, 35);
+            this.button11.TabIndex = 50;
+            this.button11.Text = "Save";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.Black;
+            this.button12.Location = new System.Drawing.Point(68, 130);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(59, 35);
+            this.button12.TabIndex = 49;
+            this.button12.Text = "Load";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // SLAVE_ADD2_Lable
             // 
@@ -5955,8 +7763,8 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.LightGray;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button15);
             this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.button15);
             this.panel6.Controls.Add(this.RTC_Lable);
             this.panel6.Controls.Add(this.RTC_checkBox);
             this.panel6.Controls.Add(this.Hour_comboBox);
@@ -5974,15 +7782,15 @@
             this.panel6.Size = new System.Drawing.Size(371, 129);
             this.panel6.TabIndex = 46;
             // 
-            // button8
+            // button15
             // 
-            this.button8.Location = new System.Drawing.Point(258, 95);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 29);
-            this.button8.TabIndex = 45;
-            this.button8.Text = "OTA Update";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button15.Location = new System.Drawing.Point(177, 91);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 32);
+            this.button15.TabIndex = 54;
+            this.button15.Text = "Get date";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // RTC_Lable
             // 
@@ -6454,15 +8262,15 @@
             this.label52.TabIndex = 35;
             this.label52.Text = "label52";
             // 
-            // button15
+            // button8
             // 
-            this.button15.Location = new System.Drawing.Point(177, 95);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 29);
-            this.button15.TabIndex = 54;
-            this.button15.Text = "Get date";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click_1);
+            this.button8.BackColor = System.Drawing.Color.OrangeRed;
+            this.button8.Location = new System.Drawing.Point(257, 91);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(109, 32);
+            this.button8.TabIndex = 51;
+            this.button8.Text = "OTA Update";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -6538,6 +8346,8 @@
             this.tabPage10.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -6771,7 +8581,6 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox destipTextBox;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label RTC_Lable;
         private System.Windows.Forms.CheckBox RTC_checkBox;
         private System.Windows.Forms.ComboBox Hour_comboBox;
@@ -6805,7 +8614,6 @@
         private System.Windows.Forms.ToolStripMenuItem timersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lEDChannelsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
-        private System.Windows.Forms.Button UDP_CREATE_PACKET_BUTTON;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Button openPort;
@@ -6821,6 +8629,27 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.Button button8;
     }
 }
 

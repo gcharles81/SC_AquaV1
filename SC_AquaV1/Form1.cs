@@ -6,14 +6,56 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net.Sockets;
+using System.Net;
+using System.Threading;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.IO;
 using Ini;
-
 
 namespace SC_AquaV1
 {
     public partial class Form1 : Form
     {
+
+        /// <RElated to Ini Config file added 14.02.2018 >
+        
+        String newMessageA = "TEST1";
+        String newMessage1B = "TEST2";
+        String newMessageC = "Test SN Number 007";
+        /// </summary>
+        String[] HZT = new String[8];
+        ///////////********
+        Char Timers_Digit_00 = ' ';
+        int Timers_Digit_01 = 0;
+        int Timers_Digit_02 = 0;
+        int Timers_Digit_03 = 0;
+        int Timers_Digit_04 = 0;
+        int Timers_Digit_05 = 0;
+        int Timers_Digit_06 = 0;
+        int Timers_Digit_07 = 0;
+
+
+        Boolean Connection_TRY = false;
+      
+        String ID_Received = ".................";
+       
+        String Connect_phrase = "Z:255";
+        String DisConnect_phrase = "Z:1";
+ 
+        UdpClient udpclient;
+        IPEndPoint remoteipendpoint;
+        IPEndPoint sourceipendpoint;
+        // IPAddress ipaddress;
+        Thread thread;
+        private bool run = false;
+        string returnData = "--------";                     //received data from UDP(initial value "????????"
+        string remoteIP = string.Empty;                     //remote IP
+        byte[] receiveBytes = new byte[32];                 //receive data buffer   
+        private bool udpCheck = false;
+
+
         //////////UDP_RELATED//////////////////////////
         char UDP_DELIMINER = ':';//
         char UDP_START = ' ';  //// A-Z
@@ -202,15 +244,45 @@ namespace SC_AquaV1
         public Form1()
         {
             InitializeComponent();
-            FOLDERS();
+            FOLDERS(); /// Create folders if not found
             comboBox49.SelectedIndex = 0;
-
+            Connect_button.Visible = false;
+            Disconnect_button.Visible = false;
+           button9.Visible = false;
+            button8.Visible = false;
+            String path21 = "config/config.ini";
+            if (File.Exists(path21))
+            {
+                Load__config_file();
+            }
         }
 
+        private void CONNECT()
+        {
+            try
+            {
+                byte[] command = Encoding.ASCII.GetBytes(Connect_phrase);//nevermind lower or upper - case....
+                udpclient.Send(command, command.Length, sourceipendpoint);
+            }
 
+            catch
+            {
+            }
+        }
 
-        /// Create folders if not found
+       
+        private void DISCONNECT()
+        {
+            try
+            {
+                byte[] command = Encoding.ASCII.GetBytes(DisConnect_phrase);//nevermind lower or upper - case....
+                udpclient.Send(command, command.Length, sourceipendpoint);
+            }
 
+            catch
+            {
+            }
+        }
         private void FOLDERS() {
 
             String path18 = "config";
@@ -3682,6 +3754,298 @@ void Load_SLAVE_ADDRESSES_settings() {
 
 
 
+        }
+
+        private void Generate__config_file()
+        {
+            ///////GENERATEATE File to store set values to be loaded on startup
+            /////// Controller IP Address 
+            /////// Port
+            /////// ID 
+
+
+            IniFile ini = new IniFile("config/config.ini");// Create file  CHGA 14/2/2018 
+
+            ini.IniWriteValue("USER_VALUES", "File info ", "//File format created by Charles Galea 2018.");
+            ini.IniWriteValue("USER_VALUES", "File Created ", DateTime.Now.ToString());
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            ini.IniWriteValue("ID", "ID", newMessageC);
+
+            //String hourOn1 = comboBox16.Text;
+            ini.IniWriteValue("IP", "IP", destipTextBox.Text.ToString());
+
+
+            // String minOn1 = comboBox13.Text;
+            ini.IniWriteValue("PORT", "PORT", portTextBox.Text.ToString());
+        }
+        private void Load__config_file()
+        {
+            IniParser parser = new IniParser("config/config.ini");
+
+
+            //// Load Sunrise Stored values in timers.ini file 
+
+
+
+            newMessage = parser.GetSetting("ID", "ID");//// Load Sunrise hourOn1 Stored values in timers.ini file 
+
+          //  toolStripStatusLabel4.Text = newMessage.ToString();
+
+
+            newMessage = parser.GetSetting("IP", "IP");//// Load Sunrise minOn1 Stored values in timers.ini file 
+
+            destipTextBox.Text = newMessage.ToString();
+
+            newMessage = parser.GetSetting("PORT", "PORT");//// Load Sunrise minOn1 Stored values in timers.ini file 
+
+            portTextBox.Text = newMessage.ToString();
+        }
+
+        //Receiving UDP packets Thread
+        private void receiveUDP()
+        {
+
+
+            while (run)
+            {
+                this.Invoke(new EventHandler(statusExpress));
+                try
+                {
+
+                    receiveBytes = udpclient.Receive(ref remoteipendpoint);
+                    remoteIP = remoteipendpoint.Address.ToString();
+                    returnData = Encoding.ASCII.GetString(receiveBytes);
+                    this.Invoke(new EventHandler(statusExpress));
+                }
+                catch
+
+                {
+
+                    returnData = "--------";
+                    remoteIP = string.Empty;
+                    this.Invoke(new EventHandler(statusExpress));
+
+                }
+            }
+        }
+
+
+        private void statusExpress(object sender, EventArgs e)
+        {
+
+
+            if (Connection_TRY == true)
+            {
+       //         toolStripStatusLabel1.Text = returnData;
+         //       toolStripStatusLabel2.Text = remoteIP;
+                statusLabel.Text = "Connected";
+                recipTextBox.Text = remoteIP;
+
+                richTextBox2.Text = returnData;
+           //     ID_Received = toolStripStatusLabel1.Text.ToString();
+
+                return;
+
+            }
+
+            else
+            {
+                statusLabel.Text = returnData;
+                recipTextBox.Text = remoteIP;
+
+            }
+            Connection_TRY = false;
+
+        }
+        private void openPort_Click(object sender, EventArgs e)
+        {
+            //  
+
+            if (udpCheck == false) //Check Open or Close state of the button
+            {
+                try
+                {
+
+                    udpclient = new UdpClient(Int32.Parse(portTextBox.Text));
+                    IPAddress ipaddress = IPAddress.Parse(destipTextBox.Text);
+                    remoteipendpoint = new IPEndPoint(IPAddress.Any, 0);                             //remote port IPEndpoint
+                    sourceipendpoint = new IPEndPoint(ipaddress, Int32.Parse(portTextBox.Text));    //source port IPEndpoint
+                    openPort.Text = "Close Port";
+                    run = true;
+                    thread = new Thread(new ThreadStart(receiveUDP));
+                    thread.IsBackground = true;
+                    thread.Start();
+
+                    udpCheck = true;
+
+
+                }
+
+                catch
+                {
+
+                    MessageBox.Show("Cannot bind the socket", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    udpCheck = false;
+
+                    try
+                    {
+                        if (udpclient == null) { }
+                        else { udpclient = null; udpclient.Close(); }
+                    }
+
+                    catch
+                    {
+                    }
+                    return;
+
+
+                }
+            }
+
+            else
+            {
+                try
+                {
+                    udpclient.Close();
+                    udpCheck = false;
+                    openPort.Text = "Open Port";
+                    recipTextBox.Text = string.Empty;
+                    thread = null;
+                    run = false;
+                    thread.Abort();
+                }
+
+
+                catch
+                {
+                }
+            }
+
+            if (udpCheck == true)
+
+            {
+
+                Connect_button.Visible = true;
+            }
+        }
+
+        private void Connect_button_Click(object sender, EventArgs e)
+        {
+            Connection_TRY = true;
+            //  if (Connection_TRY == false)
+            //{
+            MessageBox.Show("JZTSU");
+            Connection_TRY = true;
+
+            CONNECT();
+            Connect_button.Visible = false;
+            Disconnect_button.Visible = true;
+            button9.Visible = true;
+            button8.Visible = true;
+            label50.BackColor = System.Drawing.Color.DarkOrange;
+
+            // Thread.Sleep(1000);
+            //   Connection_TRY = false;
+
+
+            //}
+            label34.Text = ID_Received;
+            Generate__config_file();
+            Application.DoEvents();
+        }
+
+        private void Disconnect_button_Click(object sender, EventArgs e)
+        {
+
+            DISCONNECT();
+            Disconnect_button.Visible = false;
+            button9.Visible = false;
+            button8.Visible = false;
+            Connect_button.Visible = true;
+            label34.Text = ".............";
+           label50.BackColor = System.Drawing.Color.DarkGray;
+            Application.DoEvents();
+        }
+
+        private void button16_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                richTextBox2.Clear();
+                HZT[0] = Timers_Digit_00.ToString();
+
+                HZT[1] = Timers_Digit_01.ToString();
+                HZT[2] = Timers_Digit_02.ToString();
+                HZT[3] = Timers_Digit_03.ToString();
+                HZT[4] = Timers_Digit_04.ToString();
+                HZT[5] = Timers_Digit_05.ToString();
+                HZT[6] = Timers_Digit_06.ToString();
+                HZT[7] = 255.ToString();
+
+     
+
+                string.Join(":", HZT);
+                var builder = new StringBuilder();
+                Array.ForEach(HZT, x => builder.Append(x));
+                var result = String.Join(":", HZT.ToArray());
+
+          
+               
+                byte[] command = Encoding.UTF8.GetBytes(result); //res; // Encoding.ASCII.GetBytes(res);      //nevermind lower or upper - case....
+                udpclient.Send(command, command.Length, sourceipendpoint);
+                label10.Text = result.ToString();
+
+
+
+            }
+
+            catch
+            {
+
+            }
+        }
+
+        private void comboBox31_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            Timers_Digit_00 = Char.Parse(comboBox31.SelectedItem.ToString());
+        }
+
+        private void comboBox30_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            Timers_Digit_01 = int.Parse(comboBox30.SelectedItem.ToString());
+        }
+
+        private void comboBox29_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            Timers_Digit_02 = int.Parse(comboBox29.SelectedItem.ToString());
+        }
+
+        private void comboBox28_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Timers_Digit_03 = int.Parse(comboBox28.SelectedItem.ToString());
+        }
+
+        private void comboBox27_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Timers_Digit_04 = int.Parse(comboBox27.SelectedItem.ToString());
+        }
+
+        private void comboBox26_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Timers_Digit_05 = int.Parse(comboBox26.SelectedItem.ToString());
+        }
+
+        private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            Timers_Digit_06 = int.Parse(comboBox4.SelectedItem.ToString());
+        }
+
+        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            Timers_Digit_07 = int.Parse(comboBox8.SelectedItem.ToString());
         }
     }
 }
