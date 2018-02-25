@@ -35,7 +35,7 @@ namespace SC_AquaV1
         int Timers_Digit_05 = 0;
         int Timers_Digit_06 = 0;
         int Timers_Digit_07 = 0;
-
+        int CNT = 0;
 
         Boolean Connection_TRY = false;
       
@@ -3834,8 +3834,8 @@ void Load_SLAVE_ADDRESSES_settings() {
         private void statusExpress(object sender, EventArgs e)
         {
 
-
-            if (Connection_TRY == true)
+            
+            if (Connection_TRY == true && CNT <1)
             {
        //         toolStripStatusLabel1.Text = returnData;
          //       toolStripStatusLabel2.Text = remoteIP;
@@ -3843,10 +3843,10 @@ void Load_SLAVE_ADDRESSES_settings() {
                 recipTextBox.Text = remoteIP;
 
                 richTextBox2.Text = returnData;
-           //     ID_Received = toolStripStatusLabel1.Text.ToString();
-
+                //     ID_Received = toolStripStatusLabel1.Text.ToString();
+                CNT++;
                 return;
-
+                
             }
 
             else
@@ -3856,7 +3856,7 @@ void Load_SLAVE_ADDRESSES_settings() {
 
             }
             Connection_TRY = false;
-
+            CNT = 0;
         }
         private void openPort_Click(object sender, EventArgs e)
         {
