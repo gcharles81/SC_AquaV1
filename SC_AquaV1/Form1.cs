@@ -4049,5 +4049,15 @@ namespace SC_AquaV1
         {
             Timers_Digit_07 = int.Parse(comboBox8.SelectedItem.ToString());
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = new Bitmap("DUE_V01.jpg");
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = new Bitmap("DUE_V02.jpg");
+        }
     }
 }

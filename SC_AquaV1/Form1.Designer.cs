@@ -238,6 +238,8 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button17 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.button16 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -315,6 +317,7 @@
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label52 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -368,6 +371,7 @@
             this.tabPage10.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel50.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -387,7 +391,7 @@
             this.SUNRISE.Location = new System.Drawing.Point(28, 61);
             this.SUNRISE.Name = "SUNRISE";
             this.SUNRISE.SelectedIndex = 0;
-            this.SUNRISE.Size = new System.Drawing.Size(1139, 530);
+            this.SUNRISE.Size = new System.Drawing.Size(1139, 551);
             this.SUNRISE.TabIndex = 25;
             // 
             // TIMERS
@@ -516,7 +520,7 @@
             this.TIMERS.Location = new System.Drawing.Point(4, 25);
             this.TIMERS.Name = "TIMERS";
             this.TIMERS.Padding = new System.Windows.Forms.Padding(3);
-            this.TIMERS.Size = new System.Drawing.Size(1131, 501);
+            this.TIMERS.Size = new System.Drawing.Size(1131, 522);
             this.TIMERS.TabIndex = 3;
             this.TIMERS.Text = "TIMERS";
             // 
@@ -4455,7 +4459,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1131, 501);
+            this.tabPage7.Size = new System.Drawing.Size(1131, 522);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "LED RGB VALUES";
             // 
@@ -5457,7 +5461,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1131, 501);
+            this.tabPage10.Size = new System.Drawing.Size(1131, 522);
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "ADVANCED SETTINGS";
             // 
@@ -5468,11 +5472,14 @@
             this.tabControl1.Location = new System.Drawing.Point(441, 17);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(666, 478);
+            this.tabControl1.Size = new System.Drawing.Size(666, 499);
             this.tabControl1.TabIndex = 51;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button18);
+            this.tabPage2.Controls.Add(this.button17);
+            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.panel13);
             this.tabPage2.Controls.Add(this.Disconnect_button);
             this.tabPage2.Controls.Add(this.openPort);
@@ -5481,10 +5488,30 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(658, 452);
+            this.tabPage2.Size = new System.Drawing.Size(658, 473);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "UDP";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(442, 229);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(150, 32);
+            this.button17.TabIndex = 56;
+            this.button17.Text = "test Load image 1";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(400, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
             // 
             // panel13
             // 
@@ -7320,7 +7347,7 @@
             this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
             this.richTextBox2.Location = new System.Drawing.Point(0, 163);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(655, 283);
+            this.richTextBox2.Size = new System.Drawing.Size(655, 25);
             this.richTextBox2.TabIndex = 50;
             this.richTextBox2.Text = "";
             // 
@@ -7329,7 +7356,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(658, 452);
+            this.tabPage3.Size = new System.Drawing.Size(658, 473);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "XBEE";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -8181,7 +8208,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1131, 501);
+            this.tabPage1.Size = new System.Drawing.Size(1131, 522);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "LOG";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -8219,10 +8246,10 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.progressBar1.Location = new System.Drawing.Point(21, 606);
+            this.progressBar1.Location = new System.Drawing.Point(24, 618);
             this.progressBar1.Maximum = 500;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1139, 24);
+            this.progressBar1.Size = new System.Drawing.Size(1139, 15);
             this.progressBar1.TabIndex = 33;
             // 
             // menuStrip1
@@ -8271,6 +8298,16 @@
             this.label52.Size = new System.Drawing.Size(41, 13);
             this.label52.TabIndex = 35;
             this.label52.Text = "label52";
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(442, 287);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(150, 32);
+            this.button18.TabIndex = 57;
+            this.button18.Text = "test Load image 2";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // Form1
             // 
@@ -8346,6 +8383,7 @@
             this.tabPage10.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel50.ResumeLayout(false);
@@ -8650,6 +8688,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
     }
 }
 
