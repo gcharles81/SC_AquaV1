@@ -4115,14 +4115,5 @@ namespace SC_AquaV1
             Timers_Digit_07 = int.Parse(comboBox8.SelectedItem.ToString());
         }
 
-        private void button17_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-           
-        }
     }
 }
