@@ -25,7 +25,7 @@ namespace SC_AquaV1
         String newMessage1B = "TEST2";
         String newMessageC = "Test SN Number 007";
         String FIRST_LETTER;	// First Character of the UDP packet - can be (W) rest unused
-        int Second_DIGIT;
+        String Second_DIGIT;
         string[] parts = new String[55];
         String[] HZT = new String[8];
         ///////////********
@@ -52,7 +52,7 @@ namespace SC_AquaV1
         // IPAddress ipaddress;
         Thread thread;
         private bool run = false;
-        string returnData = "--------";                     //received data from UDP(initial value "????????"
+        string returnData = "--,---,---";                     //received data from UDP(initial value "????????"
         string remoteIP = string.Empty;                     //remote IP
         byte[] receiveBytes = new byte[32];                 //receive data buffer   
         private bool udpCheck = false;
@@ -3836,7 +3836,7 @@ namespace SC_AquaV1
 
                 {
 
-                    returnData = "--------";
+                    returnData = "-,--,--,---";
                     remoteIP = string.Empty;
                     this.Invoke(new EventHandler(statusExpress));
 
@@ -3847,81 +3847,88 @@ namespace SC_AquaV1
 
         private void statusExpress(object sender, EventArgs e)
         {
+            recipTextBox.Text = remoteIP;
+
             string str = returnData;
 
-            char[] seps = { ':' };
+            char[] seps = { ',' };
 
             parts = str.Split(seps);
 
             FIRST_LETTER = (parts[0]);
-            Second_DIGIT = Int16.Parse(parts[1]);
+            Second_DIGIT =  (parts[1]);
 
-            if (FIRST_LETTER == "W") // W ONLY AFTER Connection / disconnection request 
+            if ((FIRST_LETTER == "W" )& (Second_DIGIT=="100")) // W ONLY AFTER Connection / disconnection request 
             {
-                switch (Second_DIGIT)
-                {
-                    case 100:// After connection First Reply
-                        {
+               
                             System.Console.WriteLine("Low number");
-                            break;
-                        }
+                return;
+            }
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "250")) // W ONLY AFTER Connection / disconnection request 
+            {
+                 
+                            CONTROLLER_TYPE_label.Text = (parts[2].ToString());
+                            pictureBox1.Image = new Bitmap("DUE_V01.jpg");
+                return;
+            }
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "215")) // W ONLY AFTER Connection / disconnection request 
+            {
+                 
+                            CONTROLLER_TYPE_label.Text = (parts[2].ToString());
+                            pictureBox1.Image = new Bitmap("DUE_V02.jpg");
+                return;
 
-                    case 250:// Board TYPE ARDUINO DUE "original"
-                        {
-                            System.Console.WriteLine("Low number");
-                            break;
-                        }
-                    case 215:// Board TYPE ARDUINO "CORE"
-                        {
-                            System.Console.WriteLine("Low number");
-                            break;
-                        }
-                    case 200:// Board FW Version Received
-                        {
-                            System.Console.WriteLine("Low number");
-                            break;
-                        }
-                    case 050:// Board FW Programmed date
-                        {
-                            System.Console.WriteLine("Low number");
-                            break;
-                        }
+            }
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "200")) // W ONLY AFTER Connection / disconnection request 
+            {      
+          
+                            FW_VERSION_label.Text = (parts[2].ToString());
+                return;
+            }
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "050")) // W ONLY AFTER Connection / disconnection request 
+            {
+                  
+                            FW_DATE_label.Text = (parts[2].ToString());
+                return;
+            }
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "150")) // W ONLY AFTER Connection / disconnection request 
+            {
                     
-                    case 150:// BOARD CPU SN  
-                        {
-                            System.Console.WriteLine("Medium number");
-                            break;
-                        }
-                    default:// Unknown Commanr received by Controller
-                        {
-                            System.Console.WriteLine("Other number");
-                            break;
-                        }
-                }
-
-
-
-                label34.Text = (parts[1]);
+                            SN_BOARD_label.Text = (parts[2].ToString());
                 return;
             }
 
-            else if (FIRST_LETTER == "Z")// Z Aknowledge 
+            if ((FIRST_LETTER == "W") & (Second_DIGIT == "400"))  // W ONLY AFTER Connection / disconnection request 
             {
+                SN_BOARD_label.Text = "                               ";
+                FW_DATE_label.Text = "                               ";
+                FW_VERSION_label.Text = "                               ";
+                CONTROLLER_TYPE_label.Text = "                               ";
+                pictureBox1.Image = null;
+                //pictureBox1.Dispose();
+
+                return;
+
+            }
+
+            if (FIRST_LETTER == "F")   // W ONLY AFTER Connection / disconnection request 
+            {
+
                 richTextBox2.Text = parts[1].ToString();
                 richTextBox2.Text += " \r\n";
-                return;
             }
 
             else
             {
                 return;
             }
-        }
+       
+}
       
         private void openPort_Click(object sender, EventArgs e)
         {
             //  
-
+            parts[1] = "000";
             if (udpCheck == false) //Check Open or Close state of the button
             {
                 try
@@ -4110,12 +4117,12 @@ namespace SC_AquaV1
 
         private void button17_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = new Bitmap("DUE_V01.jpg");
+          
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = new Bitmap("DUE_V02.jpg");
+           
         }
     }
 }

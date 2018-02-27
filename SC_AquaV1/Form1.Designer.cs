@@ -238,7 +238,14 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button17 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.FW_DATE_label = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.FW_VERSION_label = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.SN_BOARD_label = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.CONTROLLER_TYPE_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.button16 = new System.Windows.Forms.Button();
@@ -278,14 +285,10 @@
             this.SLAVE_ADD1_Lable = new System.Windows.Forms.Label();
             this.comboBox62 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.portTextBox = new System.Windows.Forms.TextBox();
-            this.statusLabel = new System.Windows.Forms.Label();
             this.recipTextBox = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -317,7 +320,7 @@
             this.lEDChannelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label52 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.SUNRISE.SuspendLayout();
             this.TIMERS.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -378,6 +381,7 @@
             this.panel6.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // SUNRISE
@@ -391,7 +395,7 @@
             this.SUNRISE.Location = new System.Drawing.Point(28, 61);
             this.SUNRISE.Name = "SUNRISE";
             this.SUNRISE.SelectedIndex = 0;
-            this.SUNRISE.Size = new System.Drawing.Size(1139, 551);
+            this.SUNRISE.Size = new System.Drawing.Size(1187, 551);
             this.SUNRISE.TabIndex = 25;
             // 
             // TIMERS
@@ -520,7 +524,7 @@
             this.TIMERS.Location = new System.Drawing.Point(4, 25);
             this.TIMERS.Name = "TIMERS";
             this.TIMERS.Padding = new System.Windows.Forms.Padding(3);
-            this.TIMERS.Size = new System.Drawing.Size(1131, 522);
+            this.TIMERS.Size = new System.Drawing.Size(1179, 522);
             this.TIMERS.TabIndex = 3;
             this.TIMERS.Text = "TIMERS";
             // 
@@ -4459,7 +4463,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1131, 522);
+            this.tabPage7.Size = new System.Drawing.Size(1179, 522);
             this.tabPage7.TabIndex = 0;
             this.tabPage7.Text = "LED RGB VALUES";
             // 
@@ -5461,7 +5465,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1131, 522);
+            this.tabPage10.Size = new System.Drawing.Size(1179, 522);
             this.tabPage10.TabIndex = 1;
             this.tabPage10.Text = "ADVANCED SETTINGS";
             // 
@@ -5472,13 +5476,14 @@
             this.tabControl1.Location = new System.Drawing.Point(441, 17);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(666, 499);
+            this.tabControl1.Size = new System.Drawing.Size(732, 438);
             this.tabControl1.TabIndex = 51;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button18);
-            this.tabPage2.Controls.Add(this.button17);
+            this.tabPage2.Controls.Add(this.panel14);
+            this.tabPage2.Controls.Add(this.recipTextBox);
+            this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.panel13);
             this.tabPage2.Controls.Add(this.Disconnect_button);
@@ -5488,25 +5493,83 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(658, 473);
+            this.tabPage2.Size = new System.Drawing.Size(724, 412);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "UDP";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // label39
             // 
-            this.button17.Location = new System.Drawing.Point(442, 229);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(150, 32);
-            this.button17.TabIndex = 56;
-            this.button17.Text = "test Load image 1";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label39.Location = new System.Drawing.Point(3, 99);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(94, 13);
+            this.label39.TabIndex = 65;
+            this.label39.Text = "Firmware date :";
+            // 
+            // FW_DATE_label
+            // 
+            this.FW_DATE_label.Location = new System.Drawing.Point(104, 101);
+            this.FW_DATE_label.Name = "FW_DATE_label";
+            this.FW_DATE_label.Size = new System.Drawing.Size(170, 24);
+            this.FW_DATE_label.TabIndex = 64;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Location = new System.Drawing.Point(3, 70);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(110, 13);
+            this.label25.TabIndex = 63;
+            this.label25.Text = "Firmware version :";
+            // 
+            // FW_VERSION_label
+            // 
+            this.FW_VERSION_label.Location = new System.Drawing.Point(116, 72);
+            this.FW_VERSION_label.Name = "FW_VERSION_label";
+            this.FW_VERSION_label.Size = new System.Drawing.Size(120, 15);
+            this.FW_VERSION_label.TabIndex = 62;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(3, 47);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(32, 13);
+            this.label22.TabIndex = 61;
+            this.label22.Text = "SN :";
+            // 
+            // SN_BOARD_label
+            // 
+            this.SN_BOARD_label.Location = new System.Drawing.Point(41, 44);
+            this.SN_BOARD_label.Name = "SN_BOARD_label";
+            this.SN_BOARD_label.Size = new System.Drawing.Size(225, 15);
+            this.SN_BOARD_label.TabIndex = 60;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(3, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(69, 13);
+            this.label20.TabIndex = 59;
+            this.label20.Text = "Controller :";
+            // 
+            // CONTROLLER_TYPE_label
+            // 
+            this.CONTROLLER_TYPE_label.Location = new System.Drawing.Point(75, 24);
+            this.CONTROLLER_TYPE_label.Name = "CONTROLLER_TYPE_label";
+            this.CONTROLLER_TYPE_label.Size = new System.Drawing.Size(199, 14);
+            this.CONTROLLER_TYPE_label.TabIndex = 58;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 194);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 201);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(400, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -5538,7 +5601,7 @@
             this.panel13.Controls.Add(this.comboBox31);
             this.panel13.Location = new System.Drawing.Point(3, 39);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(646, 118);
+            this.panel13.Size = new System.Drawing.Size(715, 118);
             this.panel13.TabIndex = 54;
             // 
             // button16
@@ -5570,7 +5633,7 @@
             this.label10.ForeColor = System.Drawing.Color.Lime;
             this.label10.Location = new System.Drawing.Point(303, 88);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(322, 22);
+            this.label10.Size = new System.Drawing.Size(407, 22);
             this.label10.TabIndex = 34;
             this.label10.Text = "EMPTY";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -7347,7 +7410,7 @@
             this.richTextBox2.ForeColor = System.Drawing.Color.Lime;
             this.richTextBox2.Location = new System.Drawing.Point(0, 163);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(655, 25);
+            this.richTextBox2.Size = new System.Drawing.Size(724, 25);
             this.richTextBox2.TabIndex = 50;
             this.richTextBox2.Text = "";
             // 
@@ -7356,7 +7419,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(658, 473);
+            this.tabPage3.Size = new System.Drawing.Size(724, 473);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "XBEE";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -7611,33 +7674,17 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.LightGray;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label53);
-            this.panel7.Controls.Add(this.label6);
             this.panel7.Controls.Add(this.comboBox25);
             this.panel7.Controls.Add(this.label28);
-            this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.portTextBox);
-            this.panel7.Controls.Add(this.statusLabel);
-            this.panel7.Controls.Add(this.recipTextBox);
             this.panel7.Controls.Add(this.label38);
-            this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.label50);
             this.panel7.Controls.Add(this.destipTextBox);
             this.panel7.Location = new System.Drawing.Point(13, 16);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(411, 165);
+            this.panel7.Size = new System.Drawing.Size(373, 147);
             this.panel7.TabIndex = 47;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(21, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Controller";
             // 
             // label53
             // 
@@ -7648,22 +7695,13 @@
             this.label53.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(283, 44);
+            this.label53.Location = new System.Drawing.Point(242, 44);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(119, 26);
+            this.label53.Size = new System.Drawing.Size(99, 26);
             this.label53.TabIndex = 48;
             this.label53.Text = "CONNECTION";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label53.UseWaitCursor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(106, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "--------";
             // 
             // comboBox25
             // 
@@ -7677,9 +7715,9 @@
             "SERIAL",
             "NULL",
             "N/A"});
-            this.comboBox25.Location = new System.Drawing.Point(283, 73);
+            this.comboBox25.Location = new System.Drawing.Point(242, 73);
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(119, 21);
+            this.comboBox25.Size = new System.Drawing.Size(99, 21);
             this.comboBox25.TabIndex = 47;
             this.comboBox25.UseWaitCursor = true;
             this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
@@ -7693,47 +7731,28 @@
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(178, 44);
+            this.label28.Location = new System.Drawing.Point(153, 44);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(98, 26);
+            this.label28.Size = new System.Drawing.Size(83, 26);
             this.label28.TabIndex = 46;
             this.label28.Text = "PORT";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label28.UseWaitCursor = true;
             this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(21, 127);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Status";
-            // 
             // portTextBox
             // 
             this.portTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.portTextBox.Location = new System.Drawing.Point(178, 73);
+            this.portTextBox.Location = new System.Drawing.Point(154, 73);
             this.portTextBox.Name = "portTextBox";
-            this.portTextBox.Size = new System.Drawing.Size(58, 21);
+            this.portTextBox.Size = new System.Drawing.Size(82, 21);
             this.portTextBox.TabIndex = 45;
             this.portTextBox.Text = "2014";
             this.portTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // statusLabel
-            // 
-            this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(106, 127);
-            this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(39, 13);
-            this.statusLabel.TabIndex = 12;
-            this.statusLabel.Text = "--------";
-            // 
             // recipTextBox
             // 
-            this.recipTextBox.Location = new System.Drawing.Point(107, 104);
+            this.recipTextBox.Location = new System.Drawing.Point(561, 6);
             this.recipTextBox.Name = "recipTextBox";
             this.recipTextBox.Size = new System.Drawing.Size(127, 20);
             this.recipTextBox.TabIndex = 5;
@@ -7759,7 +7778,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(21, 107);
+            this.label9.Location = new System.Drawing.Point(469, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 7;
@@ -8208,7 +8227,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1131, 522);
+            this.tabPage1.Size = new System.Drawing.Size(1179, 522);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "LOG";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -8299,15 +8318,21 @@
             this.label52.TabIndex = 35;
             this.label52.Text = "label52";
             // 
-            // button18
+            // panel14
             // 
-            this.button18.Location = new System.Drawing.Point(442, 287);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(150, 32);
-            this.button18.TabIndex = 57;
-            this.button18.Text = "test Load image 2";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.panel14.BackColor = System.Drawing.Color.LightGray;
+            this.panel14.Controls.Add(this.label20);
+            this.panel14.Controls.Add(this.label39);
+            this.panel14.Controls.Add(this.CONTROLLER_TYPE_label);
+            this.panel14.Controls.Add(this.FW_DATE_label);
+            this.panel14.Controls.Add(this.SN_BOARD_label);
+            this.panel14.Controls.Add(this.label25);
+            this.panel14.Controls.Add(this.label22);
+            this.panel14.Controls.Add(this.FW_VERSION_label);
+            this.panel14.Location = new System.Drawing.Point(436, 201);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(285, 200);
+            this.panel14.TabIndex = 66;
             // 
             // Form1
             // 
@@ -8383,6 +8408,7 @@
             this.tabPage10.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
@@ -8395,6 +8421,8 @@
             this.tabPage1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8656,11 +8684,7 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Button openPort;
         private System.Windows.Forms.Button Disconnect_button;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Connect_button;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.TextBox recipTextBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabControl tabControl1;
@@ -8689,8 +8713,15 @@
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label FW_DATE_label;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label FW_VERSION_label;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label SN_BOARD_label;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label CONTROLLER_TYPE_label;
+        private System.Windows.Forms.Panel panel14;
     }
 }
 
