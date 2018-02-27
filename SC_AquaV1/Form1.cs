@@ -3865,6 +3865,17 @@ namespace SC_AquaV1
                             System.Console.WriteLine("Low number");
                             break;
                         }
+
+                    case 250:// Board TYPE ARDUINO DUE "original"
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
+                    case 215:// Board TYPE ARDUINO "CORE"
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
                     case 200:// Board FW Version Received
                         {
                             System.Console.WriteLine("Low number");
