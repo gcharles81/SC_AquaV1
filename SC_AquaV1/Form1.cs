@@ -24,7 +24,9 @@ namespace SC_AquaV1
         String newMessageA = "TEST1";
         String newMessage1B = "TEST2";
         String newMessageC = "Test SN Number 007";
-        /// </summary>
+        String FIRST_LETTER;	// First Character of the UDP packet - can be (W) rest unused
+        int Second_DIGIT;
+        string[] parts = new String[55];
         String[] HZT = new String[8];
         ///////////********
         Char Timers_Digit_00 = ' ';
@@ -3845,19 +3847,64 @@ namespace SC_AquaV1
 
         private void statusExpress(object sender, EventArgs e)
         {
-            // String[] Buffer = new String[50];
             string str = returnData;
 
             char[] seps = { ':' };
 
-            string[] parts = str.Split(seps);
-            //  richTextBox2.Text = parts[1].ToString();
-            //   richTextBox2.Text += " \r\n";
+            parts = str.Split(seps);
 
-            for (int i = 0; i < parts.Length; i++) { 
-                richTextBox2.Text += parts[i].ToString();
-            richTextBox2.Text += " \r\n";
-        }
+            FIRST_LETTER = (parts[0]);
+            Second_DIGIT = Int16.Parse(parts[1]);
+
+            if (FIRST_LETTER == "W") // W ONLY AFTER Connection / disconnection request 
+            {
+                switch (Second_DIGIT)
+                {
+                    case 100:// After connection First Reply
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
+                    case 200:// Board FW Version Received
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
+                    case 050:// Board FW Programmed date
+                        {
+                            System.Console.WriteLine("Low number");
+                            break;
+                        }
+                    
+                    case 150:// BOARD CPU SN  
+                        {
+                            System.Console.WriteLine("Medium number");
+                            break;
+                        }
+                    default:// Unknown Commanr received by Controller
+                        {
+                            System.Console.WriteLine("Other number");
+                            break;
+                        }
+                }
+
+
+
+                label34.Text = (parts[1]);
+                return;
+            }
+
+            else if (FIRST_LETTER == "Z")// Z Aknowledge 
+            {
+                richTextBox2.Text = parts[1].ToString();
+                richTextBox2.Text += " \r\n";
+                return;
+            }
+
+            else
+            {
+                return;
+            }
         }
       
         private void openPort_Click(object sender, EventArgs e)
